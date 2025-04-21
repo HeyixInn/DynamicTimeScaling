@@ -86,18 +86,19 @@ class GuidPool():
         flip_pairs = [[p[1], p[0]] for p in pairs]
         return pairs + flip_pairs
     def dieout(self):
-        if len(self.guid_pool)<=self.max_size:
+        if len(self.guide_pool)<self.max_size:
             return
-        while len(self.guid_pool)>self.max_size:
+        while len(self.guid_pool)>=self.max_size:
             min_guide = min(self.guid_pool, key=lambda x: x.reward)
             self.guid_pool.remove(min_guide)
 
 class GuideNode():
-    def __init__(self, guide_text, eval_results):
+    def __init__(self, guide_text, eval_results, max_token=32000):
         self.guide = guide_text
         self.eval_results = eval_results
         self.children = {}
         self.reward = max(0.01, sum(eval_results)/len(eval_results))
+        self.max_token=max_token
         
         # coefficients
         self.alpha = 1
@@ -114,9 +115,9 @@ class GuideNode():
     def update_child(self, child, acc, cost):
         if child in self.children.keys():
             self.children[child] *= self.lamda
-            self.children[child] += ((1-self.lamda)*(acc*self.alpha+log10(30000/cost)*self.beta))
+            self.children[child] += ((1-self.lamda)*(acc*self.alpha+log10(self.max_token/cost)*self.beta))
         else:
-            self.children[child] = (acc*self.alpha+log10(30000/cost)*self.beta)
+            self.children[child] = (acc*self.alpha+log10(self.max_token/cost)*self.beta)
         print(self.children[child], acc, cost)
     
     def update_reward(self):

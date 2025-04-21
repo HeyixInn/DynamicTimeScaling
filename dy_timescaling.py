@@ -7,7 +7,7 @@ import json, pickle
 from utils import *
 
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "4,5,6,7"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
 os.environ["HUGGINGFACE_API_KEY"] = "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"
 
 def get_prompt(question, model_type='Qwen'):
@@ -67,7 +67,7 @@ if __name__=="__main__":
     parser.add_argument('--model_id', type=int, default=0)
     parser.add_argument('--data_name', type=str, default='aime')
     parser.add_argument('--temperature', type=float, default=0.7)
-    parser.add_argument('--max_iter', type=int, default = 5)
+    parser.add_argument('--max_iter', type=int, default = 20)
     parser.add_argument('--num_gpus', type=int, default = 2)
     parser.add_argument('--max_tokens', type=int, default = 32000)
     parser.add_argument('--overwrite', type=bool, default = False)
@@ -101,7 +101,7 @@ if __name__=="__main__":
     
     model = LLM(
         ID_2_MODELS[args.model_id],
-        tensor_parallel_size=2,
+        tensor_parallel_size=4,
         enforce_eager=True, 
         gpu_memory_utilization=0.95,
     )
@@ -122,12 +122,12 @@ if __name__=="__main__":
     dataset = load_my_dataset(args.data_name)
     num_train = round(len(dataset)*args.train_ratio)
 
-    dataset = train_shuffle.random(dataset)
-    dataset = dataset[:args.num_train]
+    train_shuffle.shuffle(dataset)
+    dataset = dataset[:num_train]
     questions = [d['question'] for d in dataset]
     solutions = [d['solution'] for d in dataset]
     prompts_no_budget = [get_prompt(q, model_type) for q in questions]
-    no_budget_texts = [d['model_output']['no_budget_ans'] for d in saved_result[:args.num_train]]
+    no_budget_texts = [d['model_output']['no_budget_ans'] for d in saved_result[:num_train]]
         
 # ---------------------------------------------------------------------------
     save_path = f"./uncover_guides/{ID_2_MODELS[args.model_id].split('/')[-1]}/"

@@ -5,7 +5,7 @@ import argparse
 import json
 
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "7"
+os.environ["CUDA_VISIBLE_DEVICES"] = "2,3,6,7"
 os.environ["HUGGINGFACE_API_KEY"] = "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"
 
 def get_prompt(question, model_type='Qwen'):
@@ -105,7 +105,7 @@ if __name__=="__main__":
     
     model = LLM(
         ID_2_MODELS[args.model_id],
-        tensor_parallel_size=1,
+        tensor_parallel_size=4,
         enforce_eager=True, 
         gpu_memory_utilization=0.95,
     )
@@ -126,18 +126,18 @@ if __name__=="__main__":
 
     questions = [d['question'] for d in dataset]
     prompts_no_budget = [get_prompt(q, model_type) for q in questions]
-    no_budget_texts = [d['model_output']['no_budget_ans'] for d in saved_result]
+    # no_budget_texts = [d['model_output']['no_budget_ans'] for d in saved_result]
 
-    # sampling_params = SamplingParams(
-    #     max_tokens=args.max_tokens,
-    #     min_tokens=0,
-    #     stop_token_ids=tok("<|im_end|>")["input_ids"],
-    #     skip_special_tokens=False,
-    #     temperature=args.temperature,
-    # )
+    sampling_params = SamplingParams(
+        max_tokens=args.max_tokens,
+        min_tokens=0,
+        stop_token_ids=tok("<|im_end|>")["input_ids"],
+        skip_special_tokens=False,
+        temperature=args.temperature,
+    )
 
-    # outputs_no_budget = model.generate(prompts_no_budget, sampling_params=sampling_params)
-    # no_budget_texts = [o.outputs[0].text for o in outputs_no_budget]
+    outputs_no_budget = model.generate(prompts_no_budget, sampling_params=sampling_params)
+    no_budget_texts = [o.outputs[0].text for o in outputs_no_budget]
     # # print(no_budget_texts)
     # # Step 4: 构造第二轮 prompt（with budget forcing）
     # thinking_texts = []
@@ -192,49 +192,49 @@ if __name__=="__main__":
     #     file.flush()
         
 # ---------------------------------------------------------------------------
-    save_path = f"./results_dy*/{ID_2_MODELS[args.model_id].split('/')[-1]}/"
-    saved_result=[]
-    if os.path.exists(source_path+save_file) and not args.overwrite:
-        with open(source_path+save_file, 'r') as jf:
-            saved_result = json.load(jf)
-            print(f"***************already saved {len(saved_result)} results.***************")
-    if not os.path.exists(save_path):
-        os.makedirs(save_path) 
+    # save_path = f"./results_dy*/{ID_2_MODELS[args.model_id].split('/')[-1]}/"
+    # saved_result=[]
+    # if os.path.exists(source_path+save_file) and not args.overwrite:
+    #     with open(source_path+save_file, 'r') as jf:
+    #         saved_result = json.load(jf)
+    #         print(f"***************already saved {len(saved_result)} results.***************")
+    # if not os.path.exists(save_path):
+    #     os.makedirs(save_path) 
     
-    thinking_texts = []
-    for ignore_token in ignore_tokens:
-        prompts_thinking = [
-            p + "<|im_start|>think" + ans + ignore_token
-            for p, ans in zip(prompts_no_budget, no_budget_texts)
-        ]
+    # thinking_texts = []
+    # for ignore_token in ignore_tokens:
+    #     prompts_thinking = [
+    #         p + "<|im_start|>think" + ans + ignore_token
+    #         for p, ans in zip(prompts_no_budget, no_budget_texts)
+    #     ]
 
-        sampling_params_thinking = SamplingParams(
-            max_tokens=args.max_tokens//len(ignore_tokens),
-            min_tokens=1,
-            stop_token_ids=tok("<|im_start|><|im_end|>")["input_ids"],
-            skip_special_tokens=False,
-            temperature=0.0,
-        )
-        outputs_thinking = model.generate(prompts_thinking, sampling_params=sampling_params_thinking)
-        if len(thinking_texts)==0:
-            thinking_texts = [o.outputs[0].text for o in outputs_thinking]
-        else:
-            thinking_texts = [old_text+'\n'+o.outputs[0].text for o, old_text in zip(outputs_thinking, thinking_texts)]
+    #     sampling_params_thinking = SamplingParams(
+    #         max_tokens=args.max_tokens//len(ignore_tokens),
+    #         min_tokens=1,
+    #         stop_token_ids=tok("<|im_start|><|im_end|>")["input_ids"],
+    #         skip_special_tokens=False,
+    #         temperature=0.0,
+    #     )
+    #     outputs_thinking = model.generate(prompts_thinking, sampling_params=sampling_params_thinking)
+    #     if len(thinking_texts)==0:
+    #         thinking_texts = [o.outputs[0].text for o in outputs_thinking]
+    #     else:
+    #         thinking_texts = [old_text+'\n'+o.outputs[0].text for o, old_text in zip(outputs_thinking, thinking_texts)]
 
-    # Step 5: 构造最终 prompt，加入 budget forcing 后再生成最终答案
-    prompts_final = [
-        p + t
-        for p, t in zip(prompts_thinking, thinking_texts)
-    ]
-    sampling_params_final = SamplingParams(
-        max_tokens=args.max_tokens,
-        min_tokens=0,
-        stop_token_ids=tok("<|im_end|>")["input_ids"],
-        skip_special_tokens=False,
-        temperature=args.temperature,
-    )
-    outputs_final = model.generate(prompts_final, sampling_params=sampling_params_final)
-    budget_texts = [p + o.outputs[0].text for p, o in zip(prompts_final, outputs_final)]
+    # # Step 5: 构造最终 prompt，加入 budget forcing 后再生成最终答案
+    # prompts_final = [
+    #     p + t
+    #     for p, t in zip(prompts_thinking, thinking_texts)
+    # ]
+    # sampling_params_final = SamplingParams(
+    #     max_tokens=args.max_tokens,
+    #     min_tokens=0,
+    #     stop_token_ids=tok("<|im_end|>")["input_ids"],
+    #     skip_special_tokens=False,
+    #     temperature=args.temperature,
+    # )
+    # outputs_final = model.generate(prompts_final, sampling_params=sampling_params_final)
+    # budget_texts = [p + o.outputs[0].text for p, o in zip(prompts_final, outputs_final)]
 
     # Step 6: 汇总结果并保存
     results = []
@@ -249,7 +249,7 @@ if __name__=="__main__":
             'solution': d['solution'],
             'model_output': {
                 'no_budget_ans': no_budget_texts[i],
-                'budget_ans': budget_texts[i]
+                # 'budget_ans': budget_texts[i]
             }
         })
 
