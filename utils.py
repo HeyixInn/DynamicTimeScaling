@@ -121,4 +121,6 @@ class GuideNode():
         print(self.children[child], acc, cost)
     
     def update_reward(self):
+        if len(self.children)==0:
+            return
         self.reward = max(self.reward, sum([v for v in self.children.values()])/len(self.children))

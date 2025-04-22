@@ -7,7 +7,7 @@ import json, pickle
 from utils import *
 
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0,4,6,7"
 os.environ["HUGGINGFACE_API_KEY"] = "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"
 
 def get_prompt(question, model_type='Qwen'):
@@ -101,9 +101,9 @@ if __name__=="__main__":
     
     model = LLM(
         ID_2_MODELS[args.model_id],
-        tensor_parallel_size=4,
+        tensor_parallel_size=2,
         enforce_eager=True, 
-        gpu_memory_utilization=0.95,
+        # gpu_memory_utilization=0.95,
     )
     tok = AutoTokenizer.from_pretrained(
         ID_2_MODELS[args.model_id]
