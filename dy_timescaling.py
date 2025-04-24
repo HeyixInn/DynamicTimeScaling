@@ -7,7 +7,7 @@ import json, pickle
 from utils import *
 
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "0,4,6,7"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
 os.environ["HUGGINGFACE_API_KEY"] = "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"
 
 def get_prompt(question, model_type='Qwen'):
