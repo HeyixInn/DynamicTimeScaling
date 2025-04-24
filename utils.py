@@ -3,6 +3,7 @@ import random
 from vllm import LLM, SamplingParams
 from transformers import AutoTokenizer
 from math import log10
+from datasets import load_dataset, Dataset
 
 SEEDs = [        
     "Wait, let\'s make sure we\'re using the correct formula for the problem.",
@@ -10,6 +11,30 @@ SEEDs = [
     "Wait, let\'s double-check the calculations to avoid any arithmetic mistakes.",
     "Wait, let\'s verify that we\'ve correctly applied the signs throughout the problem."
 ]
+
+ID_2_MODELS = {
+    # authors'
+    0: "simplescaling/s1-32B",
+    # deepseek models
+    1: "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+    2: "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    3: "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+    # Qwen
+    4: "Qwen/Qwen2.5-7B-Instruct",
+    5: "Qwen/Qwen2.5-32B-Instruct",
+    # Llama
+    6: "meta-llama/Meta-Llama-3-8B-Instruct"
+}
+
+
+def get_model_type(model_name):
+    if 'deepseek' in model_name: 
+        return 'deepseek'
+    elif 'Qwen' in model_name: 
+        return 'Qwen'
+    elif 'Llama' in model_name: 
+        return 'Llama'
+    return 'Qwen'
 
 prompt_template_for_new_guide = """You are an expert at analyzing model mistakes. You will be given a question, the correct gold solution, and a model’s incorrect output. Your task is to:
 
@@ -39,6 +64,63 @@ GOLD SOLUTION:
 MODEL OUTPUT:
 {{model_output}}
 """
+
+def get_prompt(question, model_type='Qwen'):
+    SYSTEM_PROMPT = {
+        'Qwen': "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n",
+        'Llama': "<|im_start|>system\nYou are a helpful assistant. Whenever you give a final answer, wrap it using LaTeX boxed syntax like \\boxed{answer}.<|im_end|>\n"
+    }    
+    def get_user_prompt(q, model_type):
+        if model_type=='deepseek':
+            return "<|im_start|>user\n" + q + "<|im_end|>\n<|im_start|>assistant\n"
+        elif model_type=='Qwen' or model_type=='Llama':
+            return SYSTEM_PROMPT[model_type]+"<|im_start|>user\n" + q + "<|im_end|>\n<|im_start|>assistant\n"
+
+    return get_user_prompt(question, model_type)
+NAME_2_DATASET = {
+    'aime': "AI-MO/aimo-validation-aime",
+    'gpqa': "Idavidrein/gpqa",
+    'openaimath': "simplescaling/openaimath",
+    
+}
+DATASET_2_CONFIG = {
+    "AI-MO/aimo-validation-aime": {"split": "train", "question_field": "problem"},
+    "Idavidrein/gpqa": {"split": "train", "question_field": "Question"},
+    "simplescaling/openaimath": {"split": "test", "question_field": "problem"},
+    # "livecodebench/code_generation_lite": {"split": "test", "question_field": "question_content", "version_tag": "release_v4"},
+}
+DS_COLUMNS = {"question", "solution", "cot_type", "source_type", "metadata"}
+def load_generic(name, split, question_field="question", solution_field="solution", cot_type="math", version_tag=None):
+    conf = "gpqa_diamond" if name == "Idavidrein/gpqa" else None
+    ds = load_dataset(name, conf, version_tag=version_tag, trust_remote_code=True)[split]
+    # Make metadata a string that can be loaded via literal_eval to avoid TypeError: Couldn't cast array of type list<item: string> to null 
+    ds = ds.map(lambda x: {"question": x.pop(question_field), "solution": x.pop(solution_field, None), "cot_type": cot_type, "source_type": name, "metadata": str(x)})
+    ds = ds.remove_columns([c for c in ds.column_names if c not in DS_COLUMNS])
+    return ds
+def load_my_dataset(data_name):
+    name = NAME_2_DATASET[data_name]
+    config = DATASET_2_CONFIG[name]
+
+    ds = load_generic(name, **config)
+    # ds  = load_dataset("simplescaling/s1K-1.1")['train']
+    return [d for d in ds]
+    # if data_name=='aime':
+    #     aime = load_dataset("qq8933/AIME_1983_2024")['train']
+    #     aime_dataset = []
+    #     for example in aime:
+    #         result = process_example(example)
+    #         if result is not None:
+    #             aime_dataset.append(result)
+    #     # aime_dataset = Dataset.from_list(aime_dataset)
+    #     return aime_dataset
+    # elif data_name=='omni':
+    #     aime = []
+    #     for d in ds:
+    #         if 'KbsdJames/Omni-MATH' in d['source_type']:
+    #             aime.append(d)
+    #     return aime
+    
+
 
 def evaluate(outputs, solutions):
     eval_results = []
@@ -73,7 +155,7 @@ def uncover_new_guide(model, tok, question, solution, model_output):
     
     match = re.search(r"\[GUIDE\]\n(Wait, let[’']s[\s\S]+?)(?=\n\[|$)", output[0].outputs[0].text)
     guide = match.group(1) if match else None
-    return guide
+    return guide.split('\n')[0]
 
 class GuidPool():
     def __init__(self, max_size=10):
@@ -107,8 +189,6 @@ class GuideNode():
         self.lamda = 0.8
     
     def get_base_score(self, sampled_idx):
-        print(self.eval_results)
-        print(sampled_idx)
         eval_samples = [self.eval_results[idx] for idx in sampled_idx]
         return sum(eval_samples)/len(eval_samples)
         
