@@ -1,9 +1,11 @@
 import re
 import numpy as np
 
-
+# TODO
 def aime_evaluator(llm_outputs, ori_tasks, llm_judge):
-
+    # llm_output:   list of dict {text, logits}
+    # ori_tasks:    list of dict {question, solution}
+    # llm_judge:    AbstLiteLLM
     def extract_answer(text):
         # 使用正则表达式匹配\boxed{<answer>}的格式
         match = re.search(r'\\boxed\{(.*?)\}', text)
@@ -26,3 +28,4 @@ def aime_evaluator(llm_outputs, ori_tasks, llm_judge):
         "is_correct": eval_results,
     }
     return res
+

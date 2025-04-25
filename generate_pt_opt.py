@@ -37,7 +37,7 @@ if __name__ == "__main__":
     parser.add_argument('--model_id', type=int, default=2)
     parser.add_argument('--data_name', type=str, default='aime')
     parser.add_argument('--temperature', type=float, default=0.0)
-    parser.add_argument('--max_tokens', type=int, default=200)
+    parser.add_argument('--max_tokens', type=int, default=200) # TODO
     parser.add_argument('--overwrite', type=bool, default=False)
     parser.add_argument('--opt', type=int, default=1)
 
@@ -49,7 +49,7 @@ if __name__ == "__main__":
     os.makedirs(save_path, exist_ok=True)
 
     dataset = load_my_dataset(args.data_name)
-    train_num = 3   # int(len(dataset) * 0.1)  #TODOD use fordebug
+    train_num = 3   # TODO # int(len(dataset) * 0.1)  #TOOD use fordebug
     test_num= 10
     train_data, valid_data, test_data = dataset[:train_num], dataset[:train_num], dataset[train_num:]
     test_data = test_data[:test_num]
