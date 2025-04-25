@@ -6,11 +6,12 @@ import json
 from utils import *
 
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "6"
+os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 os.environ["HUGGINGFACE_API_KEY"] = "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"
 
 if __name__=="__main__":
     
+    parser = argparse.ArgumentParser()
     parser = argparse.ArgumentParser()
     parser.add_argument('--model_id', type=int, default=0)
     parser.add_argument('--data_name', type=str, default='aime')
@@ -28,10 +29,12 @@ if __name__=="__main__":
     
     
     saved_result=[]
-    # if os.path.exists(save_path+save_file) and not args.overwrite:
-    #     with open(save_path+save_file, 'r') as jf:
-    #         saved_result = json.load(jf)
-    #         print(f"***************already saved {len(saved_result)} results.***************")
+    if os.path.exists(save_path+save_file) and not args.overwrite:
+        with open(save_path+save_file, 'r') as jf:
+            saved_result = json.load(jf)
+            print(f"***************already saved {len(saved_result)} results.***************")
+    if len(saved_result)>0:
+        exit()
     if not os.path.exists(save_path):
         os.makedirs(save_path) 
     
@@ -60,8 +63,6 @@ if __name__=="__main__":
     prompts_no_budget = [get_prompt(q, model_type) for q in questions]
 
     sampling_params = SamplingParams(
-        n = args.n,
-        top_p=args.top_p,
         max_tokens=args.max_tokens,
         min_tokens=0,
         stop_token_ids=tok("<|im_end|>")["input_ids"],
@@ -80,6 +81,6 @@ if __name__=="__main__":
             'model_output': no_budget_texts[i]
         })
 
-    with open(save_path + save_file, 'w') as file:
-        json.dump(results, file)
-        file.flush()
+    # with open(save_path + save_file, 'w') as file:
+    #     json.dump(results, file)
+    #     file.flush()

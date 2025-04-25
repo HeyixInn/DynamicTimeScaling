@@ -5,12 +5,12 @@ from utils import *
 from pt_opt.grips import GripsOptimizer
 from pt_opt.llm_opt import LLMOptimizer
 from pt_opt import AIME_PT_LIST
-from pt_opt.evaluator import aime_evaluator
+from pt_opt.evaluator import aime_evaluator, llm_evaluator
 
 from utils import parse_litellm_output, parse_vllm_output
 import os
 
-# os.environ["CUDA_VISIBLE_DEVICES"] = "6"
+os.environ["CUDA_VISIBLE_DEVICES"] = "3"
 # os.environ["HUGGINGFACE_API_KEY"] = "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"
 
 PT_OPT_LIST = [
@@ -37,7 +37,7 @@ if __name__ == "__main__":
     parser.add_argument('--model_id', type=int, default=2)
     parser.add_argument('--data_name', type=str, default='aime')
     parser.add_argument('--temperature', type=float, default=0.0)
-    parser.add_argument('--max_tokens', type=int, default=200) # TODO
+    parser.add_argument('--max_tokens', type=int, default=30000) # TODO
     parser.add_argument('--overwrite', type=bool, default=False)
     parser.add_argument('--opt', type=int, default=1)
 
@@ -49,8 +49,8 @@ if __name__ == "__main__":
     os.makedirs(save_path, exist_ok=True)
 
     dataset = load_my_dataset(args.data_name)
-    train_num = 3   # TODO # int(len(dataset) * 0.1)  #TOOD use fordebug
-    test_num= 10
+    train_num = 20   # TODO # int(len(dataset) * 0.1)  #TOOD use fordebug
+    test_num= 20
     train_data, valid_data, test_data = dataset[:train_num], dataset[:train_num], dataset[train_num:]
     test_data = test_data[:test_num]
 
@@ -76,6 +76,9 @@ if __name__ == "__main__":
     if args.data_name == 'aime':
         seed_pts = AIME_PT_LIST
         evaluator = aime_evaluator
+    elif args.data_name == 'gpqa' or args.data_name == 'openaimath':
+        seed_pts = AIME_PT_LIST
+        evaluator = llm_evaluator
     else:
         raise NotImplementedError
 

@@ -11,13 +11,13 @@ class AbstLiteLLM:
         self.model = model_name
         self.MAX_RETRIES = 3
 
-        file_path = '/home/sc5687/2_Project/CodeSampling/KEYS/vertexAI.json'
-        with open(file_path, 'r') as file:
-            vertex_credentials = json.load(file)
-        self.vertex_credentials_json = json.dumps(vertex_credentials)
+        # file_path = '/home/sc5687/2_Project/CodeSampling/KEYS/vertexAI.json'
+        # with open(file_path, 'r') as file:
+        #     vertex_credentials = json.load(file)
+        # self.vertex_credentials_json = json.dumps(vertex_credentials)
 
         self.kwargs = {
-            "vertex_credentials": self.vertex_credentials_json,
+            # "vertex_credentials": self.vertex_credentials_json,
             # "logprobs": 0,
             "drop_params": True
         }

@@ -7,14 +7,14 @@ from utils import *
 from typing import Tuple
 
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "5"
+# os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 os.environ["HUGGINGFACE_API_KEY"] = "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"
 
     
 if __name__=="__main__":
     
     parser = argparse.ArgumentParser()
-    parser.add_argument('--model_id', type=int, default=2)
+    parser.add_argument('--model_id', type=int, default=0)
     parser.add_argument('--data_name', type=str, default='aime')
     parser.add_argument('--temperature', type=float, default=0.7)
     parser.add_argument('--max_tokens', type=int, default = 30000)
@@ -42,7 +42,8 @@ if __name__=="__main__":
         ID_2_MODELS[args.model_id],
         tensor_parallel_size=1,
         enforce_eager=True, 
-        gpu_memory_utilization=0.6,
+        gpu_memory_utilization=0.95,
+        swap_space=8
     )
     tok = AutoTokenizer.from_pretrained(
         ID_2_MODELS[args.model_id]

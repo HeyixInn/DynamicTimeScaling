@@ -7,7 +7,7 @@ import json, pickle
 from utils import *
 
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "1,2"
+# os.environ["CUDA_VISIBLE_DEVICES"] = "3"
 os.environ["HUGGINGFACE_API_KEY"] = "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"
 
 
@@ -45,7 +45,7 @@ if __name__=="__main__":
     
     model = LLM(
         ID_2_MODELS[args.model_id],
-        tensor_parallel_size=2,
+        tensor_parallel_size=1,
         enforce_eager=True, 
         gpu_memory_utilization=0.95,
     )
@@ -65,7 +65,7 @@ if __name__=="__main__":
     train_shuffle = random.Random(42)
     dataset = load_my_dataset(args.data_name)
     num_train = round(len(dataset)*args.train_ratio)
-    train_shuffle.shuffle(dataset)
+    # train_shuffle.shuffle(dataset)
     
     save_path = f"./uncover_guides/{ID_2_MODELS[args.model_id].split('/')[-1]}/"
     saved_result=[]
@@ -77,7 +77,7 @@ if __name__=="__main__":
         os.makedirs(save_path) 
         
     combined = list(zip(dataset, saved_result))
-    random.shuffle(combined)
+    train_shuffle.shuffle(combined)
     dataset, saved_result = zip(*combined)
 
     dataset = list(dataset)

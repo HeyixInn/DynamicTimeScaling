@@ -7,7 +7,6 @@ import os
 # os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
 os.environ["HUGGINGFACE_API_KEY"] = "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"
 
-model = "DeepSeek-R1-Distill-Qwen-7B"
 dataset = "omni"
 
 import litellm
@@ -47,7 +46,7 @@ results = []
 prompts = [
     prompt_template.format(
         question=r["question"],
-        model_output=r["model_output"]["no_budget_ans"],
+        model_output=r["model_output"],
         solution=r["solution"]
     )
     for r in model_outputs

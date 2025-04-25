@@ -7,6 +7,7 @@ from math import log10
 from datasets import load_dataset, Dataset
 from litellm_abst import AbstLiteLLM
 
+
 SEEDs = [        
     "Wait, let\'s make sure we\'re using the correct formula for the problem.",
     "Wait, did we convert all units to the same measurement before starting?",
@@ -79,7 +80,6 @@ def get_prompt(question, model_type='Qwen'):
             return SYSTEM_PROMPT[model_type]+"<|im_start|>user\n" + q + "<|im_end|>\n<|im_start|>assistant\n"
 
     return get_user_prompt(question, model_type)
-
 NAME_2_DATASET = {
     'aime': "AI-MO/aimo-validation-aime",
     'gpqa': "Idavidrein/gpqa",
@@ -158,7 +158,9 @@ def uncover_new_guide(model, tok, question, solution, model_output):
     
     match = re.search(r"\[GUIDE\]\n(Wait, let[’']s[\s\S]+?)(?=\n\[|$)", output[0].outputs[0].text)
     guide = match.group(1) if match else None
-    return guide.split('\n')[0]
+    if guide:
+        return guide.split('\n')[0]
+    return None
 
 class GuidPool():
     def __init__(self, max_size=10):
@@ -173,7 +175,7 @@ class GuidPool():
     def dieout(self):
         if len(self.guide_pool)<self.max_size:
             return
-        while len(self.guid_pool)>=self.max_size:
+        while len(self.guide_pool)>=self.max_size:
             min_guide = min(self.guid_pool, key=lambda x: x.reward)
             self.guid_pool.remove(min_guide)
 
