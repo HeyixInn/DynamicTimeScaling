@@ -57,15 +57,11 @@ class LLMOptimizer(AbstPtOptimizer):
                 )
             score_str = "\n".join(score_str_list)
             demo_str_list = []
-            for task in self.train_data[:3]:
+            for task in self.train_data:
                 demo_str_list.append(
-                    f"Input:\n<INS>\n\n{task.prefix}\n"
-                    f"You should output your complete implementation in a single code block wrapped by triple backticks.\n\n\n"
+                    f"Input:\n<INS>\n\n{task['question']}\n\n"
                     f"Output:\n"
-                    f"Here is the code\n"
-                    f"```{task.tgt_lang}\n"
-                    f"{task.solution}\n"
-                    f"```"
+                    f"{task['solution']}\n"
                 )
             demo_str = "\n".join(demo_str_list)
             query_str = self.mutate_template.format(

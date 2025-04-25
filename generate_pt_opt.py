@@ -19,13 +19,13 @@ PT_OPT_LIST = [
 ]
 
 
-def evaluate_pt(pt, llm, dataset, evaluator):
+def evaluate_pt(pt, llm, dataset, evaluator, agent):
     messages = [pt.task2msg(task) for task in dataset]
 
     llm_output_list = llm.chat(messages, sampling_params=llm.sampling_params)
     llm_outputs = [llm.parse_func(d) for d in llm_output_list]
 
-    return_dict = evaluator(llm_outputs, dataset)
+    return_dict = evaluator(llm_outputs, dataset, agent)
 
     return return_dict
 
@@ -39,7 +39,7 @@ if __name__ == "__main__":
     parser.add_argument('--temperature', type=float, default=0.0)
     parser.add_argument('--max_tokens', type=int, default=200)
     parser.add_argument('--overwrite', type=bool, default=False)
-    parser.add_argument('--opt', type=int, default=0)
+    parser.add_argument('--opt', type=int, default=1)
 
     args = parser.parse_args()
 
@@ -54,6 +54,7 @@ if __name__ == "__main__":
     train_data, valid_data, test_data = dataset[:train_num], dataset[:train_num], dataset[train_num:]
     test_data = test_data[:test_num]
 
+    agent = load_agent()
     model = LLM(
         ID_2_MODELS[args.model_id],
         trust_remote_code = True,
@@ -62,6 +63,7 @@ if __name__ == "__main__":
         max_seq_len_to_capture=args.max_tokens,
         gpu_memory_utilization=0.95,
     )
+
     sampling_params = SamplingParams(
         max_tokens=args.max_tokens,
         skip_special_tokens=False,
@@ -79,12 +81,12 @@ if __name__ == "__main__":
 
     pt_class = PT_OPT_LIST[args.opt]
     pt_optimizer = pt_class(
-        seed_pts, model, None, evaluator,
+        seed_pts, model, agent, evaluator,
         train_data, valid_data, test_data,{"num_steps": 3}
     )
     opt_res = pt_optimizer.optimize_pt()
 
-    evaluate_re =  evaluate_pt(opt_res["best_pt"], model, dataset, evaluator)
+    evaluate_re =  evaluate_pt(opt_res["best_pt"], model, dataset, evaluator, agent)
     print(evaluate_re)
 
 

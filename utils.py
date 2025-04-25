@@ -2,8 +2,10 @@ import re
 import random
 from vllm import LLM, SamplingParams
 from transformers import AutoTokenizer
+import litellm
 from math import log10
 from datasets import load_dataset, Dataset
+from litellm_abst import AbstLiteLLM
 
 SEEDs = [        
     "Wait, let\'s make sure we\'re using the correct formula for the problem.",
@@ -237,3 +239,12 @@ def parse_litellm_output(model_pred):
     else:
         logits = None
     return {"text": text, "logits": logits}
+
+
+def load_agent():
+    model_name = "anthropic.claude-3-5-haiku-20241022-v1:0"
+    # model_name = "anthropic.claude-3-5-sonnet-20241022-v2:0"
+    provider = "bedrock"
+
+    agent = AbstLiteLLM(provider, model_name)
+    return agent
