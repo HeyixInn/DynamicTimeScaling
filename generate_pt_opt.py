@@ -80,7 +80,7 @@ if __name__ == "__main__":
     pt_class = PT_OPT_LIST[args.opt]
     pt_optimizer = pt_class(
         seed_pts, model, None, evaluator,
-        train_data, valid_data, test_data,{}
+        train_data, valid_data, test_data,{"num_steps": 3}
     )
     opt_res = pt_optimizer.optimize_pt()
 
