@@ -82,7 +82,7 @@ aime_pt_2 = MATH_SOLVE_PT(
 )
 
 aime_pt_3 = MATH_SOLVE_PT(
-    instruction="Solve the following AIME problem step-by-step, "
+    instruction="Solve the following problem step-by-step, "
                 "then verify your solution by plugging your answer back into the original problem. "
                 "Please provide a boxed final answer at the end.\n\n",
         data_template="Math Problem:\n```\n{question}\n```",
@@ -91,7 +91,7 @@ aime_pt_3 = MATH_SOLVE_PT(
 )
 
 aime_pt_4 = MATH_SOLVE_PT(
-    instruction="You can use arithmetic or algebraic computations to solve the following AIME problem. "
+    instruction="You can use arithmetic or algebraic computations to solve the following problem. "
                 "Show each calculation step, simplify expressions, "
                 "and provide a boxed final answer at the end.\n\n",
     data_template="Math Problem:\n```\n{question}\n```",
@@ -100,7 +100,7 @@ aime_pt_4 = MATH_SOLVE_PT(
 )
 
 aime_pt_5 = MATH_SOLVE_PT(
-    instruction="Solve the following AIME problem step-by-step "
+    instruction="Solve the following problem step-by-step "
                 "and explain your reasoning. "
                 "Then provide a boxed final answer at the end.\n\n",
     data_template="Math Problem:\n```\n{question}\n```",

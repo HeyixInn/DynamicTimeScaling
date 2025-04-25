@@ -7,6 +7,7 @@ import os
 # os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
 os.environ["HUGGINGFACE_API_KEY"] = "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"
 
+model = "DeepSeek-R1-Distill-Qwen-7B"
 dataset = "omni"
 
 import litellm
@@ -17,7 +18,7 @@ litellm.bedrock_region_name = "us-east-1"
 
 with open(f"results_dy*/{model}/{dataset}.json", "r") as f:
     model_outputs = json.load(f)
-
+model_outputs = model_outputs[:2]
 prompt_template = """You are a knowledgeable and strict teaching assistant. Given a question, a model-generated answer (model_output), and the correct reference answer (solution), determine whether the model's answer is correct.
 
 ### Question:

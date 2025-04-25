@@ -122,7 +122,7 @@ if __name__=="__main__":
     outputs_final = model.generate(prompts_final, sampling_params=sampling_params_final)
     outputs = [o.outputs[0].text for o in outputs_final]
 
-    gp = GuidPool()
+    gp = GuidePool()
     for i in range(0, len(prompts_thinking), len(dataset)):
         gp.guide_pool.append(
             GuideNode(
@@ -228,7 +228,10 @@ if __name__=="__main__":
         with open(save_path + save_file, 'w') as file:
             json.dump(all_results, file, indent=4)
             file.flush()
-        with open(save_path + save_file.replace(".json", ".pkl"), 'wb') as file:
-            pickle.dump(gp, file)
+        with open(save_path + save_file.replace(".json", "_graph.json"), 'w') as file:
+            json.dump([
+                {"guide": node.guide, "children": node.children}
+                for node in gp.guide_pool
+            ], file, indent=4)
             file.flush()
         

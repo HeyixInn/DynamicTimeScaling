@@ -162,7 +162,7 @@ def uncover_new_guide(model, tok, question, solution, model_output):
         return guide.split('\n')[0]
     return None
 
-class GuidPool():
+class GuidePool():
     def __init__(self, max_size=10):
         self.guide_pool = []     
         self.max_size = max_size   

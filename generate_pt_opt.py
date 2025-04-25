@@ -10,7 +10,7 @@ from pt_opt.evaluator import aime_evaluator, llm_evaluator
 from utils import parse_litellm_output, parse_vllm_output
 import os
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "3"
+# os.environ["CUDA_VISIBLE_DEVICES"] = "3"
 # os.environ["HUGGINGFACE_API_KEY"] = "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"
 
 PT_OPT_LIST = [
@@ -39,20 +39,30 @@ if __name__ == "__main__":
     parser.add_argument('--temperature', type=float, default=0.0)
     parser.add_argument('--max_tokens', type=int, default=30000) # TODO
     parser.add_argument('--overwrite', type=bool, default=False)
-    parser.add_argument('--opt', type=int, default=1)
+    parser.add_argument('--opt', type=int, default=0)
+    parser.add_argument('--train_ratio', type=float, default = 0.1)
 
     args = parser.parse_args()
+    
+    save_path = f"./results_pt_opt/{ID_2_MODELS[args.model_id].split('/')[-1]}/opt_{args.opt}/"
+    # source_path = f"./results/{ID_2_MODELS[args.model_id].split('/')[-1]}/"
+    save_file = f"{args.data_name}.json"
+    if not os.path.exists(save_path):
+        os.makedirs(save_path)
 
     model_type = get_model_type(ID_2_MODELS[args.model_id])
 
-    save_path = f"./pt_opt_{args.opt}/{ID_2_MODELS[args.model_id].split('/')[-1]}__{args.data_name}/"
-    os.makedirs(save_path, exist_ok=True)
+    # save_path = f"./pt_opt_{args.opt}/{ID_2_MODELS[args.model_id].split('/')[-1]}__{args.data_name}/"
+    # os.makedirs(save_path, exist_ok=True)
 
+    train_shuffle = random.Random(42)
     dataset = load_my_dataset(args.data_name)
-    train_num = 20   # TODO # int(len(dataset) * 0.1)  #TOOD use fordebug
-    test_num= 20
+    train_shuffle.shuffle(dataset)
+    train_num = round(len(dataset)*args.train_ratio)   # TODO # int(len(dataset) * 0.1)  #TOOD use fordebug
+    # train_num=3
+    # test_num= 20
     train_data, valid_data, test_data = dataset[:train_num], dataset[:train_num], dataset[train_num:]
-    test_data = test_data[:test_num]
+    # test_data = test_data[:test_num]
 
     agent = load_agent()
     model = LLM(
@@ -90,7 +100,7 @@ if __name__ == "__main__":
     opt_res = pt_optimizer.optimize_pt()
 
     evaluate_re =  evaluate_pt(opt_res["best_pt"], model, dataset, evaluator, agent)
-    print(evaluate_re)
+    # print(evaluate_re)
 
 
     # outputs_no_budget = model.generate(prompts_no_budget, sampling_params=sampling_params)
@@ -104,6 +114,9 @@ if __name__ == "__main__":
     #         'model_output': no_budget_texts[i]
     #     })
     #
-    # with open(save_path + save_file, 'w') as file:
-    #     json.dump(results, file)
-    #     file.flush()
+    with open(save_path + save_file, 'w') as file:
+        json.dump(opt_res, file)
+        file.flush()
+    with open(save_path + save_file.replace(".json","_eval.json"), 'w') as file:
+        json.dump(evaluate_re, file)
+        file.flush()
