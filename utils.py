@@ -77,6 +77,7 @@ def get_prompt(question, model_type='Qwen'):
             return SYSTEM_PROMPT[model_type]+"<|im_start|>user\n" + q + "<|im_end|>\n<|im_start|>assistant\n"
 
     return get_user_prompt(question, model_type)
+
 NAME_2_DATASET = {
     'aime': "AI-MO/aimo-validation-aime",
     'gpqa': "Idavidrein/gpqa",
@@ -204,3 +205,35 @@ class GuideNode():
         if len(self.children)==0:
             return
         self.reward = max(self.reward, sum([v for v in self.children.values()])/len(self.children))
+
+
+def parse_vllm_output(model_pred):
+
+    def extract_token_prob(d_list):
+        res = []
+        for d in d_list:
+            tmp = list(d.values())[0]
+            res.append([tmp.decoded_token, tmp.logprob])
+        return res
+
+    text = model_pred.outputs[0].text
+    logits = extract_token_prob(model_pred.outputs[0].logprobs)
+    return {"text": text, "logits": logits}
+
+
+def parse_litellm_output(model_pred):
+    def extract_token_prob(prob_list):
+        res = []
+        for d in prob_list:
+            res.append([d.token, d.logprob])
+        return res
+
+    num_of_gen = len(model_pred.choices)
+    assert num_of_gen == 1
+
+    text = model_pred.choices[0].message.content
+    if hasattr(model_pred.choices[0], 'logprobs'):
+        logits = extract_token_prob(model_pred.choices[0].logprobs.content)
+    else:
+        logits = None
+    return {"text": text, "logits": logits}

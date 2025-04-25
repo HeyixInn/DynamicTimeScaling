@@ -12,7 +12,6 @@ os.environ["HUGGINGFACE_API_KEY"] = "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"
 if __name__=="__main__":
     
     parser = argparse.ArgumentParser()
-    parser = argparse.ArgumentParser()
     parser.add_argument('--model_id', type=int, default=0)
     parser.add_argument('--data_name', type=str, default='aime')
     parser.add_argument('--temperature', type=float, default=0.0)
@@ -61,6 +60,8 @@ if __name__=="__main__":
     prompts_no_budget = [get_prompt(q, model_type) for q in questions]
 
     sampling_params = SamplingParams(
+        n = args.n,
+        top_p=args.top_p,
         max_tokens=args.max_tokens,
         min_tokens=0,
         stop_token_ids=tok("<|im_end|>")["input_ids"],
