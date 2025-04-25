@@ -101,7 +101,7 @@ class AbstPtOptimizer:
         llm_output_list = self.code_llm.chat(messages, sampling_params=self.code_llm.sampling_params)
         llm_outputs = [self.code_llm.parse_func(d) for d in llm_output_list]
 
-        return_dict = self.evaluator(llm_outputs, tasks)
+        return_dict = self.evaluator(llm_outputs, tasks, self.agent)
         score = return_dict['score']
         return score
 

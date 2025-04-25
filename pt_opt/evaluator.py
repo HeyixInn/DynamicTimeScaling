@@ -2,7 +2,7 @@ import re
 import numpy as np
 
 
-def aime_evaluator(llm_outputs, ori_tasks):
+def aime_evaluator(llm_outputs, ori_tasks, llm_judge):
 
     def extract_answer(text):
         # 使用正则表达式匹配\boxed{<answer>}的格式
