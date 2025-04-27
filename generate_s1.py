@@ -6,7 +6,7 @@ import json
 from utils import *
 
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "6"
+# os.environ["CUDA_VISIBLE_DEVICES"] = "6"
 os.environ["HUGGINGFACE_API_KEY"] = "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"
 
 if __name__=="__main__":
@@ -23,7 +23,7 @@ if __name__=="__main__":
     
     model_type = get_model_type(ID_2_MODELS[args.model_id])
 
-    save_path = f"./results_greedy/{ID_2_MODELS[args.model_id].split('/')[-1]}/"
+    save_path = f"./results_s1/{ID_2_MODELS[args.model_id].split('/')[-1]}/"
     source_path = f"./results_greedy/{ID_2_MODELS[args.model_id].split('/')[-1]}/"
     save_file = f"{args.data_name}.json"
 
@@ -78,20 +78,26 @@ if __name__=="__main__":
         p + "<|im_start|>think" + ans + ignore_token
         for p, ans in zip(prompts_no_budget, no_budget_texts)
     ]
-
-    sampling_params_thinking = SamplingParams(
-        max_tokens=args.max_tokens//len(ignore_tokens),
-        min_tokens=1,
-        stop_token_ids=tok("<|im_start|><|im_end|>")["input_ids"],
-        skip_special_tokens=False,
-        temperature=0.0,
-    )
-    outputs_thinking = model.generate(prompts_thinking, sampling_params=sampling_params_thinking)
-    if len(thinking_texts)==0:
+    budget = args.max_tokens
+    
+    while budget>0:
+        sampling_params_thinking = SamplingParams(
+            max_tokens=budget,
+            min_tokens=1,
+            stop_token_ids=tok("<|im_start|><|im_end|>")["input_ids"],
+            skip_special_tokens=False,
+            temperature=0.0,
+        )
+        outputs_thinking = model.generate(prompts_thinking, sampling_params=sampling_params_thinking)
         thinking_texts = [o.outputs[0].text for o in outputs_thinking]
-    else:
-        thinking_texts = [old_text+'\n'+o.outputs[0].text for o, old_text in zip(outputs_thinking, thinking_texts)]
+        
+        budget_cuts = [len(o.outputs[0].token_ids) for o in outputs_thinking]
+        budget-=max(budget_cuts)
 
+        prompts_thinking = [
+            p + ignore_token
+            for p in prompts_thinking
+        ]
     prompts_final = [
         p + t
         for p, t in zip(prompts_thinking, thinking_texts)

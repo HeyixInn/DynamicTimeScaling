@@ -134,11 +134,80 @@ def evaluate(outputs, solutions):
             return match.groups()[-1]  # 提取并返回匹配的内容
     for o, sol in zip(outputs, solutions):
         answer = extract_answer(o)
-        if answer is not None and answer==sol:
+        sol_num = extract_answer(sol)
+        if answer is not None and answer==sol_num:
             eval_results.append(True)
         else:
             eval_results.append(False)
     return eval_results
+
+def llm_evaluate(outputs, solutions, questions):
+    # llm_output:   list of dict {text, logits}
+    # ori_tasks:    list of dict {question, solution}
+    # llm_judge:    AbstLiteLLM
+    
+    prompts = [
+        prompt_template.format(
+            question=task["question"],
+            model_output=output["text"],
+            solution=task["solution"]
+        )
+        for output, task in zip(llm_outputs, ori_tasks)
+    ]
+    outputs = []
+    # for p in prompts:
+    #     response = litellm.completion(
+    #         model="bedrock/anthropic.claude-3-sonnet-20240229-v1:0",
+    #         messages=[
+    #             {"role": "user", "content": p}
+    #         ],
+    #         temperature=0,
+    #         top_p=1.0,
+    #     )
+    #     outputs.append(response.choices[0].message["content"])
+    for p in prompts:
+        while True:
+            try:
+                response = litellm.completion(
+                    model="bedrock/anthropic.claude-3-sonnet-20240229-v1:0",
+                    messages=[
+                        {"role": "user", "content": p}
+                    ],
+                    temperature=0,
+                    top_p=1.0,
+                )
+                outputs.append(response.choices[0].message["content"])
+                break  
+            except HTTPStatusError as e:
+                if e.response.status_code == 503:
+                    print("503 error, retrying ...")
+                    time.sleep(3)  
+                else:
+                    raise  
+            except Exception as e:
+                print(f"Unknown error: {e}")
+                raise
+
+    pred_list, eval_results = [], []
+    for llm_output, o in zip(llm_outputs, outputs):
+        # sol= ori_task['solution']
+        answer = llm_output['text']
+        pred_list.append(answer)
+        # if answer is not None and answer == sol:
+        #     eval_results.append(True)
+        # else:
+        #     eval_results.append(False)
+        if "correct" in o.lower():
+            eval_results.append(True)
+        else:
+            eval_results.append(False)
+        
+    res = {
+        "score": np.mean(eval_results),
+        "pred_list": pred_list,
+        "is_correct": eval_results,
+    }
+    return res
 
 def uncover_new_guide(model, tok, question, solution, model_output):
 
@@ -176,8 +245,8 @@ class GuidePool():
         if len(self.guide_pool)<self.max_size:
             return
         while len(self.guide_pool)>=self.max_size:
-            min_guide = min(self.guid_pool, key=lambda x: x.reward)
-            self.guid_pool.remove(min_guide)
+            min_guide = min(self.guide_pool, key=lambda x: x.reward)
+            self.guide_pool.remove(min_guide)
 
 class GuideNode():
     def __init__(self, guide_text, eval_results, max_token=32000):

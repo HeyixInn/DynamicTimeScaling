@@ -228,10 +228,10 @@ if __name__=="__main__":
         with open(save_path + save_file, 'w') as file:
             json.dump(all_results, file, indent=4)
             file.flush()
+        graph = []
+        for node in gp.guide_pool:
+            graph.append({"guide": node.guide, "children": [{c.guide: c.reward} for c in node.children]})
         with open(save_path + save_file.replace(".json", "_graph.json"), 'w') as file:
-            json.dump([
-                {"guide": node.guide, "children": node.children}
-                for node in gp.guide_pool
-            ], file, indent=4)
+            json.dump(graph, file, indent=4)
             file.flush()
         

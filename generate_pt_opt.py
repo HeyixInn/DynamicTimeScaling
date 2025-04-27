@@ -99,7 +99,6 @@ if __name__ == "__main__":
     )
     opt_res = pt_optimizer.optimize_pt()
 
-    evaluate_re =  evaluate_pt(opt_res["best_pt"], model, dataset, evaluator, agent)
     # print(evaluate_re)
 
 
@@ -114,9 +113,18 @@ if __name__ == "__main__":
     #         'model_output': no_budget_texts[i]
     #     })
     #
+    results = [
+        {
+            "best_pt": opt_res["best_pt"].instruction,
+            "best_pt_list": [pt.instruction for pt in opt_res["best_pt_list"]],
+            # "valid_scores_list": opt_res["valid_scores_list"],
+            "train_scores_list": opt_res["train_scores_list"]
+        }
+    ]
     with open(save_path + save_file, 'w') as file:
-        json.dump(opt_res, file)
+        json.dump(results, file)
         file.flush()
+    evaluate_re =  evaluate_pt(opt_res["best_pt"], model, dataset, evaluator, agent)
     with open(save_path + save_file.replace(".json","_eval.json"), 'w') as file:
         json.dump(evaluate_re, file)
         file.flush()
