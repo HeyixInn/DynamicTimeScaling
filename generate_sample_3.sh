@@ -1,0 +1,2 @@
+CUDA_VISIBLE_DEVICES=1 python generate_sample.py --model_id=3 --data_name=openaimath
+CUDA_VISIBLE_DEVICES=1 python generate_sample.py --model_id=3 --data_name=gpqa
