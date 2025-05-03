@@ -23,8 +23,8 @@ ID_2_MODELS = {
     2: "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
     3: "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
     # Qwen
-    4: "Qwen/Qwen2.5-7B-Instruct",
-    5: "Qwen/Qwen2.5-32B-Instruct",
+    4: "Qwen/Qwen3-8B",
+    5: "Qwen/Qwen3-30B-A3B",
     # Llama
     6: "meta-llama/Meta-Llama-3-8B-Instruct"
 }
@@ -68,7 +68,7 @@ MODEL OUTPUT:
 {{model_output}}
 """
 
-def get_prompt(question, model_type='Qwen'):
+def get_prompt(question, model_type='Qwen', enable_thinking=False):
     SYSTEM_PROMPT = {
         'Qwen': "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n",
         'Llama': "<|im_start|>system\nYou are a helpful assistant. Whenever you give a final answer, wrap it using LaTeX boxed syntax like \\boxed{answer}.<|im_end|>\n"
@@ -77,6 +77,8 @@ def get_prompt(question, model_type='Qwen'):
         if model_type=='deepseek':
             return "<|im_start|>user\n" + q + "<|im_end|>\n<|im_start|>assistant\n"
         elif model_type=='Qwen' or model_type=='Llama':
+            if not enable_thinking:
+                return SYSTEM_PROMPT[model_type]+"<|im_start|>user\n" + q + "/no_think" + "<|im_end|>\n<|im_start|>assistant\n"
             return SYSTEM_PROMPT[model_type]+"<|im_start|>user\n" + q + "<|im_end|>\n<|im_start|>assistant\n"
 
     return get_user_prompt(question, model_type)
@@ -87,7 +89,7 @@ NAME_2_DATASET = {
     
 }
 DATASET_2_CONFIG = {
-    "AI-MO/aimo-validation-aime": {"split": "train", "question_field": "problem"},
+    "AI-MO/aimo-validation-aime": {"split": "train", "question_field": "problem", "solution_field": "answer"},
     "Idavidrein/gpqa": {"split": "train", "question_field": "Question"},
     "simplescaling/openaimath": {"split": "test", "question_field": "problem"},
     # "livecodebench/code_generation_lite": {"split": "test", "question_field": "question_content", "version_tag": "release_v4"},
@@ -134,8 +136,13 @@ def evaluate(outputs, solutions):
             return match.groups()[-1]  # 提取并返回匹配的内容
     for o, sol in zip(outputs, solutions):
         answer = extract_answer(o)
-        sol_num = extract_answer(sol)
-        if answer is not None and answer==sol_num:
+        # sol_num = extract_answer(sol)
+        print(answer, sol)
+        if answer is not None:
+            with open("./_temp1.txt", 'a') as tf:
+                tf.writelines(o)
+                tf.write("\n"+"-"*10)
+        if answer is not None and answer.isdigit() and int(answer)==int(sol):
             eval_results.append(True)
         else:
             eval_results.append(False)

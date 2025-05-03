@@ -3,6 +3,10 @@ import json
 import argparse
 import os
 
+import time
+from httpx import HTTPStatusError
+from litellm.exceptions import ServiceUnavailableError
+
 prompt_template = """You are a knowledgeable and strict teaching assistant. Given a question, a model-generated answer (model_output), and the correct reference answer (solution), determine whether the model's answer is correct.
 
 ### Question:
@@ -52,6 +56,9 @@ def llm_eval(outputs, solutions, questions):
                     time.sleep(3)  
                 else:
                     raise  
+            except ServiceUnavailableError as e:
+                time.sleep(60)
+                
             except Exception as e:
                 print(f"Unknown error: {e}")
                 raise
@@ -71,6 +78,7 @@ if __name__=="__main__":
     parser.add_argument("--mode", type=str, default="greedy")
     parser.add_argument("--model_id", type=int, default=2)
     parser.add_argument("--data_name", type=str, default="aime")
+    parser.add_argument("--source_dir", type=str, default="results_greedy")
     
     args = parser.parse_args()
     
@@ -80,7 +88,7 @@ if __name__=="__main__":
     #     saved_results = json.load(file)
     
     if args.mode=="greedy":
-        source_path = f"./results_greedy/{ID_2_MODELS[args.model_id].split('/')[-1]}/"
+        source_path = f"./{args.source_dir}/{ID_2_MODELS[args.model_id].split('/')[-1]}/"
         save_file = f"{args.data_name}.json"
         with open(source_path+save_file, 'r') as file:   
             saved_results = json.load(file)
@@ -88,6 +96,8 @@ if __name__=="__main__":
         solutions = [r['solution'] for r in saved_results]
         questions = [r['question'] for r in saved_results]
         if args.data_name=="aime":
+            aime = load_my_dataset("aime")
+            solutions = [r['solution'] for r in aime]
             eval_results = evaluate(output_texts, solutions)
             for r, e in zip(saved_results, eval_results):
                 r.update({'eval': e})
@@ -97,7 +107,7 @@ if __name__=="__main__":
                 r.update({'llm_eval_output': e['llm_eval_output'], 'eval': e['eval']})
     
     elif args.mode=="sampling":
-        source_path = f"./results_sample/{ID_2_MODELS[args.model_id].split('/')[-1]}/"
+        source_path = f"./{args.source_dir}/{ID_2_MODELS[args.model_id].split('/')[-1]}/"
         save_file = f"{args.data_name}.json"
         with open(source_path+save_file, 'r') as file:   
             saved_results = json.load(file)
@@ -107,6 +117,8 @@ if __name__=="__main__":
         questions = [r['question'] for r in saved_results for _ in range(sample_num)]
         
         if args.data_name=="aime":
+            aime = load_my_dataset("aime")
+            solutions = [r['solution'] for r in aime for _ in range(sample_num)]
             eval_results = evaluate(output_texts, solutions)
             sample_eval = [eval_results[i:i+sample_num] for i in range(0, len(eval_results), sample_num)]
             for r, e in zip(saved_results, sample_eval):

@@ -25,7 +25,7 @@ if __name__=="__main__":
     
     model_type = get_model_type(ID_2_MODELS[args.model_id])
 
-    save_path = f"./results_sample/{ID_2_MODELS[args.model_id].split('/')[-1]}/"
+    save_path = f"./results_sample1/{ID_2_MODELS[args.model_id].split('/')[-1]}/"
     # source_path = f"./results/{ID_2_MODELS[args.model_id].split('/')[-1]}/"
     save_file = f"{args.data_name}.json"
     
@@ -70,28 +70,29 @@ if __name__=="__main__":
     )
 
     dataset = load_my_dataset(args.data_name)
+    print(len(dataset))
 
-    questions = [d['question'] for d in dataset]
-    prompts_no_budget = [get_prompt(q, model_type) for q in questions]
+    # questions = [d['question'] for d in dataset]
+    # prompts_no_budget = [get_prompt(q, model_type) for q in questions]
 
-    outputs_no_budget = model.generate(prompts_no_budget, sampling_params=sampling_params)
-    results = []
-    for d, o in zip(dataset, outputs_no_budget):
-        sample_logprobs = []
-        sample_texts = []
-        for i in range(args.nsamples):
-            temp = []
-            for lps in o.outputs[i].logprobs:
-                temp.append([list(lps.keys())[0], list(lps.values())[0].logprob])
-            sample_logprobs.append(temp)
-            sample_texts.append(o.outputs[i].text)
-        results.append({
-            'question': d['question'],
-            'solution': d['solution'],
-            'sample_texts': sample_texts,
-            'sample_logprobs': sample_logprobs,
-        })
-    with open(save_path + save_file, 'w') as file:
-        json.dump(results, file)
-        file.flush()
+    # outputs_no_budget = model.generate(prompts_no_budget, sampling_params=sampling_params)
+    # results = []
+    # for d, o in zip(dataset, outputs_no_budget):
+    #     sample_logprobs = []
+    #     sample_texts = []
+    #     for i in range(args.nsamples):
+    #         temp = []
+    #         for lps in o.outputs[i].logprobs:
+    #             temp.append([list(lps.keys())[0], list(lps.values())[0].logprob])
+    #         sample_logprobs.append(temp)
+    #         sample_texts.append(o.outputs[i].text)
+    #     results.append({
+    #         'question': d['question'],
+    #         'solution': d['solution'],
+    #         'sample_texts': sample_texts,
+    #         'sample_logprobs': sample_logprobs,
+    #     })
+    # with open(save_path + save_file, 'w') as file:
+    #     json.dump(results, file)
+    #     file.flush()
     

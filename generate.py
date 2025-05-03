@@ -15,7 +15,7 @@ if __name__=="__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--model_id', type=int, default=0)
     parser.add_argument('--data_name', type=str, default='aime')
-    parser.add_argument('--temperature', type=float, default=0.0)
+    parser.add_argument('--temperature', type=float, default=0.7)
     parser.add_argument('--max_tokens', type=int, default = 32000)
     parser.add_argument('--overwrite', type=bool, default = False)
     

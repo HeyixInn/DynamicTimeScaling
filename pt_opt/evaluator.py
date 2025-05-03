@@ -2,6 +2,7 @@ import re
 import numpy as np
 import time
 from httpx import HTTPStatusError
+from litellm.exceptions import ServiceUnavailableError
 
 import litellm
 litellm.bedrock_region_name = "us-east-1"
@@ -92,7 +93,10 @@ def llm_evaluator(llm_outputs, ori_tasks, llm_judge):
                     print("503 error, retrying ...")
                     time.sleep(3)  
                 else:
-                    raise  
+                    raise
+                
+            except ServiceUnavailableError as e:
+                time.sleep(60) 
             except Exception as e:
                 print(f"Unknown error: {e}")
                 raise

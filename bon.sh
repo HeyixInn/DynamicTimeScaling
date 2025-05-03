@@ -1,0 +1,17 @@
+python bon.py --data_name=aime --select_type=logprob_avg
+python bon.py --data_name=aime --select_type=logprob_sum
+python bon.py --data_name=aime --select_type=cons_base
+python bon.py --data_name=aime --select_type=cons_weight
+python bon.py --data_name=aime --select_type=cons_consensus
+
+# python bon.py --data_name=gpqa --select_type=logprob_avg
+# python bon.py --data_name=gpqa --select_type=logprob_sum
+# python bon.py --data_name=gpqa --select_type=cons_base
+# python bon.py --data_name=gpqa --select_type=cons_weight
+# python bon.py --data_name=gpqa --select_type=cons_consensus
+
+# python bon.py --data_name=openaimath --select_type=logprob_avg
+# python bon.py --data_name=openaimath --select_type=logprob_sum
+# python bon.py --data_name=openaimath --select_type=cons_base
+# python bon.py --data_name=openaimath --select_type=cons_weight
+# python bon.py --data_name=openaimath --select_type=cons_consensus

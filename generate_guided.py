@@ -23,7 +23,7 @@ if __name__=="__main__":
     
     model_type = get_model_type(ID_2_MODELS[args.model_id])
 
-    save_path = f"./results_s1**/{ID_2_MODELS[args.model_id].split('/')[-1]}/"
+    save_path = f"./results_guided**/{ID_2_MODELS[args.model_id].split('/')[-1]}/"
     source_path = f"./results_greedy/{ID_2_MODELS[args.model_id].split('/')[-1]}/"
     save_file = f"{args.data_name}.json"
 
@@ -57,7 +57,7 @@ if __name__=="__main__":
     dataset = load_my_dataset(args.data_name)
 
     questions = [d['question'] for d in dataset]
-    prompts_no_budget = [get_prompt(q, model_type, enable_thinking=True) for q in questions]
+    prompts_no_budget = [get_prompt(q, model_type) for q in questions]
     no_budget_texts = [d['model_output'] for d in saved_result]
 
     sampling_params = SamplingParams(
@@ -72,18 +72,32 @@ if __name__=="__main__":
     # no_budget_texts = [o.outputs[0].text for o in outputs_no_budget]
     
     
+    
+    
+    with open(f"./uncover_guides/{ID_2_MODELS[args.model_id].split('/')[-1]}/{args.data_name}_graph.json", 'r') as file:
+        guide_graph_list = json.load(file)
+        guide_graph = {}
+        for d in guide_graph_list:
+            guide_graph.update({d['guide']: d['children']})
+    with open(f"./uncover_guides/{ID_2_MODELS[args.model_id].split('/')[-1]}/{args.data_name}.json", 'r') as file:
+        guide_pool = json.load(file)
+        guide_pool = guide_pool[19]["19"]
+    
+    sorted_guide_pool = sorted(guide_pool.items(), key=lambda item: item[1], reverse=True)
+    ignore_token = sorted_guide_pool[0][0]
+    
     thinking_texts = []
-    ignore_token = "Wait"
     prompts_thinking = [
-        # p + "<|im_start|>think" + ans + ignore_token
-        p + "<|im_start|>/think" + ans + ignore_token
+        p + "<|im_start|>think" + ans + ignore_token
         for p, ans in zip(prompts_no_budget, no_budget_texts)
     ]
     budget = args.max_tokens
     
-    num_waits = 0
-    while budget>0:
-        num_waits+=1
+    used_guide = []
+    max_iter = 10
+    while budget>0 and max_iter>0:
+        max_iter -=1
+        used_guide.append(ignore_token)
         sampling_params_thinking = SamplingParams(
             max_tokens=budget,
             min_tokens=1,
@@ -97,10 +111,25 @@ if __name__=="__main__":
         budget_cuts = [len(o.outputs[0].token_ids) for o in outputs_thinking]
         budget-=max(budget_cuts)
 
+        # prompts_thinking = [
+        #     p + ignore_token
+        #     for p in thinking_texts
+        # ]
         prompts_thinking = [
             p + t + ignore_token
             for p, t in zip(prompts_thinking, thinking_texts)
         ]
+        
+        guide_pool = {}
+        for g in guide_graph[ignore_token]:
+            guide_pool.update(g)
+        sorted_guide_pool = sorted(guide_pool.items(), key=lambda item: item[1], reverse=True)
+        g=0
+        while sorted_guide_pool[g][0] in used_guide:
+            g+=1
+        ignore_token = sorted_guide_pool[g][0]
+        used_guide.append(ignore_token)
+    
     prompts_final = [
         p + t
         for p, t in zip(prompts_thinking, thinking_texts)
@@ -122,7 +151,8 @@ if __name__=="__main__":
             'question': d['question'],
             'solution': d['solution'],
             'model_output': budget_texts[i],
-            'num_waits': num_waits
+            'used_guide': used_guide,
+            'num_guide': len(used_guide)
         })
 
     with open(save_path + save_file, 'w') as file:
