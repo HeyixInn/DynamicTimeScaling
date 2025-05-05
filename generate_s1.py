@@ -57,7 +57,7 @@ if __name__=="__main__":
     dataset = load_my_dataset(args.data_name)
 
     questions = [d['question'] for d in dataset]
-    prompts_no_budget = [get_prompt(q, model_type, enable_thinking=True) for q in questions]
+    prompts_no_budget = [get_prompt(q, model_type, tokenizer=tok, enable_thinking=True) for q in questions]
     no_budget_texts = [d['model_output'] for d in saved_result]
 
     sampling_params = SamplingParams(
@@ -75,8 +75,8 @@ if __name__=="__main__":
     thinking_texts = []
     ignore_token = "Wait"
     prompts_thinking = [
-        # p + "<|im_start|>think" + ans + ignore_token
-        p + "<|im_start|>/think" + ans + ignore_token
+        p + "<|im_start|>think" + ans + ignore_token
+        # get_prompt(p, model_type, tokenizer=tok, enable_thinking=False) + ans + ignore_token
         for p, ans in zip(prompts_no_budget, no_budget_texts)
     ]
     budget = args.max_tokens

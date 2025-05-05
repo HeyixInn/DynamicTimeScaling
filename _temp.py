@@ -1,44 +1,43 @@
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from vllm import LLM, SamplingParams
 
+# 模型名称
 model_name = "Qwen/Qwen3-8B"
 
-# load the tokenizer and the model
-tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = AutoModelForCausalLM.from_pretrained(
-    model_name,
-    torch_dtype="auto",
-    device_map="auto"
+# 创建 vLLM 模型实例
+llm = LLM(
+    model=model_name,
+    dtype="auto",  # 自动推断数据类型
+    trust_remote_code=True  # 对 HuggingFace 上的自定义代码进行信任
 )
 
-# prepare the model input
+# Prompt 内容
 prompt = "Give me a short introduction to large language model."
+
+# 构造 Chat 模板（与 transformers 中的 apply_chat_template 类似）
 messages = [
-    {"role": "user", "content": prompt+'\\no_think'}
+    {"role": "user", "content": prompt + "\no_think"}
 ]
+from transformers import AutoTokenizer
+tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
 text = tokenizer.apply_chat_template(
     messages,
     tokenize=False,
     add_generation_prompt=True,
-    enable_thinking=True # Switches between thinking and non-thinking modes. Default is True.
+    enable_thinking=True  # 仅 Qwen 模型支持
 )
-model_inputs = tokenizer([text], return_tensors="pt").to(model.device)
-print(text)
-# conduct text completion
-# generated_ids = model.generate(
-#     **model_inputs,
-#     max_new_tokens=32768
-# )
-# output_ids = generated_ids[0][len(model_inputs.input_ids[0]):].tolist() 
 
-# # parsing thinking content
-# try:
-#     # rindex finding 151668 (</think>)
-#     index = len(output_ids) - output_ids[::-1].index(151668)
-# except ValueError:
-#     index = 0
+# 设置采样参数
+sampling_params = SamplingParams(
+    max_tokens=1024,
+    temperature=0.7,
+    top_p=0.9
+)
 
-# thinking_content = tokenizer.decode(output_ids[:index], skip_special_tokens=True).strip("\n")
-# content = tokenizer.decode(output_ids[index:], skip_special_tokens=True).strip("\n")
+# 进行推理
+outputs = llm.generate([text], sampling_params)
 
-# print("thinking content:", thinking_content)
-# print("content:", content)
+# 输出生成结果
+for output in outputs:
+    generated_text = output.outputs[0].text
+    print("Generated output:")
+    print(generated_text)

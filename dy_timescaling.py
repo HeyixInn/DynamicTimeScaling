@@ -87,7 +87,7 @@ if __name__=="__main__":
     dataset = dataset[:num_train]
     questions = [d['question'] for d in dataset]
     solutions = [d['solution'] for d in dataset]
-    prompts_no_budget = [get_prompt(q, model_type) for q in questions]
+    prompts_no_budget = [get_prompt(q, model_type, tok, enable_thinking=False) for q in questions]
     no_budget_texts = [d['model_output'] for d in saved_result[:num_train]]
         
 # ---------------------------------------------------------------------------
@@ -96,7 +96,8 @@ if __name__=="__main__":
     prompts_thinking = []
     for seed in SEEDs:
         prompts_thinking += [
-            p + "<|im_start|>think" + ans + seed
+            # p + "<|im_start|>think" + ans + seed
+            get_prompt(p, model_type, tok, enable_thinking=True) + ans + seed
             for p, ans in zip(prompts_no_budget, no_budget_texts)
         ]
     sampling_params_thinking = SamplingParams(

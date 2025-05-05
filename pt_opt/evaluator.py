@@ -37,7 +37,7 @@ def aime_evaluator(llm_outputs, ori_tasks, llm_judge):
             return None
     pred_list, eval_results = [], []
     for llm_output, ori_task in zip(llm_outputs, ori_tasks):
-        sol= extract_answer(ori_task['solution'])
+        sol= ori_task['solution']
         answer = extract_answer(llm_output['text'])
         pred_list.append(answer)
         if answer is not None and answer == sol:

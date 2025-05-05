@@ -6,8 +6,8 @@ import json
 from utils import *
 
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
-os.environ["HUGGINGFACE_API_KEY"] = "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"
+# os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+# os.environ["HUGGINGFACE_API_KEY"] = "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"
 
 if __name__=="__main__":
     
@@ -43,9 +43,11 @@ if __name__=="__main__":
         tensor_parallel_size=1,
         enforce_eager=True, 
         gpu_memory_utilization=0.95,
+        dtype="auto",  # 自动推断数据类型
+        trust_remote_code=True
     )
     tok = AutoTokenizer.from_pretrained(
-        ID_2_MODELS[args.model_id]
+        ID_2_MODELS[args.model_id],
     )
 
     stop_token_ids = tok("<|im_end|>")["input_ids"]
@@ -60,7 +62,7 @@ if __name__=="__main__":
     dataset = load_my_dataset(args.data_name)
 
     questions = [d['question'] for d in dataset]
-    prompts_no_budget = [get_prompt(q, model_type) for q in questions]
+    prompts_no_budget = [get_prompt(q, model_type, tokenizer=tok, enable_thinking=False) for q in questions]
 
     sampling_params = SamplingParams(
         max_tokens=args.max_tokens,
@@ -81,6 +83,6 @@ if __name__=="__main__":
             'model_output': no_budget_texts[i]
         })
 
-    # with open(save_path + save_file, 'w') as file:
-    #     json.dump(results, file)
-    #     file.flush()
+    with open(save_path + save_file, 'w') as file:
+        json.dump(results, file)
+        file.flush()

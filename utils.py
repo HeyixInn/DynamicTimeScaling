@@ -33,6 +33,8 @@ ID_2_MODELS = {
 def get_model_type(model_name):
     if 'deepseek' in model_name: 
         return 'deepseek'
+    elif 'Qwen3' in model_name: 
+        return 'Qwen3'
     elif 'Qwen' in model_name: 
         return 'Qwen'
     elif 'Llama' in model_name: 
@@ -68,20 +70,29 @@ MODEL OUTPUT:
 {{model_output}}
 """
 
-def get_prompt(question, model_type='Qwen', enable_thinking=False):
+def get_prompt(question, model_type='Qwen', tokenizer=None, enable_thinking=False):
     SYSTEM_PROMPT = {
         'Qwen': "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n",
         'Llama': "<|im_start|>system\nYou are a helpful assistant. Whenever you give a final answer, wrap it using LaTeX boxed syntax like \\boxed{answer}.<|im_end|>\n"
     }    
-    def get_user_prompt(q, model_type):
+    def get_user_prompt(q, model_type, tokenizer, enable_thinking):
         if model_type=='deepseek':
             return "<|im_start|>user\n" + q + "<|im_end|>\n<|im_start|>assistant\n"
+        elif model_type=='Qwen3':
+            messages = [
+                {"role": "user", "content": q}
+            ]
+            text = tokenizer.apply_chat_template(
+                    messages,
+                    tokenize=False,
+                    add_generation_prompt=True,
+                    enable_thinking=enable_thinking # Switches between thinking and non-thinking modes. Default is True.
+                )
+            return text
         elif model_type=='Qwen' or model_type=='Llama':
-            if not enable_thinking:
-                return SYSTEM_PROMPT[model_type]+"<|im_start|>user\n" + q + "/no_think" + "<|im_end|>\n<|im_start|>assistant\n"
             return SYSTEM_PROMPT[model_type]+"<|im_start|>user\n" + q + "<|im_end|>\n<|im_start|>assistant\n"
 
-    return get_user_prompt(question, model_type)
+    return get_user_prompt(question, model_type, tokenizer, enable_thinking)
 NAME_2_DATASET = {
     'aime': "AI-MO/aimo-validation-aime",
     'gpqa': "Idavidrein/gpqa",
