@@ -1,0 +1,287 @@
+[
+    {
+        "guide": "Wait, let's make sure we're using the correct formula for the problem.",
+        "children": [
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.28516159232770893
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.25837172030136757
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.23890690135442025
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.29723069237972155
+            },
+            {
+                "Wait, let's double-check the employee data to ensure all employees are included in the count.": 0.2402099287108589
+            },
+            {
+                "Wait, let's make sure to include all necessary details and explanations in our response. This will ensure that our solution is comprehensive and addresses the question thoroughly, preventing truncation or omissions in the future.": 0.27634770601915903
+            },
+            {
+                "Wait, let's verify both the city and country names to ensure accuracy before finalizing the answer.": 0.2613732272131163
+            },
+            {
+                "Wait, let's double-check the facts about the historical event or geographical information in question. Ensure that the country hosting the event is correctly identified by verifying reliable sources or databases. This will help prevent misidentification and provide the correct answer.": 0.22172150913189964
+            },
+            {
+                "Wait, let's make sure we're not missing any important inputs or partners that could help provide a more complete solution. Sometimes, combining different perspectives can lead to better outcomes.": 0.4171904279357943
+            }
+        ]
+    },
+    {
+        "guide": "Wait, did we convert all units to the same measurement before starting?",
+        "children": [
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.28516159232770893
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.25837172030136757
+            },
+            {
+                "Wait, let's make sure to include all necessary details and explanations in our response. This will ensure that our solution is comprehensive and addresses the question thoroughly, preventing truncation or omissions in the future.": 0.27634770601915903
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.29723069237972155
+            },
+            {
+                "Wait, let's verify both the city and country names to ensure accuracy before finalizing the answer.": 0.2613732272131163
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.23890690135442025
+            },
+            {
+                "Wait, let's double-check the employee data to ensure all employees are included in the count.": 0.2402099287108589
+            },
+            {
+                "Wait, let's make sure we're not missing any important inputs or partners that could help provide a more complete solution. Sometimes, combining different perspectives can lead to better outcomes.": 0.4171904279357943
+            },
+            {
+                "Wait, let's double-check the facts about the historical event or geographical information in question. Ensure that the country hosting the event is correctly identified by verifying reliable sources or databases. This will help prevent misidentification and provide the correct answer.": 0.22172150913189964
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's double-check the calculations to avoid any arithmetic mistakes.",
+        "children": [
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.23890690135442025
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.28516159232770893
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.25837172030136757
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.29723069237972155
+            },
+            {
+                "Wait, let's make sure to include all necessary details and explanations in our response. This will ensure that our solution is comprehensive and addresses the question thoroughly, preventing truncation or omissions in the future.": 0.27634770601915903
+            },
+            {
+                "Wait, let's double-check the employee data to ensure all employees are included in the count.": 0.2402099287108589
+            },
+            {
+                "Wait, let's verify both the city and country names to ensure accuracy before finalizing the answer.": 0.2613732272131163
+            },
+            {
+                "Wait, let's make sure we're not missing any important inputs or partners that could help provide a more complete solution. Sometimes, combining different perspectives can lead to better outcomes.": 0.4171904279357943
+            },
+            {
+                "Wait, let's double-check the facts about the historical event or geographical information in question. Ensure that the country hosting the event is correctly identified by verifying reliable sources or databases. This will help prevent misidentification and provide the correct answer.": 0.22172150913189964
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's verify that we've correctly applied the signs throughout the problem.",
+        "children": [
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.29723069237972155
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.25837172030136757
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.28516159232770893
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.23890690135442025
+            },
+            {
+                "Wait, let's make sure to include all necessary details and explanations in our response. This will ensure that our solution is comprehensive and addresses the question thoroughly, preventing truncation or omissions in the future.": 0.27634770601915903
+            },
+            {
+                "Wait, let's double-check the employee data to ensure all employees are included in the count.": 0.2402099287108589
+            },
+            {
+                "Wait, let's verify both the city and country names to ensure accuracy before finalizing the answer.": 0.2613732272131163
+            },
+            {
+                "Wait, let's double-check the facts about the historical event or geographical information in question. Ensure that the country hosting the event is correctly identified by verifying reliable sources or databases. This will help prevent misidentification and provide the correct answer.": 0.22172150913189964
+            },
+            {
+                "Wait, let's make sure we're not missing any important inputs or partners that could help provide a more complete solution. Sometimes, combining different perspectives can lead to better outcomes.": 0.4171904279357943
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's make sure to include all necessary details and explanations in our response. This will ensure that our solution is comprehensive and addresses the question thoroughly, preventing truncation or omissions in the future.",
+        "children": [
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.25837172030136757
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.23890690135442025
+            },
+            {
+                "Wait, let's make sure to include all necessary details and explanations in our response. This will ensure that our solution is comprehensive and addresses the question thoroughly, preventing truncation or omissions in the future.": 0.27634770601915903
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.28516159232770893
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.29723069237972155
+            },
+            {
+                "Wait, let's verify both the city and country names to ensure accuracy before finalizing the answer.": 0.2613732272131163
+            },
+            {
+                "Wait, let's double-check the employee data to ensure all employees are included in the count.": 0.2402099287108589
+            },
+            {
+                "Wait, let's make sure we're not missing any important inputs or partners that could help provide a more complete solution. Sometimes, combining different perspectives can lead to better outcomes.": 0.4171904279357943
+            },
+            {
+                "Wait, let's double-check the facts about the historical event or geographical information in question. Ensure that the country hosting the event is correctly identified by verifying reliable sources or databases. This will help prevent misidentification and provide the correct answer.": 0.22172150913189964
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's double-check the employee data to ensure all employees are included in the count.",
+        "children": [
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.25837172030136757
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.29723069237972155
+            },
+            {
+                "Wait, let's verify both the city and country names to ensure accuracy before finalizing the answer.": 0.2613732272131163
+            },
+            {
+                "Wait, let's make sure to include all necessary details and explanations in our response. This will ensure that our solution is comprehensive and addresses the question thoroughly, preventing truncation or omissions in the future.": 0.27634770601915903
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.23890690135442025
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.28516159232770893
+            },
+            {
+                "Wait, let's make sure we're not missing any important inputs or partners that could help provide a more complete solution. Sometimes, combining different perspectives can lead to better outcomes.": 0.4171904279357943
+            },
+            {
+                "Wait, let's double-check the facts about the historical event or geographical information in question. Ensure that the country hosting the event is correctly identified by verifying reliable sources or databases. This will help prevent misidentification and provide the correct answer.": 0.22172150913189964
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's verify both the city and country names to ensure accuracy before finalizing the answer.",
+        "children": [
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.23890690135442025
+            },
+            {
+                "Wait, let's make sure to include all necessary details and explanations in our response. This will ensure that our solution is comprehensive and addresses the question thoroughly, preventing truncation or omissions in the future.": 0.27634770601915903
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.25837172030136757
+            },
+            {
+                "Wait, let's double-check the employee data to ensure all employees are included in the count.": 0.2402099287108589
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.29723069237972155
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.28516159232770893
+            },
+            {
+                "Wait, let's make sure we're not missing any important inputs or partners that could help provide a more complete solution. Sometimes, combining different perspectives can lead to better outcomes.": 0.4171904279357943
+            },
+            {
+                "Wait, let's verify both the city and country names to ensure accuracy before finalizing the answer.": 0.2613732272131163
+            },
+            {
+                "Wait, let's double-check the facts about the historical event or geographical information in question. Ensure that the country hosting the event is correctly identified by verifying reliable sources or databases. This will help prevent misidentification and provide the correct answer.": 0.22172150913189964
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's make sure we're not missing any important inputs or partners that could help provide a more complete solution. Sometimes, combining different perspectives can lead to better outcomes.",
+        "children": [
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.23890690135442025
+            },
+            {
+                "Wait, let's double-check the facts about the historical event or geographical information in question. Ensure that the country hosting the event is correctly identified by verifying reliable sources or databases. This will help prevent misidentification and provide the correct answer.": 0.22172150913189964
+            },
+            {
+                "Wait, let's verify both the city and country names to ensure accuracy before finalizing the answer.": 0.2613732272131163
+            },
+            {
+                "Wait, let's make sure we're not missing any important inputs or partners that could help provide a more complete solution. Sometimes, combining different perspectives can lead to better outcomes.": 0.4171904279357943
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.25837172030136757
+            },
+            {
+                "Wait, let's make sure to include all necessary details and explanations in our response. This will ensure that our solution is comprehensive and addresses the question thoroughly, preventing truncation or omissions in the future.": 0.27634770601915903
+            },
+            {
+                "Wait, let's double-check the employee data to ensure all employees are included in the count.": 0.2402099287108589
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.29723069237972155
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.28516159232770893
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's double-check the facts about the historical event or geographical information in question. Ensure that the country hosting the event is correctly identified by verifying reliable sources or databases. This will help prevent misidentification and provide the correct answer.",
+        "children": [
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.28516159232770893
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.29723069237972155
+            },
+            {
+                "Wait, let's double-check the employee data to ensure all employees are included in the count.": 0.2402099287108589
+            },
+            {
+                "Wait, let's make sure we're not missing any important inputs or partners that could help provide a more complete solution. Sometimes, combining different perspectives can lead to better outcomes.": 0.4171904279357943
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.23890690135442025
+            },
+            {
+                "Wait, let's verify both the city and country names to ensure accuracy before finalizing the answer.": 0.2613732272131163
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.25837172030136757
+            },
+            {
+                "Wait, let's double-check the facts about the historical event or geographical information in question. Ensure that the country hosting the event is correctly identified by verifying reliable sources or databases. This will help prevent misidentification and provide the correct answer.": 0.22172150913189964
+            },
+            {
+                "Wait, let's make sure to include all necessary details and explanations in our response. This will ensure that our solution is comprehensive and addresses the question thoroughly, preventing truncation or omissions in the future.": 0.27634770601915903
+            }
+        ]
+    }
+]

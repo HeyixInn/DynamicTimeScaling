@@ -1,0 +1,278 @@
+[
+    {
+        "guide": "Wait, let's make sure we're using the correct formula for the problem.",
+        "children": [
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.19155644146791315
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.1984378170241777
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.19541828004522813
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.2156790293953006
+            },
+            {
+                "Wait, let's ensure that all required dependencies are properly injected into the context before attempting to resolve them. This can be done by verifying the presence of the dependency using a method like `dependency_injector.currently_resolving()` or by explicitly checking if the dependency is available in the dependency injection container before proceeding.": 0.2440691989092988
+            },
+            {
+                "Wait, let's think about whether [specific aspect]. If the model is not considering [missing factor], perhaps it's ignoring some key information. To improve, the model should [correct action].": 0.18116437372830715
+            },
+            {
+                "Wait, let's make sure we're considering all relevant factors and accurately interpreting the data before making our final decision or recommendation.": 0.16779541044433038
+            },
+            {
+                "Wait, let's consider cross-checking the dataset for accuracy. Maybe the model's training data is incomplete or outdated, leading it to produce incorrect predictions.": 0.18927900303521317
+            },
+            {
+                "Wait, let's double-check the question to ensure we're adding the correct numbers and not accidentally using multiplication.": 0.21472904732134676
+            }
+        ]
+    },
+    {
+        "guide": "Wait, did we convert all units to the same measurement before starting?",
+        "children": [
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.19541828004522813
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.2156790293953006
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.19155644146791315
+            },
+            {
+                "Wait, let's ensure that all required dependencies are properly injected into the context before attempting to resolve them. This can be done by verifying the presence of the dependency using a method like `dependency_injector.currently_resolving()` or by explicitly checking if the dependency is available in the dependency injection container before proceeding.": 0.2440691989092988
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.1984378170241777
+            },
+            {
+                "Wait, let's make sure we're considering all relevant factors and accurately interpreting the data before making our final decision or recommendation.": 0.16779541044433038
+            },
+            {
+                "Wait, let's think about whether [specific aspect]. If the model is not considering [missing factor], perhaps it's ignoring some key information. To improve, the model should [correct action].": 0.18116437372830715
+            },
+            {
+                "Wait, let's consider cross-checking the dataset for accuracy. Maybe the model's training data is incomplete or outdated, leading it to produce incorrect predictions.": 0.18927900303521317
+            },
+            {
+                "Wait, let's double-check the question to ensure we're adding the correct numbers and not accidentally using multiplication.": 0.21472904732134676
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's double-check the calculations to avoid any arithmetic mistakes.",
+        "children": [
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.19541828004522813
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.2156790293953006
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.1984378170241777
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.19155644146791315
+            },
+            {
+                "Wait, let's think about whether [specific aspect]. If the model is not considering [missing factor], perhaps it's ignoring some key information. To improve, the model should [correct action].": 0.18116437372830715
+            },
+            {
+                "Wait, let's ensure that all required dependencies are properly injected into the context before attempting to resolve them. This can be done by verifying the presence of the dependency using a method like `dependency_injector.currently_resolving()` or by explicitly checking if the dependency is available in the dependency injection container before proceeding.": 0.2440691989092988
+            },
+            {
+                "Wait, let's make sure we're considering all relevant factors and accurately interpreting the data before making our final decision or recommendation.": 0.16779541044433038
+            },
+            {
+                "Wait, let's consider cross-checking the dataset for accuracy. Maybe the model's training data is incomplete or outdated, leading it to produce incorrect predictions.": 0.18927900303521317
+            },
+            {
+                "Wait, let's double-check the question to ensure we're adding the correct numbers and not accidentally using multiplication.": 0.21472904732134676
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's verify that we've correctly applied the signs throughout the problem.",
+        "children": [
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.19541828004522813
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.2156790293953006
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.1984378170241777
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.19155644146791315
+            },
+            {
+                "Wait, let's make sure we're considering all relevant factors and accurately interpreting the data before making our final decision or recommendation.": 0.16779541044433038
+            },
+            {
+                "Wait, let's ensure that all required dependencies are properly injected into the context before attempting to resolve them. This can be done by verifying the presence of the dependency using a method like `dependency_injector.currently_resolving()` or by explicitly checking if the dependency is available in the dependency injection container before proceeding.": 0.2440691989092988
+            },
+            {
+                "Wait, let's think about whether [specific aspect]. If the model is not considering [missing factor], perhaps it's ignoring some key information. To improve, the model should [correct action].": 0.18116437372830715
+            },
+            {
+                "Wait, let's consider cross-checking the dataset for accuracy. Maybe the model's training data is incomplete or outdated, leading it to produce incorrect predictions.": 0.18927900303521317
+            },
+            {
+                "Wait, let's double-check the question to ensure we're adding the correct numbers and not accidentally using multiplication.": 0.21472904732134676
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's think about whether [specific aspect]. If the model is not considering [missing factor], perhaps it's ignoring some key information. To improve, the model should [correct action].",
+        "children": [
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.19541828004522813
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.19155644146791315
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.2156790293953006
+            },
+            {
+                "Wait, let's ensure that all required dependencies are properly injected into the context before attempting to resolve them. This can be done by verifying the presence of the dependency using a method like `dependency_injector.currently_resolving()` or by explicitly checking if the dependency is available in the dependency injection container before proceeding.": 0.2440691989092988
+            },
+            {
+                "Wait, let's make sure we're considering all relevant factors and accurately interpreting the data before making our final decision or recommendation.": 0.16779541044433038
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.1984378170241777
+            },
+            {
+                "Wait, let's think about whether [specific aspect]. If the model is not considering [missing factor], perhaps it's ignoring some key information. To improve, the model should [correct action].": 0.18116437372830715
+            },
+            {
+                "Wait, let's consider cross-checking the dataset for accuracy. Maybe the model's training data is incomplete or outdated, leading it to produce incorrect predictions.": 0.18927900303521317
+            },
+            {
+                "Wait, let's double-check the question to ensure we're adding the correct numbers and not accidentally using multiplication.": 0.21472904732134676
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's ensure that all required dependencies are properly injected into the context before attempting to resolve them. This can be done by verifying the presence of the dependency using a method like `dependency_injector.currently_resolving()` or by explicitly checking if the dependency is available in the dependency injection container before proceeding.",
+        "children": [
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.1984378170241777
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.2156790293953006
+            },
+            {
+                "Wait, let's ensure that all required dependencies are properly injected into the context before attempting to resolve them. This can be done by verifying the presence of the dependency using a method like `dependency_injector.currently_resolving()` or by explicitly checking if the dependency is available in the dependency injection container before proceeding.": 0.2440691989092988
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.19155644146791315
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.19541828004522813
+            },
+            {
+                "Wait, let's make sure we're considering all relevant factors and accurately interpreting the data before making our final decision or recommendation.": 0.16779541044433038
+            },
+            {
+                "Wait, let's think about whether [specific aspect]. If the model is not considering [missing factor], perhaps it's ignoring some key information. To improve, the model should [correct action].": 0.18116437372830715
+            },
+            {
+                "Wait, let's consider cross-checking the dataset for accuracy. Maybe the model's training data is incomplete or outdated, leading it to produce incorrect predictions.": 0.18927900303521317
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's make sure we're considering all relevant factors and accurately interpreting the data before making our final decision or recommendation.",
+        "children": [
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.19155644146791315
+            },
+            {
+                "Wait, let's ensure that all required dependencies are properly injected into the context before attempting to resolve them. This can be done by verifying the presence of the dependency using a method like `dependency_injector.currently_resolving()` or by explicitly checking if the dependency is available in the dependency injection container before proceeding.": 0.2440691989092988
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.19541828004522813
+            },
+            {
+                "Wait, let's make sure we're considering all relevant factors and accurately interpreting the data before making our final decision or recommendation.": 0.16779541044433038
+            },
+            {
+                "Wait, let's think about whether [specific aspect]. If the model is not considering [missing factor], perhaps it's ignoring some key information. To improve, the model should [correct action].": 0.18116437372830715
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.1984378170241777
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.2156790293953006
+            },
+            {
+                "Wait, let's consider cross-checking the dataset for accuracy. Maybe the model's training data is incomplete or outdated, leading it to produce incorrect predictions.": 0.18927900303521317
+            },
+            {
+                "Wait, let's double-check the question to ensure we're adding the correct numbers and not accidentally using multiplication.": 0.21472904732134676
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's consider cross-checking the dataset for accuracy. Maybe the model's training data is incomplete or outdated, leading it to produce incorrect predictions.",
+        "children": [
+            {
+                "Wait, let's think about whether [specific aspect]. If the model is not considering [missing factor], perhaps it's ignoring some key information. To improve, the model should [correct action].": 0.18116437372830715
+            },
+            {
+                "Wait, let's make sure we're considering all relevant factors and accurately interpreting the data before making our final decision or recommendation.": 0.16779541044433038
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.19541828004522813
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.1984378170241777
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.19155644146791315
+            },
+            {
+                "Wait, let's ensure that all required dependencies are properly injected into the context before attempting to resolve them. This can be done by verifying the presence of the dependency using a method like `dependency_injector.currently_resolving()` or by explicitly checking if the dependency is available in the dependency injection container before proceeding.": 0.2440691989092988
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.2156790293953006
+            },
+            {
+                "Wait, let's double-check the question to ensure we're adding the correct numbers and not accidentally using multiplication.": 0.21472904732134676
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's double-check the question to ensure we're adding the correct numbers and not accidentally using multiplication.",
+        "children": [
+            {
+                "Wait, let's make sure we're considering all relevant factors and accurately interpreting the data before making our final decision or recommendation.": 0.16779541044433038
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.1984378170241777
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.19541828004522813
+            },
+            {
+                "Wait, let's consider cross-checking the dataset for accuracy. Maybe the model's training data is incomplete or outdated, leading it to produce incorrect predictions.": 0.18927900303521317
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.19155644146791315
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.2156790293953006
+            },
+            {
+                "Wait, let's think about whether [specific aspect]. If the model is not considering [missing factor], perhaps it's ignoring some key information. To improve, the model should [correct action].": 0.18116437372830715
+            }
+        ]
+    }
+]

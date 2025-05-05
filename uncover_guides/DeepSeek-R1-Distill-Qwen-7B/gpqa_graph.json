@@ -1,0 +1,290 @@
+[
+    {
+        "guide": "Wait, let's make sure we're using the correct formula for the problem.",
+        "children": [
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.20619249351518812
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.2268415610845098
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.18527829706575902
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.21198881068668352
+            },
+            {
+                "Wait, let's ensure all sentences begin with a capital letter by double-checking each word's case.": 0.21508268142220416
+            },
+            {
+                "Wait, let's ensure I carefully follow all steps and consider all aspects of the problem before finalizing my answer.": 0.21297914859229264
+            },
+            {
+                "Wait, let's ensure all variables and conditions are accounted for and double-check the calculations to avoid such errors in the future.": 0.24645476382058332
+            },
+            {
+                "Wait, let's ensure the answer is directly supported by the text before providing any specific value.": 0.2349813940854844
+            },
+            {
+                "Wait, let's double-check all the details before making a final decision.": 0.22210245635406325
+            }
+        ]
+    },
+    {
+        "guide": "Wait, did we convert all units to the same measurement before starting?",
+        "children": [
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.2268415610845098
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.20619249351518812
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.21198881068668352
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.18527829706575902
+            },
+            {
+                "Wait, let's ensure the answer is directly supported by the text before providing any specific value.": 0.2349813940854844
+            },
+            {
+                "Wait, let's ensure all sentences begin with a capital letter by double-checking each word's case.": 0.21508268142220416
+            },
+            {
+                "Wait, let's ensure I carefully follow all steps and consider all aspects of the problem before finalizing my answer.": 0.21297914859229264
+            },
+            {
+                "Wait, let's double-check all the details before making a final decision.": 0.22210245635406325
+            },
+            {
+                "Wait, let's ensure all variables and conditions are accounted for and double-check the calculations to avoid such errors in the future.": 0.24645476382058332
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's double-check the calculations to avoid any arithmetic mistakes.",
+        "children": [
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.20619249351518812
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.2268415610845098
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.21198881068668352
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.18527829706575902
+            },
+            {
+                "Wait, let's ensure all sentences begin with a capital letter by double-checking each word's case.": 0.21508268142220416
+            },
+            {
+                "Wait, let's ensure the answer is directly supported by the text before providing any specific value.": 0.2349813940854844
+            },
+            {
+                "Wait, let's ensure I carefully follow all steps and consider all aspects of the problem before finalizing my answer.": 0.21297914859229264
+            },
+            {
+                "Wait, let's double-check all the details before making a final decision.": 0.22210245635406325
+            },
+            {
+                "Wait, let's ensure all variables and conditions are accounted for and double-check the calculations to avoid such errors in the future.": 0.24645476382058332
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's verify that we've correctly applied the signs throughout the problem.",
+        "children": [
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.21198881068668352
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.2268415610845098
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.18527829706575902
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.20619249351518812
+            },
+            {
+                "Wait, let's ensure all sentences begin with a capital letter by double-checking each word's case.": 0.21508268142220416
+            },
+            {
+                "Wait, let's ensure all variables and conditions are accounted for and double-check the calculations to avoid such errors in the future.": 0.24645476382058332
+            },
+            {
+                "Wait, let's ensure the answer is directly supported by the text before providing any specific value.": 0.2349813940854844
+            },
+            {
+                "Wait, let's ensure I carefully follow all steps and consider all aspects of the problem before finalizing my answer.": 0.21297914859229264
+            },
+            {
+                "Wait, let's double-check all the details before making a final decision.": 0.22210245635406325
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's ensure all variables and conditions are accounted for and double-check the calculations to avoid such errors in the future.",
+        "children": [
+            {
+                "Wait, let's ensure all sentences begin with a capital letter by double-checking each word's case.": 0.21508268142220416
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.2268415610845098
+            },
+            {
+                "Wait, let's ensure all variables and conditions are accounted for and double-check the calculations to avoid such errors in the future.": 0.24645476382058332
+            },
+            {
+                "Wait, let's ensure the answer is directly supported by the text before providing any specific value.": 0.2349813940854844
+            },
+            {
+                "Wait, let's double-check all the details before making a final decision.": 0.22210245635406325
+            },
+            {
+                "Wait, let's ensure I carefully follow all steps and consider all aspects of the problem before finalizing my answer.": 0.21297914859229264
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.20619249351518812
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.18527829706575902
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.21198881068668352
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's ensure all sentences begin with a capital letter by double-checking each word's case.",
+        "children": [
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.21198881068668352
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.20619249351518812
+            },
+            {
+                "Wait, let's ensure all sentences begin with a capital letter by double-checking each word's case.": 0.21508268142220416
+            },
+            {
+                "Wait, let's ensure all variables and conditions are accounted for and double-check the calculations to avoid such errors in the future.": 0.24645476382058332
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.2268415610845098
+            },
+            {
+                "Wait, let's ensure I carefully follow all steps and consider all aspects of the problem before finalizing my answer.": 0.21297914859229264
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.18527829706575902
+            },
+            {
+                "Wait, let's ensure the answer is directly supported by the text before providing any specific value.": 0.2349813940854844
+            },
+            {
+                "Wait, let's double-check all the details before making a final decision.": 0.22210245635406325
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's ensure I carefully follow all steps and consider all aspects of the problem before finalizing my answer.",
+        "children": [
+            {
+                "Wait, let's ensure all sentences begin with a capital letter by double-checking each word's case.": 0.21508268142220416
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.20619249351518812
+            },
+            {
+                "Wait, let's ensure I carefully follow all steps and consider all aspects of the problem before finalizing my answer.": 0.21297914859229264
+            },
+            {
+                "Wait, let's double-check all the details before making a final decision.": 0.22210245635406325
+            },
+            {
+                "Wait, let's ensure the answer is directly supported by the text before providing any specific value.": 0.2349813940854844
+            },
+            {
+                "Wait, let's ensure all variables and conditions are accounted for and double-check the calculations to avoid such errors in the future.": 0.24645476382058332
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.2268415610845098
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.18527829706575902
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.21198881068668352
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's ensure the answer is directly supported by the text before providing any specific value.",
+        "children": [
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.18527829706575902
+            },
+            {
+                "Wait, let's ensure I carefully follow all steps and consider all aspects of the problem before finalizing my answer.": 0.21297914859229264
+            },
+            {
+                "Wait, let's ensure all variables and conditions are accounted for and double-check the calculations to avoid such errors in the future.": 0.24645476382058332
+            },
+            {
+                "Wait, let's ensure all sentences begin with a capital letter by double-checking each word's case.": 0.21508268142220416
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.2268415610845098
+            },
+            {
+                "Wait, let's double-check all the details before making a final decision.": 0.22210245635406325
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.21198881068668352
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.20619249351518812
+            },
+            {
+                "Wait, let's ensure the answer is directly supported by the text before providing any specific value.": 0.2349813940854844
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's double-check all the details before making a final decision.",
+        "children": [
+            {
+                "Wait, let's ensure I carefully follow all steps and consider all aspects of the problem before finalizing my answer.": 0.21297914859229264
+            },
+            {
+                "Wait, let's ensure the answer is directly supported by the text before providing any specific value.": 0.2349813940854844
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.18527829706575902
+            },
+            {
+                "Wait, let's ensure all variables and conditions are accounted for and double-check the calculations to avoid such errors in the future.": 0.24645476382058332
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.21198881068668352
+            },
+            {
+                "Wait, let's ensure all sentences begin with a capital letter by double-checking each word's case.": 0.21508268142220416
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.2268415610845098
+            },
+            {
+                "Wait, let's double-check all the details before making a final decision.": 0.22210245635406325
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.20619249351518812
+            }
+        ]
+    }
+]

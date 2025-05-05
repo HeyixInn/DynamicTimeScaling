@@ -1,0 +1,290 @@
+[
+    {
+        "guide": "Wait, let's make sure we're using the correct formula for the problem.",
+        "children": [
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.30038353182534877
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.3030163848532906
+            },
+            {
+                "Wait, let's consider both physical impact and ecological consequences for a more comprehensive answer.": 0.24783823355161783
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.26797694919620246
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.28250939575926437
+            },
+            {
+                "Wait, let's ensure that the model is trained on a diverse set of country-capital pairs to improve its ability to distinguish between similar city names.": 0.33138852485584086
+            },
+            {
+                "Wait, let's double-check each step of the problem to ensure we're applying the correct formulas and concepts. Pay close attention to all details in the question and verify each calculation carefully.": 0.3038696322361596
+            },
+            {
+                "Wait, let's make sure to use the correct baking agents and substitute ingredients carefully, considering their chemical properties and their impact on the final product's texture and flavor.": 0.24956990825212122
+            },
+            {
+                "Wait, let's ensure the model considers the interplay between policy implementation and investment levels when analyzing the main drivers of renewable energy adoption.": 0.2684200153836037
+            }
+        ]
+    },
+    {
+        "guide": "Wait, did we convert all units to the same measurement before starting?",
+        "children": [
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.30038353182534877
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.26797694919620246
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.3030163848532906
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.28250939575926437
+            },
+            {
+                "Wait, let's consider both physical impact and ecological consequences for a more comprehensive answer.": 0.24783823355161783
+            },
+            {
+                "Wait, let's make sure to use the correct baking agents and substitute ingredients carefully, considering their chemical properties and their impact on the final product's texture and flavor.": 0.24956990825212122
+            },
+            {
+                "Wait, let's ensure that the model is trained on a diverse set of country-capital pairs to improve its ability to distinguish between similar city names.": 0.33138852485584086
+            },
+            {
+                "Wait, let's double-check each step of the problem to ensure we're applying the correct formulas and concepts. Pay close attention to all details in the question and verify each calculation carefully.": 0.3038696322361596
+            },
+            {
+                "Wait, let's ensure the model considers the interplay between policy implementation and investment levels when analyzing the main drivers of renewable energy adoption.": 0.2684200153836037
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's double-check the calculations to avoid any arithmetic mistakes.",
+        "children": [
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.30038353182534877
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.28250939575926437
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.26797694919620246
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.3030163848532906
+            },
+            {
+                "Wait, let's consider both physical impact and ecological consequences for a more comprehensive answer.": 0.24783823355161783
+            },
+            {
+                "Wait, let's ensure that the model is trained on a diverse set of country-capital pairs to improve its ability to distinguish between similar city names.": 0.33138852485584086
+            },
+            {
+                "Wait, let's make sure to use the correct baking agents and substitute ingredients carefully, considering their chemical properties and their impact on the final product's texture and flavor.": 0.24956990825212122
+            },
+            {
+                "Wait, let's double-check each step of the problem to ensure we're applying the correct formulas and concepts. Pay close attention to all details in the question and verify each calculation carefully.": 0.3038696322361596
+            },
+            {
+                "Wait, let's ensure the model considers the interplay between policy implementation and investment levels when analyzing the main drivers of renewable energy adoption.": 0.2684200153836037
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's verify that we've correctly applied the signs throughout the problem.",
+        "children": [
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.28250939575926437
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.26797694919620246
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.3030163848532906
+            },
+            {
+                "Wait, let's consider both physical impact and ecological consequences for a more comprehensive answer.": 0.24783823355161783
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.30038353182534877
+            },
+            {
+                "Wait, let's ensure that the model is trained on a diverse set of country-capital pairs to improve its ability to distinguish between similar city names.": 0.33138852485584086
+            },
+            {
+                "Wait, let's double-check each step of the problem to ensure we're applying the correct formulas and concepts. Pay close attention to all details in the question and verify each calculation carefully.": 0.3038696322361596
+            },
+            {
+                "Wait, let's make sure to use the correct baking agents and substitute ingredients carefully, considering their chemical properties and their impact on the final product's texture and flavor.": 0.24956990825212122
+            },
+            {
+                "Wait, let's ensure the model considers the interplay between policy implementation and investment levels when analyzing the main drivers of renewable energy adoption.": 0.2684200153836037
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's consider both physical impact and ecological consequences for a more comprehensive answer.",
+        "children": [
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.3030163848532906
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.30038353182534877
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.26797694919620246
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.28250939575926437
+            },
+            {
+                "Wait, let's consider both physical impact and ecological consequences for a more comprehensive answer.": 0.24783823355161783
+            },
+            {
+                "Wait, let's ensure that the model is trained on a diverse set of country-capital pairs to improve its ability to distinguish between similar city names.": 0.33138852485584086
+            },
+            {
+                "Wait, let's ensure the model considers the interplay between policy implementation and investment levels when analyzing the main drivers of renewable energy adoption.": 0.2684200153836037
+            },
+            {
+                "Wait, let's make sure to use the correct baking agents and substitute ingredients carefully, considering their chemical properties and their impact on the final product's texture and flavor.": 0.24956990825212122
+            },
+            {
+                "Wait, let's double-check each step of the problem to ensure we're applying the correct formulas and concepts. Pay close attention to all details in the question and verify each calculation carefully.": 0.3038696322361596
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's make sure to use the correct baking agents and substitute ingredients carefully, considering their chemical properties and their impact on the final product's texture and flavor.",
+        "children": [
+            {
+                "Wait, let's ensure that the model is trained on a diverse set of country-capital pairs to improve its ability to distinguish between similar city names.": 0.33138852485584086
+            },
+            {
+                "Wait, let's make sure to use the correct baking agents and substitute ingredients carefully, considering their chemical properties and their impact on the final product's texture and flavor.": 0.24956990825212122
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.26797694919620246
+            },
+            {
+                "Wait, let's ensure the model considers the interplay between policy implementation and investment levels when analyzing the main drivers of renewable energy adoption.": 0.2684200153836037
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.30038353182534877
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.28250939575926437
+            },
+            {
+                "Wait, let's consider both physical impact and ecological consequences for a more comprehensive answer.": 0.24783823355161783
+            },
+            {
+                "Wait, let's double-check each step of the problem to ensure we're applying the correct formulas and concepts. Pay close attention to all details in the question and verify each calculation carefully.": 0.3038696322361596
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.3030163848532906
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's ensure that the model is trained on a diverse set of country-capital pairs to improve its ability to distinguish between similar city names.",
+        "children": [
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.30038353182534877
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.3030163848532906
+            },
+            {
+                "Wait, let's ensure that the model is trained on a diverse set of country-capital pairs to improve its ability to distinguish between similar city names.": 0.33138852485584086
+            },
+            {
+                "Wait, let's make sure to use the correct baking agents and substitute ingredients carefully, considering their chemical properties and their impact on the final product's texture and flavor.": 0.24956990825212122
+            },
+            {
+                "Wait, let's consider both physical impact and ecological consequences for a more comprehensive answer.": 0.24783823355161783
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.26797694919620246
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.28250939575926437
+            },
+            {
+                "Wait, let's double-check each step of the problem to ensure we're applying the correct formulas and concepts. Pay close attention to all details in the question and verify each calculation carefully.": 0.3038696322361596
+            },
+            {
+                "Wait, let's ensure the model considers the interplay between policy implementation and investment levels when analyzing the main drivers of renewable energy adoption.": 0.2684200153836037
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's double-check each step of the problem to ensure we're applying the correct formulas and concepts. Pay close attention to all details in the question and verify each calculation carefully.",
+        "children": [
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.30038353182534877
+            },
+            {
+                "Wait, let's ensure that the model is trained on a diverse set of country-capital pairs to improve its ability to distinguish between similar city names.": 0.33138852485584086
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.28250939575926437
+            },
+            {
+                "Wait, let's ensure the model considers the interplay between policy implementation and investment levels when analyzing the main drivers of renewable energy adoption.": 0.2684200153836037
+            },
+            {
+                "Wait, let's consider both physical impact and ecological consequences for a more comprehensive answer.": 0.24783823355161783
+            },
+            {
+                "Wait, let's double-check each step of the problem to ensure we're applying the correct formulas and concepts. Pay close attention to all details in the question and verify each calculation carefully.": 0.3038696322361596
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.3030163848532906
+            },
+            {
+                "Wait, let's make sure to use the correct baking agents and substitute ingredients carefully, considering their chemical properties and their impact on the final product's texture and flavor.": 0.24956990825212122
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.26797694919620246
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's ensure the model considers the interplay between policy implementation and investment levels when analyzing the main drivers of renewable energy adoption.",
+        "children": [
+            {
+                "Wait, let's make sure to use the correct baking agents and substitute ingredients carefully, considering their chemical properties and their impact on the final product's texture and flavor.": 0.24956990825212122
+            },
+            {
+                "Wait, let's ensure the model considers the interplay between policy implementation and investment levels when analyzing the main drivers of renewable energy adoption.": 0.2684200153836037
+            },
+            {
+                "Wait, let's consider both physical impact and ecological consequences for a more comprehensive answer.": 0.24783823355161783
+            },
+            {
+                "Wait, let's double-check each step of the problem to ensure we're applying the correct formulas and concepts. Pay close attention to all details in the question and verify each calculation carefully.": 0.3038696322361596
+            },
+            {
+                "Wait, let's ensure that the model is trained on a diverse set of country-capital pairs to improve its ability to distinguish between similar city names.": 0.33138852485584086
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.3030163848532906
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.28250939575926437
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.26797694919620246
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.30038353182534877
+            }
+        ]
+    }
+]

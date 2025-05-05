@@ -1,0 +1,290 @@
+[
+    {
+        "guide": "Wait, let's make sure we're using the correct formula for the problem.",
+        "children": [
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.2194202968897232
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.2110419706891214
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.1837325696933638
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.22183960160241545
+            },
+            {
+                "Wait, let's ensure we're including all necessary numbers in our response, such as \"nine,\" to provide a comprehensive and accurate answer.": 0.24940026175441085
+            },
+            {
+                "Wait, let's break down the components before providing a solution. First, clearly identify the key points in the question and the gold solution, then structure your response by listing these points separately to ensure clarity and organization.": 0.26922366216770505
+            },
+            {
+                "Wait, let's make sure the model cross-references multiple sources to validate the accuracy of the event's details, such as the year, location, and additional context. Before finalizing the output, ensure each piece of information is corroborated to prevent misinterpretations.": 0.2133798407742926
+            },
+            {
+                "Wait, let's verify the information from at least two reliable sources before providing the answer.": 0.19944637523654318
+            },
+            {
+                "Wait, let's make sure to provide a detailed, step-by-step explanation in addition to delivering the answer. This ensures that the model's solution is thorough and informative, helping others understand the problem-solving process.": 0.2006288289327022
+            }
+        ]
+    },
+    {
+        "guide": "Wait, did we convert all units to the same measurement before starting?",
+        "children": [
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.2110419706891214
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.2194202968897232
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.22183960160241545
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.1837325696933638
+            },
+            {
+                "Wait, let's ensure we're including all necessary numbers in our response, such as \"nine,\" to provide a comprehensive and accurate answer.": 0.24940026175441085
+            },
+            {
+                "Wait, let's make sure the model cross-references multiple sources to validate the accuracy of the event's details, such as the year, location, and additional context. Before finalizing the output, ensure each piece of information is corroborated to prevent misinterpretations.": 0.2133798407742926
+            },
+            {
+                "Wait, let's verify the information from at least two reliable sources before providing the answer.": 0.19944637523654318
+            },
+            {
+                "Wait, let's make sure to provide a detailed, step-by-step explanation in addition to delivering the answer. This ensures that the model's solution is thorough and informative, helping others understand the problem-solving process.": 0.2006288289327022
+            },
+            {
+                "Wait, let's break down the components before providing a solution. First, clearly identify the key points in the question and the gold solution, then structure your response by listing these points separately to ensure clarity and organization.": 0.26922366216770505
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's double-check the calculations to avoid any arithmetic mistakes.",
+        "children": [
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.1837325696933638
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.2110419706891214
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.2194202968897232
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.22183960160241545
+            },
+            {
+                "Wait, let's ensure we're including all necessary numbers in our response, such as \"nine,\" to provide a comprehensive and accurate answer.": 0.24940026175441085
+            },
+            {
+                "Wait, let's break down the components before providing a solution. First, clearly identify the key points in the question and the gold solution, then structure your response by listing these points separately to ensure clarity and organization.": 0.26922366216770505
+            },
+            {
+                "Wait, let's verify the information from at least two reliable sources before providing the answer.": 0.19944637523654318
+            },
+            {
+                "Wait, let's make sure the model cross-references multiple sources to validate the accuracy of the event's details, such as the year, location, and additional context. Before finalizing the output, ensure each piece of information is corroborated to prevent misinterpretations.": 0.2133798407742926
+            },
+            {
+                "Wait, let's make sure to provide a detailed, step-by-step explanation in addition to delivering the answer. This ensures that the model's solution is thorough and informative, helping others understand the problem-solving process.": 0.2006288289327022
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's verify that we've correctly applied the signs throughout the problem.",
+        "children": [
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.1837325696933638
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.2110419706891214
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.2194202968897232
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.22183960160241545
+            },
+            {
+                "Wait, let's ensure we're including all necessary numbers in our response, such as \"nine,\" to provide a comprehensive and accurate answer.": 0.24940026175441085
+            },
+            {
+                "Wait, let's break down the components before providing a solution. First, clearly identify the key points in the question and the gold solution, then structure your response by listing these points separately to ensure clarity and organization.": 0.26922366216770505
+            },
+            {
+                "Wait, let's verify the information from at least two reliable sources before providing the answer.": 0.19944637523654318
+            },
+            {
+                "Wait, let's make sure the model cross-references multiple sources to validate the accuracy of the event's details, such as the year, location, and additional context. Before finalizing the output, ensure each piece of information is corroborated to prevent misinterpretations.": 0.2133798407742926
+            },
+            {
+                "Wait, let's make sure to provide a detailed, step-by-step explanation in addition to delivering the answer. This ensures that the model's solution is thorough and informative, helping others understand the problem-solving process.": 0.2006288289327022
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's ensure we're including all necessary numbers in our response, such as \"nine,\" to provide a comprehensive and accurate answer.",
+        "children": [
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.2110419706891214
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.22183960160241545
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.1837325696933638
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.2194202968897232
+            },
+            {
+                "Wait, let's make sure the model cross-references multiple sources to validate the accuracy of the event's details, such as the year, location, and additional context. Before finalizing the output, ensure each piece of information is corroborated to prevent misinterpretations.": 0.2133798407742926
+            },
+            {
+                "Wait, let's break down the components before providing a solution. First, clearly identify the key points in the question and the gold solution, then structure your response by listing these points separately to ensure clarity and organization.": 0.26922366216770505
+            },
+            {
+                "Wait, let's ensure we're including all necessary numbers in our response, such as \"nine,\" to provide a comprehensive and accurate answer.": 0.24940026175441085
+            },
+            {
+                "Wait, let's verify the information from at least two reliable sources before providing the answer.": 0.19944637523654318
+            },
+            {
+                "Wait, let's make sure to provide a detailed, step-by-step explanation in addition to delivering the answer. This ensures that the model's solution is thorough and informative, helping others understand the problem-solving process.": 0.2006288289327022
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's make sure the model cross-references multiple sources to validate the accuracy of the event's details, such as the year, location, and additional context. Before finalizing the output, ensure each piece of information is corroborated to prevent misinterpretations.",
+        "children": [
+            {
+                "Wait, let's ensure we're including all necessary numbers in our response, such as \"nine,\" to provide a comprehensive and accurate answer.": 0.24940026175441085
+            },
+            {
+                "Wait, let's break down the components before providing a solution. First, clearly identify the key points in the question and the gold solution, then structure your response by listing these points separately to ensure clarity and organization.": 0.26922366216770505
+            },
+            {
+                "Wait, let's make sure the model cross-references multiple sources to validate the accuracy of the event's details, such as the year, location, and additional context. Before finalizing the output, ensure each piece of information is corroborated to prevent misinterpretations.": 0.2133798407742926
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.2110419706891214
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.1837325696933638
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.2194202968897232
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.22183960160241545
+            },
+            {
+                "Wait, let's verify the information from at least two reliable sources before providing the answer.": 0.19944637523654318
+            },
+            {
+                "Wait, let's make sure to provide a detailed, step-by-step explanation in addition to delivering the answer. This ensures that the model's solution is thorough and informative, helping others understand the problem-solving process.": 0.2006288289327022
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's break down the components before providing a solution. First, clearly identify the key points in the question and the gold solution, then structure your response by listing these points separately to ensure clarity and organization.",
+        "children": [
+            {
+                "Wait, let's make sure the model cross-references multiple sources to validate the accuracy of the event's details, such as the year, location, and additional context. Before finalizing the output, ensure each piece of information is corroborated to prevent misinterpretations.": 0.2133798407742926
+            },
+            {
+                "Wait, let's break down the components before providing a solution. First, clearly identify the key points in the question and the gold solution, then structure your response by listing these points separately to ensure clarity and organization.": 0.26922366216770505
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.2194202968897232
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.22183960160241545
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.2110419706891214
+            },
+            {
+                "Wait, let's ensure we're including all necessary numbers in our response, such as \"nine,\" to provide a comprehensive and accurate answer.": 0.24940026175441085
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.1837325696933638
+            },
+            {
+                "Wait, let's verify the information from at least two reliable sources before providing the answer.": 0.19944637523654318
+            },
+            {
+                "Wait, let's make sure to provide a detailed, step-by-step explanation in addition to delivering the answer. This ensures that the model's solution is thorough and informative, helping others understand the problem-solving process.": 0.2006288289327022
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's verify the information from at least two reliable sources before providing the answer.",
+        "children": [
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.2194202968897232
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.2110419706891214
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.1837325696933638
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.22183960160241545
+            },
+            {
+                "Wait, let's ensure we're including all necessary numbers in our response, such as \"nine,\" to provide a comprehensive and accurate answer.": 0.24940026175441085
+            },
+            {
+                "Wait, let's verify the information from at least two reliable sources before providing the answer.": 0.19944637523654318
+            },
+            {
+                "Wait, let's make sure the model cross-references multiple sources to validate the accuracy of the event's details, such as the year, location, and additional context. Before finalizing the output, ensure each piece of information is corroborated to prevent misinterpretations.": 0.2133798407742926
+            },
+            {
+                "Wait, let's break down the components before providing a solution. First, clearly identify the key points in the question and the gold solution, then structure your response by listing these points separately to ensure clarity and organization.": 0.26922366216770505
+            },
+            {
+                "Wait, let's make sure to provide a detailed, step-by-step explanation in addition to delivering the answer. This ensures that the model's solution is thorough and informative, helping others understand the problem-solving process.": 0.2006288289327022
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's make sure to provide a detailed, step-by-step explanation in addition to delivering the answer. This ensures that the model's solution is thorough and informative, helping others understand the problem-solving process.",
+        "children": [
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.22183960160241545
+            },
+            {
+                "Wait, let's verify the information from at least two reliable sources before providing the answer.": 0.19944637523654318
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.1837325696933638
+            },
+            {
+                "Wait, let's ensure we're including all necessary numbers in our response, such as \"nine,\" to provide a comprehensive and accurate answer.": 0.24940026175441085
+            },
+            {
+                "Wait, let's break down the components before providing a solution. First, clearly identify the key points in the question and the gold solution, then structure your response by listing these points separately to ensure clarity and organization.": 0.26922366216770505
+            },
+            {
+                "Wait, let's make sure to provide a detailed, step-by-step explanation in addition to delivering the answer. This ensures that the model's solution is thorough and informative, helping others understand the problem-solving process.": 0.2006288289327022
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.2110419706891214
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.2194202968897232
+            },
+            {
+                "Wait, let's make sure the model cross-references multiple sources to validate the accuracy of the event's details, such as the year, location, and additional context. Before finalizing the output, ensure each piece of information is corroborated to prevent misinterpretations.": 0.2133798407742926
+            }
+        ]
+    }
+]
