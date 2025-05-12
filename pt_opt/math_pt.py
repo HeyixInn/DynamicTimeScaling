@@ -64,19 +64,19 @@ class MATH_SOLVE_PT(AbstPt):
 
 # TODO
 aime_pt_1 = MATH_SOLVE_PT(
-        instruction="Given the following math problem, "
-                    "please help to solve the following math problem for me, "
+        instruction="Given the following question, "
+                    "please help to solve it for me, "
                     "and provide a boxed final answer at the end.\n\n",
-        data_template="Math Problem:\n```\n{question}\n```",
+        data_template="Question:\n```\n{question}\n```",
         name="aime_pt_1",
         position=INST_POSTION.PREVIOUS,
 )
 
 aime_pt_2 = MATH_SOLVE_PT(
         instruction="You are a helpful mathematical assistant. "
-                    "Please help me solve the following math problem, "
+                    "Please help me solve the following question, "
                     "and provide a boxed final answer at the end.\n\n",
-        data_template="Math Problem:\n```\n{question}\n```",
+        data_template="Question:\n```\n{question}\n```",
         name="aime_pt_2",
         position=INST_POSTION.PREVIOUS,
 )
@@ -91,10 +91,9 @@ aime_pt_3 = MATH_SOLVE_PT(
 )
 
 aime_pt_4 = MATH_SOLVE_PT(
-    instruction="You can use arithmetic or algebraic computations to solve the following problem. "
-                "Show each calculation step, simplify expressions, "
-                "and provide a boxed final answer at the end.\n\n",
-    data_template="Math Problem:\n```\n{question}\n```",
+    instruction="You can use arithmetic or algebraic computations to solve the following question. "
+                "Please rovide a boxed final answer at the end.\n\n",
+    data_template="Question:\n```\n{question}\n```",
     name="aime_pt_4",
     position=INST_POSTION.PREVIOUS,
 )
@@ -108,4 +107,4 @@ aime_pt_5 = MATH_SOLVE_PT(
     position=INST_POSTION.PREVIOUS,
 )
 
-AIME_PT_LIST = [aime_pt_1, aime_pt_2, aime_pt_3, aime_pt_4, aime_pt_5]
+AIME_PT_LIST = [aime_pt_1, aime_pt_2, aime_pt_4]

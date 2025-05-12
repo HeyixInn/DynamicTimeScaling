@@ -30,11 +30,9 @@ def aime_evaluator(llm_outputs, ori_tasks, llm_judge):
     # llm_judge:    AbstLiteLLM
     def extract_answer(text):
         # 使用正则表达式匹配\boxed{<answer>}的格式
-        match = re.search(r'\\boxed\{(.*?)\}', text)
-        if match:
-            return match.groups()[-1]  # 提取并返回匹配的内容
-        else:
-            return None
+        matches = re.findall(r'\\boxed\{(.*?)\}', text)
+        if matches:
+            return matches[-1]  # 返回最后一个匹配项
     pred_list, eval_results = [], []
     for llm_output, ori_task in zip(llm_outputs, ori_tasks):
         sol= ori_task['solution']

@@ -42,6 +42,11 @@ class LLMOptimizer(AbstPtOptimizer):
              "Write your new text that is different from the old ones and has a score as high as possible. "
              "Write the text in <text></text> tags.")
 
+    def create_tmp_pt(self, inst):
+        pt = copy.deepcopy(self.seed_pts[0])
+        pt.instruction = inst
+        return pt
+    
     def optimize_pt(self):
         score_list = [(copy.deepcopy(pt), self.score_pt(pt, self.train_data)) for pt in self.seed_pts]
         best_score_list = []

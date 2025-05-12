@@ -16,7 +16,7 @@ if __name__=="__main__":
     parser.add_argument('--model_id', type=int, default=0)
     parser.add_argument('--data_name', type=str, default='aime')
     parser.add_argument('--temperature', type=float, default=0.0)
-    parser.add_argument('--max_tokens', type=int, default = 32000)
+    parser.add_argument('--max_tokens', type=int, default = 10000)
     parser.add_argument('--overwrite', type=bool, default = False)
     
     args = parser.parse_args()
@@ -24,7 +24,7 @@ if __name__=="__main__":
     model_type = get_model_type(ID_2_MODELS[args.model_id])
 
     save_path = f"./results_s1**/{ID_2_MODELS[args.model_id].split('/')[-1]}/"
-    source_path = f"./results_greedy/{ID_2_MODELS[args.model_id].split('/')[-1]}/"
+    source_path = f"./results_greedy**/{ID_2_MODELS[args.model_id].split('/')[-1]}/"
     save_file = f"{args.data_name}.json"
 
     saved_result=[]
@@ -39,6 +39,7 @@ if __name__=="__main__":
         ID_2_MODELS[args.model_id],
         tensor_parallel_size=1,
         enforce_eager=True, 
+        max_seq_len_to_capture=args.max_tokens,
         gpu_memory_utilization=0.95,
     )
     tok = AutoTokenizer.from_pretrained(
@@ -74,12 +75,19 @@ if __name__=="__main__":
     
     thinking_texts = []
     ignore_token = "Wait"
-    prompts_thinking = [
-        p + "<|im_start|>think" + ans + ignore_token
-        # get_prompt(p, model_type, tokenizer=tok, enable_thinking=False) + ans + ignore_token
-        for p, ans in zip(prompts_no_budget, no_budget_texts)
-    ]
-    budget = args.max_tokens
+    if model_type=="Qwen3":
+        prompts_thinking = [
+            # p + "<|im_start|>think" + ans + ignore_token
+            get_prompt(p, model_type, tokenizer=tok, enable_thinking=True) + ans + ignore_token
+            for p, ans in zip(prompts_no_budget, no_budget_texts)
+        ]
+    else:
+        prompts_thinking = [
+            p + "<|im_start|>think" + ans + ignore_token
+            # get_prompt(p, model_type, tokenizer=tok, enable_thinking=True) + ans + ignore_token
+            for p, ans in zip(prompts_no_budget, no_budget_texts)
+        ]
+    budget = args.max_tokens//2
     
     num_waits = 0
     while budget>0:
@@ -101,10 +109,8 @@ if __name__=="__main__":
             p + t + ignore_token
             for p, t in zip(prompts_thinking, thinking_texts)
         ]
-    prompts_final = [
-        p + t
-        for p, t in zip(prompts_thinking, thinking_texts)
-    ]
+    prompts_final = prompts_thinking
+    
     sampling_params_final = SamplingParams(
         max_tokens=args.max_tokens,
         min_tokens=0,

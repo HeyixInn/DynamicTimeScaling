@@ -25,8 +25,10 @@ ID_2_MODELS = {
     # Qwen
     4: "Qwen/Qwen3-8B",
     5: "Qwen/Qwen3-30B-A3B",
+    6: "Qwen/Qwen3-1.7B",
+    7: "Qwen/Qwen3-0.6B",
     # Llama
-    6: "meta-llama/Meta-Llama-3-8B-Instruct"
+    8: "meta-llama/Meta-Llama-3-8B-Instruct"
 }
 
 
@@ -142,18 +144,15 @@ def evaluate(outputs, solutions):
     eval_results = []
     def extract_answer(text):
         # 使用正则表达式匹配\boxed{<answer>}的格式
-        match = re.search(r'\\boxed\{(.*?)\}', text)
-        if match:
-            return match.groups()[-1]  # 提取并返回匹配的内容
+        matches = re.findall(r'\\boxed\{(.*?)\}', text)
+        if matches:
+            return matches[-1]  # 返回最后一个匹配项
     for o, sol in zip(outputs, solutions):
         answer = extract_answer(o)
+        sol = sol.rstrip('0')
         # sol_num = extract_answer(sol)
         print(answer, sol)
-        if answer is not None:
-            with open("./_temp1.txt", 'a') as tf:
-                tf.writelines(o)
-                tf.write("\n"+"-"*10)
-        if answer is not None and answer.isdigit() and int(answer)==int(sol):
+        if answer is not None and answer.isdigit() and answer==sol:         
             eval_results.append(True)
         else:
             eval_results.append(False)
@@ -163,26 +162,16 @@ def llm_evaluate(outputs, solutions, questions):
     # llm_output:   list of dict {text, logits}
     # ori_tasks:    list of dict {question, solution}
     # llm_judge:    AbstLiteLLM
-    
+    from evaluate import prompt_template
     prompts = [
         prompt_template.format(
-            question=task["question"],
-            model_output=output["text"],
-            solution=task["solution"]
+            question=outputs[i],
+            model_output=solutions[i],
+            solution=questions[i]
         )
-        for output, task in zip(llm_outputs, ori_tasks)
+        for i in range(len(outputs))
     ]
     outputs = []
-    # for p in prompts:
-    #     response = litellm.completion(
-    #         model="bedrock/anthropic.claude-3-sonnet-20240229-v1:0",
-    #         messages=[
-    #             {"role": "user", "content": p}
-    #         ],
-    #         temperature=0,
-    #         top_p=1.0,
-    #     )
-    #     outputs.append(response.choices[0].message["content"])
     for p in prompts:
         while True:
             try:
@@ -202,30 +191,19 @@ def llm_evaluate(outputs, solutions, questions):
                     time.sleep(3)  
                 else:
                     raise  
+            except ServiceUnavailableError as e:
+                time.sleep(60)
+                
             except Exception as e:
                 print(f"Unknown error: {e}")
                 raise
-
-    pred_list, eval_results = [], []
-    for llm_output, o in zip(llm_outputs, outputs):
-        # sol= ori_task['solution']
-        answer = llm_output['text']
-        pred_list.append(answer)
-        # if answer is not None and answer == sol:
-        #     eval_results.append(True)
-        # else:
-        #     eval_results.append(False)
+    eval_results = []
+    for o in outputs:
         if "correct" in o.lower():
             eval_results.append(True)
         else:
             eval_results.append(False)
-        
-    res = {
-        "score": np.mean(eval_results),
-        "pred_list": pred_list,
-        "is_correct": eval_results,
-    }
-    return res
+    return eval_results
 
 def uncover_new_guide(model, tok, question, solution, model_output):
 

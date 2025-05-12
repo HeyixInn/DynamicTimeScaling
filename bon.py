@@ -1,7 +1,7 @@
 import argparse
 import numpy as np
 import json
-
+from utils import ID_2_MODELS
 def select_by_logprob(results, score_type):
     if score_type=='avg':
         scores = [[np.mean(seq) for seq in r['sample_logprobs']] for r in results]
@@ -53,20 +53,6 @@ def select_by_cons(results, score_type):
     print(scores)
     return scores
 
-ID_2_MODELS = {
-    # authors'
-    0: "simplescaling/s1-32B",
-    # deepseek models
-    1: "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
-    2: "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
-    3: "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
-    # Qwen
-    4: "Qwen/Qwen2.5-7B-Instruct",
-    5: "Qwen/Qwen2.5-32B-Instruct",
-    # Llama
-    6: "meta-llama/Meta-Llama-3-8B-Instruct"
-}
-
 def select(results, select_type="logprob_avg"):
     select_type, score_type = select_type.split('_')
     
@@ -87,7 +73,7 @@ if __name__=="__main__":
 
     args = parser.parse_args()
 
-    source_path = f"./results_sample/{ID_2_MODELS[args.model_id].split('/')[-1]}/"
+    source_path = f"./results_sample**/{ID_2_MODELS[args.model_id].split('/')[-1]}/"
     save_file = f"{args.data_name}_seleted_by_{args.select_type}.json"
     with open(source_path+f"{args.data_name}.json") as file:
         data = json.load(file)

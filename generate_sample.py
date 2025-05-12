@@ -17,7 +17,7 @@ if __name__=="__main__":
     parser.add_argument('--model_id', type=int, default=0)
     parser.add_argument('--data_name', type=str, default='aime')
     parser.add_argument('--temperature', type=float, default=0.7)
-    parser.add_argument('--max_tokens', type=int, default = 30000)
+    parser.add_argument('--max_tokens', type=int, default = 10000)
     parser.add_argument('--overwrite', type=bool, default = False)
     parser.add_argument('--nsamples', type=int, default = 5)
     
@@ -25,7 +25,7 @@ if __name__=="__main__":
     
     model_type = get_model_type(ID_2_MODELS[args.model_id])
 
-    save_path = f"./results_sample/{ID_2_MODELS[args.model_id].split('/')[-1]}/"
+    save_path = f"./results_sample**/{ID_2_MODELS[args.model_id].split('/')[-1]}/"
     # source_path = f"./results/{ID_2_MODELS[args.model_id].split('/')[-1]}/"
     save_file = f"{args.data_name}.json"
     
@@ -42,6 +42,7 @@ if __name__=="__main__":
         ID_2_MODELS[args.model_id],
         tensor_parallel_size=1,
         enforce_eager=True, 
+        max_seq_len_to_capture=args.max_tokens,
         gpu_memory_utilization=0.95,
         swap_space=8
     )
@@ -73,7 +74,7 @@ if __name__=="__main__":
     print(len(dataset))
 
     questions = [d['question'] for d in dataset]
-    prompts_no_budget = [get_prompt(q, model_type, tokenizer=tok, enable_thinking=False) for q in questions]
+    prompts_no_budget = [get_prompt(q, model_type, tokenizer=tok, enable_thinking=True) for q in questions]
 
     outputs_no_budget = model.generate(prompts_no_budget, sampling_params=sampling_params)
     results = []

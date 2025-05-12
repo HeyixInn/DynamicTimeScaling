@@ -93,11 +93,13 @@ if __name__=="__main__":
         with open(source_path+save_file, 'r') as file:   
             saved_results = json.load(file)
         output_texts = [r['model_output'] for r in saved_results]
-        solutions = [r['solution'] for r in saved_results]
-        questions = [r['question'] for r in saved_results]
+        # solutions = [r['solution'] for r in saved_results]
+        # questions = [r['question'] for r in saved_results]
+        solutions = [r['solution'] for r in load_my_dataset(args.data_name)]
+        questions = [r['question'] for r in load_my_dataset(args.data_name)]
         if args.data_name=="aime":
-            aime = load_my_dataset("aime")
-            solutions = [r['solution'] for r in aime]
+            # aime = load_my_dataset("aime")
+            # solutions = [r['solution'] for r in aime]
             eval_results = evaluate(output_texts, solutions)
             for r, e in zip(saved_results, eval_results):
                 r.update({'eval': e})
