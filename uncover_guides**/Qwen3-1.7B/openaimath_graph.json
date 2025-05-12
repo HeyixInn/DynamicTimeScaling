@@ -1,0 +1,278 @@
+[
+    {
+        "guide": "Wait, let's make sure we're using the correct formula for the problem.",
+        "children": [
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 1.1251468520468182
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 1.258502665202918
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 1.2881900687922005
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 1.1164314885941065
+            },
+            {
+                "Wait, let's ensure the dataset path is correct. Always verify the file path in your code to avoid runtime errors. Use absolute paths or check the current working directory. This helps prevent issues when the file is not in the expected location. Always include a check for the file's existence before reading it. For example, you can add `os.path.exists('data.csv')` to confirm the file is present. This ensures the code runs smoothly without exceptions. Additionally, after loading the data, it's a good practice to print a summary of the data to understand its structure and ensure there are no missing values or outliers that need handling. This proactive step helps catch potential issues early in the modeling process. Regularly reviewing the data's integrity is crucial for accurate model training and evaluation. By following these steps, you can avoid common pitfalls and ensure your model is robust and reliable. ": 1.1447747828930062
+            },
+            {
+                "Wait, let's double-check the verb tense and ensure consistency.": 1.074564210390254
+            },
+            {
+                "Wait, let's ensure the data is properly loaded and there are no missing values. Check for any missing data in the dataset before proceeding.": 1.215716208303318
+            },
+            {
+                "Wait, let's ensure the formula is correctly applied: $\\text{Students not in school} = \\text{Total students} - \\text{Students in school}$.": 1.1992972832209143
+            },
+            {
+                "Wait, let's ensure the function is correctly handling duplicate breeds. Always verify that the set operation is properly applied to the list of breeds to avoid counting duplicates.": 1.1814852248295158
+            }
+        ]
+    },
+    {
+        "guide": "Wait, did we convert all units to the same measurement before starting?",
+        "children": [
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 1.1251468520468182
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 1.258502665202918
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 1.2881900687922005
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 1.1164314885941065
+            },
+            {
+                "Wait, let's ensure the formula is correctly applied: $\\text{Students not in school} = \\text{Total students} - \\text{Students in school}$.": 1.1992972832209143
+            },
+            {
+                "Wait, let's ensure the function is correctly handling duplicate breeds. Always verify that the set operation is properly applied to the list of breeds to avoid counting duplicates.": 1.1814852248295158
+            },
+            {
+                "Wait, let's ensure the dataset path is correct. Always verify the file path in your code to avoid runtime errors. Use absolute paths or check the current working directory. This helps prevent issues when the file is not in the expected location. Always include a check for the file's existence before reading it. For example, you can add `os.path.exists('data.csv')` to confirm the file is present. This ensures the code runs smoothly without exceptions. Additionally, after loading the data, it's a good practice to print a summary of the data to understand its structure and ensure there are no missing values or outliers that need handling. This proactive step helps catch potential issues early in the modeling process. Regularly reviewing the data's integrity is crucial for accurate model training and evaluation. By following these steps, you can avoid common pitfalls and ensure your model is robust and reliable. ": 1.1447747828930062
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's double-check the calculations to avoid any arithmetic mistakes.",
+        "children": [
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 1.1251468520468182
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 1.258502665202918
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 1.1164314885941065
+            },
+            {
+                "Wait, let's ensure the data is properly loaded and there are no missing values. Check for any missing data in the dataset before proceeding.": 1.215716208303318
+            },
+            {
+                "Wait, let's ensure the dataset path is correct. Always verify the file path in your code to avoid runtime errors. Use absolute paths or check the current working directory. This helps prevent issues when the file is not in the expected location. Always include a check for the file's existence before reading it. For example, you can add `os.path.exists('data.csv')` to confirm the file is present. This ensures the code runs smoothly without exceptions. Additionally, after loading the data, it's a good practice to print a summary of the data to understand its structure and ensure there are no missing values or outliers that need handling. This proactive step helps catch potential issues early in the modeling process. Regularly reviewing the data's integrity is crucial for accurate model training and evaluation. By following these steps, you can avoid common pitfalls and ensure your model is robust and reliable. ": 1.1447747828930062
+            },
+            {
+                "Wait, let's ensure the function is correctly handling duplicate breeds. Always verify that the set operation is properly applied to the list of breeds to avoid counting duplicates.": 1.1814852248295158
+            },
+            {
+                "Wait, let's ensure the formula is correctly applied: $\\text{Students not in school} = \\text{Total students} - \\text{Students in school}$.": 1.1992972832209143
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 1.2881900687922005
+            },
+            {
+                "Wait, let's double-check the verb tense and ensure consistency.": 1.074564210390254
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's verify that we've correctly applied the signs throughout the problem.",
+        "children": [
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 1.2881900687922005
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 1.1164314885941065
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 1.258502665202918
+            },
+            {
+                "Wait, let's ensure the formula is correctly applied: $\\text{Students not in school} = \\text{Total students} - \\text{Students in school}$.": 1.1992972832209143
+            },
+            {
+                "Wait, let's ensure the dataset path is correct. Always verify the file path in your code to avoid runtime errors. Use absolute paths or check the current working directory. This helps prevent issues when the file is not in the expected location. Always include a check for the file's existence before reading it. For example, you can add `os.path.exists('data.csv')` to confirm the file is present. This ensures the code runs smoothly without exceptions. Additionally, after loading the data, it's a good practice to print a summary of the data to understand its structure and ensure there are no missing values or outliers that need handling. This proactive step helps catch potential issues early in the modeling process. Regularly reviewing the data's integrity is crucial for accurate model training and evaluation. By following these steps, you can avoid common pitfalls and ensure your model is robust and reliable. ": 1.1447747828930062
+            },
+            {
+                "Wait, let's double-check the verb tense and ensure consistency.": 1.074564210390254
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 1.1251468520468182
+            },
+            {
+                "Wait, let's ensure the data is properly loaded and there are no missing values. Check for any missing data in the dataset before proceeding.": 1.215716208303318
+            },
+            {
+                "Wait, let's ensure the function is correctly handling duplicate breeds. Always verify that the set operation is properly applied to the list of breeds to avoid counting duplicates.": 1.1814852248295158
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's ensure the dataset path is correct. Always verify the file path in your code to avoid runtime errors. Use absolute paths or check the current working directory. This helps prevent issues when the file is not in the expected location. Always include a check for the file's existence before reading it. For example, you can add `os.path.exists('data.csv')` to confirm the file is present. This ensures the code runs smoothly without exceptions. Additionally, after loading the data, it's a good practice to print a summary of the data to understand its structure and ensure there are no missing values or outliers that need handling. This proactive step helps catch potential issues early in the modeling process. Regularly reviewing the data's integrity is crucial for accurate model training and evaluation. By following these steps, you can avoid common pitfalls and ensure your model is robust and reliable. ",
+        "children": [
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 1.258502665202918
+            },
+            {
+                "Wait, let's ensure the formula is correctly applied: $\\text{Students not in school} = \\text{Total students} - \\text{Students in school}$.": 1.1992972832209143
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 1.1251468520468182
+            },
+            {
+                "Wait, let's ensure the data is properly loaded and there are no missing values. Check for any missing data in the dataset before proceeding.": 1.215716208303318
+            },
+            {
+                "Wait, let's double-check the verb tense and ensure consistency.": 1.074564210390254
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 1.2881900687922005
+            },
+            {
+                "Wait, let's ensure the dataset path is correct. Always verify the file path in your code to avoid runtime errors. Use absolute paths or check the current working directory. This helps prevent issues when the file is not in the expected location. Always include a check for the file's existence before reading it. For example, you can add `os.path.exists('data.csv')` to confirm the file is present. This ensures the code runs smoothly without exceptions. Additionally, after loading the data, it's a good practice to print a summary of the data to understand its structure and ensure there are no missing values or outliers that need handling. This proactive step helps catch potential issues early in the modeling process. Regularly reviewing the data's integrity is crucial for accurate model training and evaluation. By following these steps, you can avoid common pitfalls and ensure your model is robust and reliable. ": 1.1447747828930062
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 1.1164314885941065
+            },
+            {
+                "Wait, let's ensure the function is correctly handling duplicate breeds. Always verify that the set operation is properly applied to the list of breeds to avoid counting duplicates.": 1.1814852248295158
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's ensure the formula is correctly applied: $\\text{Students not in school} = \\text{Total students} - \\text{Students in school}$.",
+        "children": [
+            {
+                "Wait, let's ensure the dataset path is correct. Always verify the file path in your code to avoid runtime errors. Use absolute paths or check the current working directory. This helps prevent issues when the file is not in the expected location. Always include a check for the file's existence before reading it. For example, you can add `os.path.exists('data.csv')` to confirm the file is present. This ensures the code runs smoothly without exceptions. Additionally, after loading the data, it's a good practice to print a summary of the data to understand its structure and ensure there are no missing values or outliers that need handling. This proactive step helps catch potential issues early in the modeling process. Regularly reviewing the data's integrity is crucial for accurate model training and evaluation. By following these steps, you can avoid common pitfalls and ensure your model is robust and reliable. ": 1.1447747828930062
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 1.1251468520468182
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 1.1164314885941065
+            },
+            {
+                "Wait, let's ensure the data is properly loaded and there are no missing values. Check for any missing data in the dataset before proceeding.": 1.215716208303318
+            },
+            {
+                "Wait, let's ensure the formula is correctly applied: $\\text{Students not in school} = \\text{Total students} - \\text{Students in school}$.": 1.1992972832209143
+            },
+            {
+                "Wait, let's double-check the verb tense and ensure consistency.": 1.074564210390254
+            },
+            {
+                "Wait, let's ensure the function is correctly handling duplicate breeds. Always verify that the set operation is properly applied to the list of breeds to avoid counting duplicates.": 1.1814852248295158
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 1.258502665202918
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 1.2881900687922005
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's double-check the verb tense and ensure consistency.",
+        "children": [
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 1.258502665202918
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 1.1251468520468182
+            },
+            {
+                "Wait, let's ensure the formula is correctly applied: $\\text{Students not in school} = \\text{Total students} - \\text{Students in school}$.": 1.1992972832209143
+            },
+            {
+                "Wait, let's ensure the dataset path is correct. Always verify the file path in your code to avoid runtime errors. Use absolute paths or check the current working directory. This helps prevent issues when the file is not in the expected location. Always include a check for the file's existence before reading it. For example, you can add `os.path.exists('data.csv')` to confirm the file is present. This ensures the code runs smoothly without exceptions. Additionally, after loading the data, it's a good practice to print a summary of the data to understand its structure and ensure there are no missing values or outliers that need handling. This proactive step helps catch potential issues early in the modeling process. Regularly reviewing the data's integrity is crucial for accurate model training and evaluation. By following these steps, you can avoid common pitfalls and ensure your model is robust and reliable. ": 1.1447747828930062
+            },
+            {
+                "Wait, let's double-check the verb tense and ensure consistency.": 1.074564210390254
+            },
+            {
+                "Wait, let's ensure the data is properly loaded and there are no missing values. Check for any missing data in the dataset before proceeding.": 1.215716208303318
+            },
+            {
+                "Wait, let's ensure the function is correctly handling duplicate breeds. Always verify that the set operation is properly applied to the list of breeds to avoid counting duplicates.": 1.1814852248295158
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 1.2881900687922005
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's ensure the data is properly loaded and there are no missing values. Check for any missing data in the dataset before proceeding.",
+        "children": [
+            {
+                "Wait, let's ensure the formula is correctly applied: $\\text{Students not in school} = \\text{Total students} - \\text{Students in school}$.": 1.1992972832209143
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 1.2881900687922005
+            },
+            {
+                "Wait, let's ensure the dataset path is correct. Always verify the file path in your code to avoid runtime errors. Use absolute paths or check the current working directory. This helps prevent issues when the file is not in the expected location. Always include a check for the file's existence before reading it. For example, you can add `os.path.exists('data.csv')` to confirm the file is present. This ensures the code runs smoothly without exceptions. Additionally, after loading the data, it's a good practice to print a summary of the data to understand its structure and ensure there are no missing values or outliers that need handling. This proactive step helps catch potential issues early in the modeling process. Regularly reviewing the data's integrity is crucial for accurate model training and evaluation. By following these steps, you can avoid common pitfalls and ensure your model is robust and reliable. ": 1.1447747828930062
+            },
+            {
+                "Wait, let's ensure the function is correctly handling duplicate breeds. Always verify that the set operation is properly applied to the list of breeds to avoid counting duplicates.": 1.1814852248295158
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 1.258502665202918
+            },
+            {
+                "Wait, let's double-check the verb tense and ensure consistency.": 1.074564210390254
+            },
+            {
+                "Wait, let's ensure the data is properly loaded and there are no missing values. Check for any missing data in the dataset before proceeding.": 1.215716208303318
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 1.1251468520468182
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's ensure the function is correctly handling duplicate breeds. Always verify that the set operation is properly applied to the list of breeds to avoid counting duplicates.",
+        "children": [
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 1.1164314885941065
+            },
+            {
+                "Wait, let's ensure the data is properly loaded and there are no missing values. Check for any missing data in the dataset before proceeding.": 1.215716208303318
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 1.2881900687922005
+            },
+            {
+                "Wait, let's ensure the formula is correctly applied: $\\text{Students not in school} = \\text{Total students} - \\text{Students in school}$.": 1.1992972832209143
+            },
+            {
+                "Wait, let's ensure the dataset path is correct. Always verify the file path in your code to avoid runtime errors. Use absolute paths or check the current working directory. This helps prevent issues when the file is not in the expected location. Always include a check for the file's existence before reading it. For example, you can add `os.path.exists('data.csv')` to confirm the file is present. This ensures the code runs smoothly without exceptions. Additionally, after loading the data, it's a good practice to print a summary of the data to understand its structure and ensure there are no missing values or outliers that need handling. This proactive step helps catch potential issues early in the modeling process. Regularly reviewing the data's integrity is crucial for accurate model training and evaluation. By following these steps, you can avoid common pitfalls and ensure your model is robust and reliable. ": 1.1447747828930062
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 1.258502665202918
+            },
+            {
+                "Wait, let's double-check the verb tense and ensure consistency.": 1.074564210390254
+            },
+            {
+                "Wait, let's ensure the function is correctly handling duplicate breeds. Always verify that the set operation is properly applied to the list of breeds to avoid counting duplicates.": 1.1814852248295158
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 1.1251468520468182
+            }
+        ]
+    }
+]

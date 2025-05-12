@@ -3,28 +3,31 @@
         "guide": "Wait, let's make sure we're using the correct formula for the problem.",
         "children": [
             {
-                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.32756634644544896
+                "Wait, did we convert all units to the same measurement before starting?": 0.2078602607485703
             },
             {
-                "Wait, did we convert all units to the same measurement before starting?": 0.2570948737694008
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.20715180661765084
             },
             {
-                "Wait, let's verify factual information by cross-referencing with a reliable knowledge base or using contextual clues like geographical proximity and historical context to distinguish between similar-sounding entities. ": 0.44377071355435255
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.28838736036153795
             },
             {
-                "Wait, let's make sure we're using the correct formula for the problem.": 0.3736594817336048
+                "Wait, let's ensure that all necessary information, including the question, is provided before attempting analysis.": 0.21160454123816302
             },
             {
-                "Wait, let's verify the mathematical formula required for the problem and double-check the operations needed to ensure we're calculating the correct value (e.g., multiplication for area, addition for perimeter).": 0.2684455574182671
+                "Wait, let's verify whether the question is asking for perimeter or area and recall the correct formula for the required calculation. Always distinguish between operations (addition vs. multiplication) based on the problem's context. ": 0.2012761972419875
             },
             {
-                "Wait, let's carefully verify the given parameters and ensure that the correct dimensions are used in calculations.": 0.2846185135655471
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.27387371312075065
             },
             {
-                "Wait, let's carefully verify the operation required by the problem's context, such as recognizing that \"area\" necessitates multiplication rather than addition, and double-check the mathematical principles involved.": 0.28902527622867713
+                "Wait, let's double-check the specific details of the question, such as country names and their corresponding capitals, to ensure accurate associations. Verify that the answer aligns precisely with the question's requirements. ": 0.26137760249636266
             },
             {
-                "Wait, let's re-read the passage and explicitly identify the central claim or thesis statement before selecting the main idea to ensure it aligns with the overarching message rather than a specific detail.": 0.3814953898291393
+                "Wait, let's ensure all necessary information is included when providing the question, gold solution, and model output to enable accurate analysis.": 0.3514144689246838
+            },
+            {
+                "Wait, let's always reverse the order of operations when solving equations: first address addition/subtraction, then multiplication/division, to isolate the variable correctly.": 0.21934936301653402
             }
         ]
     },
@@ -32,28 +35,28 @@
         "guide": "Wait, did we convert all units to the same measurement before starting?",
         "children": [
             {
-                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.32756634644544896
+                "Wait, did we convert all units to the same measurement before starting?": 0.2078602607485703
             },
             {
-                "Wait, let's make sure we're using the correct formula for the problem.": 0.3736594817336048
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.20715180661765084
             },
             {
-                "Wait, let's verify factual information by cross-referencing with a reliable knowledge base or using contextual clues like geographical proximity and historical context to distinguish between similar-sounding entities. ": 0.44377071355435255
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.28838736036153795
             },
             {
-                "Wait, let's [actionable advice, e.g., verify factual accuracy, double-check calculations, or carefully re-read the question].": 0.24804400979457317
+                "Wait, let's ensure that all necessary information, including the question, is provided before attempting analysis.": 0.21160454123816302
             },
             {
-                "Wait, did we convert all units to the same measurement before starting?": 0.2570948737694008
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.27387371312075065
             },
             {
-                "Wait, let's verify the mathematical formula required for the problem and double-check the operations needed to ensure we're calculating the correct value (e.g., multiplication for area, addition for perimeter).": 0.2684455574182671
+                "Wait, let's verify whether the question is asking for perimeter or area and recall the correct formula for the required calculation. Always distinguish between operations (addition vs. multiplication) based on the problem's context. ": 0.2012761972419875
             },
             {
-                "Wait, let's carefully verify the operation required by the problem's context, such as recognizing that \"area\" necessitates multiplication rather than addition, and double-check the mathematical principles involved.": 0.28902527622867713
+                "Wait, let's ensure all necessary information is included when providing the question, gold solution, and model output to enable accurate analysis.": 0.3514144689246838
             },
             {
-                "Wait, let's re-read the passage and explicitly identify the central claim or thesis statement before selecting the main idea to ensure it aligns with the overarching message rather than a specific detail.": 0.3814953898291393
+                "Wait, let's double-check the specific details of the question, such as country names and their corresponding capitals, to ensure accurate associations. Verify that the answer aligns precisely with the question's requirements. ": 0.26137760249636266
             }
         ]
     },
@@ -61,205 +64,217 @@
         "guide": "Wait, let's double-check the calculations to avoid any arithmetic mistakes.",
         "children": [
             {
-                "Wait, did we convert all units to the same measurement before starting?": 0.2570948737694008
+                "Wait, let's verify whether the question is asking for perimeter or area and recall the correct formula for the required calculation. Always distinguish between operations (addition vs. multiplication) based on the problem's context. ": 0.2012761972419875
             },
             {
-                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.32756634644544896
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.28838736036153795
             },
             {
-                "Wait, let's make sure we're using the correct formula for the problem.": 0.3736594817336048
+                "Wait, did we convert all units to the same measurement before starting?": 0.2078602607485703
             },
             {
-                "Wait, let's verify factual information by cross-referencing with a reliable knowledge base or using contextual clues like geographical proximity and historical context to distinguish between similar-sounding entities. ": 0.44377071355435255
+                "Wait, let's ensure that all necessary information, including the question, is provided before attempting analysis.": 0.21160454123816302
             },
             {
-                "Wait, let's verify the mathematical formula required for the problem and double-check the operations needed to ensure we're calculating the correct value (e.g., multiplication for area, addition for perimeter).": 0.2684455574182671
+                "Wait, let's ensure all necessary information is included when providing the question, gold solution, and model output to enable accurate analysis.": 0.3514144689246838
             },
             {
-                "Wait, let's carefully verify the given parameters and ensure that the correct dimensions are used in calculations.": 0.2846185135655471
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.27387371312075065
             },
             {
-                "Wait, let's carefully verify the operation required by the problem's context, such as recognizing that \"area\" necessitates multiplication rather than addition, and double-check the mathematical principles involved.": 0.28902527622867713
+                "Wait, let's double-check the specific details of the question, such as country names and their corresponding capitals, to ensure accurate associations. Verify that the answer aligns precisely with the question's requirements. ": 0.26137760249636266
             },
             {
-                "Wait, let's re-read the passage and explicitly identify the central claim or thesis statement before selecting the main idea to ensure it aligns with the overarching message rather than a specific detail.": 0.3814953898291393
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.20715180661765084
+            },
+            {
+                "Wait, let's always reverse the order of operations when solving equations: first address addition/subtraction, then multiplication/division, to isolate the variable correctly.": 0.21934936301653402
             }
         ]
     },
     {
-        "guide": "Wait, let's verify factual information by cross-referencing with a reliable knowledge base or using contextual clues like geographical proximity and historical context to distinguish between similar-sounding entities. ",
+        "guide": "Wait, let's verify that we've correctly applied the signs throughout the problem.",
         "children": [
             {
-                "Wait, did we convert all units to the same measurement before starting?": 0.2570948737694008
+                "Wait, did we convert all units to the same measurement before starting?": 0.2078602607485703
             },
             {
-                "Wait, let's make sure we're using the correct formula for the problem.": 0.3736594817336048
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.20715180661765084
             },
             {
-                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.32756634644544896
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.28838736036153795
             },
             {
-                "Wait, let's verify factual information by cross-referencing with a reliable knowledge base or using contextual clues like geographical proximity and historical context to distinguish between similar-sounding entities. ": 0.44377071355435255
+                "Wait, let's verify whether the question is asking for perimeter or area and recall the correct formula for the required calculation. Always distinguish between operations (addition vs. multiplication) based on the problem's context. ": 0.2012761972419875
             },
             {
-                "Wait, let's [actionable advice, e.g., verify factual accuracy, double-check calculations, or carefully re-read the question].": 0.24804400979457317
+                "Wait, let's ensure that all necessary information, including the question, is provided before attempting analysis.": 0.21160454123816302
             },
             {
-                "Wait, let's carefully verify the given parameters and ensure that the correct dimensions are used in calculations.": 0.2846185135655471
+                "Wait, let's ensure all necessary information is included when providing the question, gold solution, and model output to enable accurate analysis.": 0.3514144689246838
             },
             {
-                "Wait, let's verify the mathematical formula required for the problem and double-check the operations needed to ensure we're calculating the correct value (e.g., multiplication for area, addition for perimeter).": 0.2684455574182671
+                "Wait, let's double-check the specific details of the question, such as country names and their corresponding capitals, to ensure accurate associations. Verify that the answer aligns precisely with the question's requirements. ": 0.26137760249636266
             },
             {
-                "Wait, let's carefully verify the operation required by the problem's context, such as recognizing that \"area\" necessitates multiplication rather than addition, and double-check the mathematical principles involved.": 0.28902527622867713
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.27387371312075065
             },
             {
-                "Wait, let's re-read the passage and explicitly identify the central claim or thesis statement before selecting the main idea to ensure it aligns with the overarching message rather than a specific detail.": 0.3814953898291393
+                "Wait, let's always reverse the order of operations when solving equations: first address addition/subtraction, then multiplication/division, to isolate the variable correctly.": 0.21934936301653402
             }
         ]
     },
     {
-        "guide": "Wait, let's [actionable advice, e.g., verify factual accuracy, double-check calculations, or carefully re-read the question].",
+        "guide": "Wait, let's verify whether the question is asking for perimeter or area and recall the correct formula for the required calculation. Always distinguish between operations (addition vs. multiplication) based on the problem's context. ",
         "children": [
             {
-                "Wait, let's [actionable advice, e.g., verify factual accuracy, double-check calculations, or carefully re-read the question].": 0.24804400979457317
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.20715180661765084
             },
             {
-                "Wait, let's make sure we're using the correct formula for the problem.": 0.3736594817336048
+                "Wait, let's ensure that all necessary information, including the question, is provided before attempting analysis.": 0.21160454123816302
             },
             {
-                "Wait, let's carefully verify the given parameters and ensure that the correct dimensions are used in calculations.": 0.2846185135655471
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.27387371312075065
             },
             {
-                "Wait, let's verify the mathematical formula required for the problem and double-check the operations needed to ensure we're calculating the correct value (e.g., multiplication for area, addition for perimeter).": 0.2684455574182671
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.28838736036153795
             },
             {
-                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.32756634644544896
+                "Wait, did we convert all units to the same measurement before starting?": 0.2078602607485703
             },
             {
-                "Wait, let's carefully verify the operation required by the problem's context, such as recognizing that \"area\" necessitates multiplication rather than addition, and double-check the mathematical principles involved.": 0.28902527622867713
+                "Wait, let's verify whether the question is asking for perimeter or area and recall the correct formula for the required calculation. Always distinguish between operations (addition vs. multiplication) based on the problem's context. ": 0.2012761972419875
             },
             {
-                "Wait, let's verify factual information by cross-referencing with a reliable knowledge base or using contextual clues like geographical proximity and historical context to distinguish between similar-sounding entities. ": 0.44377071355435255
+                "Wait, let's ensure all necessary information is included when providing the question, gold solution, and model output to enable accurate analysis.": 0.3514144689246838
             },
             {
-                "Wait, did we convert all units to the same measurement before starting?": 0.2570948737694008
-            },
-            {
-                "Wait, let's re-read the passage and explicitly identify the central claim or thesis statement before selecting the main idea to ensure it aligns with the overarching message rather than a specific detail.": 0.3814953898291393
+                "Wait, let's double-check the specific details of the question, such as country names and their corresponding capitals, to ensure accurate associations. Verify that the answer aligns precisely with the question's requirements. ": 0.26137760249636266
             }
         ]
     },
     {
-        "guide": "Wait, let's verify the mathematical formula required for the problem and double-check the operations needed to ensure we're calculating the correct value (e.g., multiplication for area, addition for perimeter).",
+        "guide": "Wait, let's ensure that all necessary information, including the question, is provided before attempting analysis.",
         "children": [
             {
-                "Wait, let's make sure we're using the correct formula for the problem.": 0.3736594817336048
+                "Wait, did we convert all units to the same measurement before starting?": 0.2078602607485703
             },
             {
-                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.32756634644544896
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.28838736036153795
             },
             {
-                "Wait, let's verify factual information by cross-referencing with a reliable knowledge base or using contextual clues like geographical proximity and historical context to distinguish between similar-sounding entities. ": 0.44377071355435255
+                "Wait, let's verify whether the question is asking for perimeter or area and recall the correct formula for the required calculation. Always distinguish between operations (addition vs. multiplication) based on the problem's context. ": 0.2012761972419875
             },
             {
-                "Wait, did we convert all units to the same measurement before starting?": 0.2570948737694008
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.20715180661765084
             },
             {
-                "Wait, let's carefully verify the operation required by the problem's context, such as recognizing that \"area\" necessitates multiplication rather than addition, and double-check the mathematical principles involved.": 0.28902527622867713
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.27387371312075065
             },
             {
-                "Wait, let's [actionable advice, e.g., verify factual accuracy, double-check calculations, or carefully re-read the question].": 0.24804400979457317
+                "Wait, let's ensure that all necessary information, including the question, is provided before attempting analysis.": 0.21160454123816302
             },
             {
-                "Wait, let's re-read the passage and explicitly identify the central claim or thesis statement before selecting the main idea to ensure it aligns with the overarching message rather than a specific detail.": 0.3814953898291393
+                "Wait, let's ensure all necessary information is included when providing the question, gold solution, and model output to enable accurate analysis.": 0.3514144689246838
+            },
+            {
+                "Wait, let's double-check the specific details of the question, such as country names and their corresponding capitals, to ensure accurate associations. Verify that the answer aligns precisely with the question's requirements. ": 0.26137760249636266
+            },
+            {
+                "Wait, let's always reverse the order of operations when solving equations: first address addition/subtraction, then multiplication/division, to isolate the variable correctly.": 0.21934936301653402
             }
         ]
     },
     {
-        "guide": "Wait, let's carefully verify the given parameters and ensure that the correct dimensions are used in calculations.",
+        "guide": "Wait, let's double-check the specific details of the question, such as country names and their corresponding capitals, to ensure accurate associations. Verify that the answer aligns precisely with the question's requirements. ",
         "children": [
             {
-                "Wait, let's verify factual information by cross-referencing with a reliable knowledge base or using contextual clues like geographical proximity and historical context to distinguish between similar-sounding entities. ": 0.44377071355435255
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.28838736036153795
             },
             {
-                "Wait, let's verify the mathematical formula required for the problem and double-check the operations needed to ensure we're calculating the correct value (e.g., multiplication for area, addition for perimeter).": 0.2684455574182671
+                "Wait, let's ensure all necessary information is included when providing the question, gold solution, and model output to enable accurate analysis.": 0.3514144689246838
             },
             {
-                "Wait, let's make sure we're using the correct formula for the problem.": 0.3736594817336048
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.27387371312075065
             },
             {
-                "Wait, let's [actionable advice, e.g., verify factual accuracy, double-check calculations, or carefully re-read the question].": 0.24804400979457317
+                "Wait, let's double-check the specific details of the question, such as country names and their corresponding capitals, to ensure accurate associations. Verify that the answer aligns precisely with the question's requirements. ": 0.26137760249636266
             },
             {
-                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.32756634644544896
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.20715180661765084
             },
             {
-                "Wait, let's carefully verify the given parameters and ensure that the correct dimensions are used in calculations.": 0.2846185135655471
+                "Wait, let's ensure that all necessary information, including the question, is provided before attempting analysis.": 0.21160454123816302
             },
             {
-                "Wait, let's carefully verify the operation required by the problem's context, such as recognizing that \"area\" necessitates multiplication rather than addition, and double-check the mathematical principles involved.": 0.28902527622867713
+                "Wait, did we convert all units to the same measurement before starting?": 0.2078602607485703
+            },
+            {
+                "Wait, let's always reverse the order of operations when solving equations: first address addition/subtraction, then multiplication/division, to isolate the variable correctly.": 0.21934936301653402
+            },
+            {
+                "Wait, let's verify whether the question is asking for perimeter or area and recall the correct formula for the required calculation. Always distinguish between operations (addition vs. multiplication) based on the problem's context. ": 0.2012761972419875
             }
         ]
     },
     {
-        "guide": "Wait, let's carefully verify the operation required by the problem's context, such as recognizing that \"area\" necessitates multiplication rather than addition, and double-check the mathematical principles involved.",
+        "guide": "Wait, let's ensure all necessary information is included when providing the question, gold solution, and model output to enable accurate analysis.",
         "children": [
             {
-                "Wait, let's verify the mathematical formula required for the problem and double-check the operations needed to ensure we're calculating the correct value (e.g., multiplication for area, addition for perimeter).": 0.2684455574182671
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.27387371312075065
             },
             {
-                "Wait, let's [actionable advice, e.g., verify factual accuracy, double-check calculations, or carefully re-read the question].": 0.24804400979457317
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.20715180661765084
             },
             {
-                "Wait, let's verify factual information by cross-referencing with a reliable knowledge base or using contextual clues like geographical proximity and historical context to distinguish between similar-sounding entities. ": 0.44377071355435255
+                "Wait, let's ensure all necessary information is included when providing the question, gold solution, and model output to enable accurate analysis.": 0.3514144689246838
             },
             {
-                "Wait, let's make sure we're using the correct formula for the problem.": 0.3736594817336048
+                "Wait, let's double-check the specific details of the question, such as country names and their corresponding capitals, to ensure accurate associations. Verify that the answer aligns precisely with the question's requirements. ": 0.26137760249636266
             },
             {
-                "Wait, let's carefully verify the operation required by the problem's context, such as recognizing that \"area\" necessitates multiplication rather than addition, and double-check the mathematical principles involved.": 0.28902527622867713
+                "Wait, let's verify whether the question is asking for perimeter or area and recall the correct formula for the required calculation. Always distinguish between operations (addition vs. multiplication) based on the problem's context. ": 0.2012761972419875
             },
             {
-                "Wait, did we convert all units to the same measurement before starting?": 0.2570948737694008
+                "Wait, did we convert all units to the same measurement before starting?": 0.2078602607485703
             },
             {
-                "Wait, let's carefully verify the given parameters and ensure that the correct dimensions are used in calculations.": 0.2846185135655471
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.28838736036153795
             },
             {
-                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.32756634644544896
+                "Wait, let's always reverse the order of operations when solving equations: first address addition/subtraction, then multiplication/division, to isolate the variable correctly.": 0.21934936301653402
             },
             {
-                "Wait, let's re-read the passage and explicitly identify the central claim or thesis statement before selecting the main idea to ensure it aligns with the overarching message rather than a specific detail.": 0.3814953898291393
+                "Wait, let's ensure that all necessary information, including the question, is provided before attempting analysis.": 0.21160454123816302
             }
         ]
     },
     {
-        "guide": "Wait, let's re-read the passage and explicitly identify the central claim or thesis statement before selecting the main idea to ensure it aligns with the overarching message rather than a specific detail.",
+        "guide": "Wait, let's always reverse the order of operations when solving equations: first address addition/subtraction, then multiplication/division, to isolate the variable correctly.",
         "children": [
             {
-                "Wait, let's make sure we're using the correct formula for the problem.": 0.3736594817336048
+                "Wait, let's double-check the specific details of the question, such as country names and their corresponding capitals, to ensure accurate associations. Verify that the answer aligns precisely with the question's requirements. ": 0.26137760249636266
             },
             {
-                "Wait, let's re-read the passage and explicitly identify the central claim or thesis statement before selecting the main idea to ensure it aligns with the overarching message rather than a specific detail.": 0.3814953898291393
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.28838736036153795
             },
             {
-                "Wait, let's verify the mathematical formula required for the problem and double-check the operations needed to ensure we're calculating the correct value (e.g., multiplication for area, addition for perimeter).": 0.2684455574182671
+                "Wait, did we convert all units to the same measurement before starting?": 0.2078602607485703
             },
             {
-                "Wait, let's verify factual information by cross-referencing with a reliable knowledge base or using contextual clues like geographical proximity and historical context to distinguish between similar-sounding entities. ": 0.44377071355435255
+                "Wait, let's ensure all necessary information is included when providing the question, gold solution, and model output to enable accurate analysis.": 0.3514144689246838
             },
             {
-                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.32756634644544896
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.27387371312075065
             },
             {
-                "Wait, let's carefully verify the operation required by the problem's context, such as recognizing that \"area\" necessitates multiplication rather than addition, and double-check the mathematical principles involved.": 0.28902527622867713
+                "Wait, let's ensure that all necessary information, including the question, is provided before attempting analysis.": 0.21160454123816302
             },
             {
-                "Wait, let's [actionable advice, e.g., verify factual accuracy, double-check calculations, or carefully re-read the question].": 0.24804400979457317
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.20715180661765084
             },
             {
-                "Wait, did we convert all units to the same measurement before starting?": 0.2570948737694008
+                "Wait, let's always reverse the order of operations when solving equations: first address addition/subtraction, then multiplication/division, to isolate the variable correctly.": 0.21934936301653402
             }
         ]
     }

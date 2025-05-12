@@ -1,0 +1,236 @@
+[
+    {
+        "guide": "Wait, let's make sure we're using the correct formula for the problem.",
+        "children": [
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.35632412039543065
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.2663790507865051
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.3537164710919436
+            },
+            {
+                "Wait, let's <your guide here>. ": 0.3125068330830641
+            },
+            {
+                "Wait, let's carefully verify the problem's exact wording and ensure we calculate the precise probability required (e.g., \"exactly\" vs. \"at least\"). Double-check combination calculations and exponent usage in the binomial formula to avoid conflating similar but distinct probability scenarios. ": 0.45777796152808825
+            },
+            {
+                "Wait, let's [actionable advice, e.g., double-check formulas, verify all conditions, or test edge cases].": 0.24931568636606494
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.2563099559213055
+            },
+            {
+                "Wait, let's verify factual information and ensure accurate knowledge of geographical facts to avoid such confusion.": 0.304275198042095
+            }
+        ]
+    },
+    {
+        "guide": "Wait, did we convert all units to the same measurement before starting?",
+        "children": [
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.3537164710919436
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.35632412039543065
+            },
+            {
+                "Wait, let's <your guide here>. ": 0.3125068330830641
+            },
+            {
+                "Wait, let's carefully verify the problem's exact wording and ensure we calculate the precise probability required (e.g., \"exactly\" vs. \"at least\"). Double-check combination calculations and exponent usage in the binomial formula to avoid conflating similar but distinct probability scenarios. ": 0.45777796152808825
+            },
+            {
+                "Wait, let's always re-read the question to ensure all given details, like taxes or additional fees, are incorporated into the solution. Double-checking the problem statement can prevent critical omissions. ": 0.22017478444503288
+            },
+            {
+                "Wait, let's [actionable advice, e.g., double-check formulas, verify all conditions, or test edge cases].": 0.24931568636606494
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.2663790507865051
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.2563099559213055
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's double-check the calculations to avoid any arithmetic mistakes.",
+        "children": [
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.35632412039543065
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.2563099559213055
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.3537164710919436
+            },
+            {
+                "Wait, let's <your guide here>. ": 0.3125068330830641
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.2663790507865051
+            },
+            {
+                "Wait, let's carefully verify the problem's exact wording and ensure we calculate the precise probability required (e.g., \"exactly\" vs. \"at least\"). Double-check combination calculations and exponent usage in the binomial formula to avoid conflating similar but distinct probability scenarios. ": 0.45777796152808825
+            },
+            {
+                "Wait, let's always re-read the question to ensure all given details, like taxes or additional fees, are incorporated into the solution. Double-checking the problem statement can prevent critical omissions. ": 0.22017478444503288
+            },
+            {
+                "Wait, let's [actionable advice, e.g., double-check formulas, verify all conditions, or test edge cases].": 0.24931568636606494
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's verify that we've correctly applied the signs throughout the problem.",
+        "children": [
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.3537164710919436
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.35632412039543065
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.2563099559213055
+            },
+            {
+                "Wait, let's <your guide here>. ": 0.3125068330830641
+            },
+            {
+                "Wait, let's carefully verify the problem's exact wording and ensure we calculate the precise probability required (e.g., \"exactly\" vs. \"at least\"). Double-check combination calculations and exponent usage in the binomial formula to avoid conflating similar but distinct probability scenarios. ": 0.45777796152808825
+            },
+            {
+                "Wait, let's always re-read the question to ensure all given details, like taxes or additional fees, are incorporated into the solution. Double-checking the problem statement can prevent critical omissions. ": 0.22017478444503288
+            },
+            {
+                "Wait, let's [actionable advice, e.g., double-check formulas, verify all conditions, or test edge cases].": 0.24931568636606494
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.2663790507865051
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's <your guide here>. ",
+        "children": [
+            {
+                "Wait, let's <your guide here>. ": 0.3125068330830641
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.2663790507865051
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.2563099559213055
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.35632412039543065
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.3537164710919436
+            },
+            {
+                "Wait, let's carefully verify the problem's exact wording and ensure we calculate the precise probability required (e.g., \"exactly\" vs. \"at least\"). Double-check combination calculations and exponent usage in the binomial formula to avoid conflating similar but distinct probability scenarios. ": 0.45777796152808825
+            },
+            {
+                "Wait, let's [actionable advice, e.g., double-check formulas, verify all conditions, or test edge cases].": 0.24931568636606494
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's carefully verify the problem's exact wording and ensure we calculate the precise probability required (e.g., \"exactly\" vs. \"at least\"). Double-check combination calculations and exponent usage in the binomial formula to avoid conflating similar but distinct probability scenarios. ",
+        "children": [
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.2563099559213055
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.2663790507865051
+            },
+            {
+                "Wait, let's always re-read the question to ensure all given details, like taxes or additional fees, are incorporated into the solution. Double-checking the problem statement can prevent critical omissions. ": 0.22017478444503288
+            },
+            {
+                "Wait, let's <your guide here>. ": 0.3125068330830641
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.3537164710919436
+            },
+            {
+                "Wait, let's [actionable advice, e.g., double-check formulas, verify all conditions, or test edge cases].": 0.24931568636606494
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.35632412039543065
+            },
+            {
+                "Wait, let's verify factual information and ensure accurate knowledge of geographical facts to avoid such confusion.": 0.304275198042095
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's always re-read the question to ensure all given details, like taxes or additional fees, are incorporated into the solution. Double-checking the problem statement can prevent critical omissions. ",
+        "children": [
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.2563099559213055
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.2663790507865051
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.35632412039543065
+            },
+            {
+                "Wait, let's carefully verify the problem's exact wording and ensure we calculate the precise probability required (e.g., \"exactly\" vs. \"at least\"). Double-check combination calculations and exponent usage in the binomial formula to avoid conflating similar but distinct probability scenarios. ": 0.45777796152808825
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.3537164710919436
+            },
+            {
+                "Wait, let's <your guide here>. ": 0.3125068330830641
+            },
+            {
+                "Wait, let's always re-read the question to ensure all given details, like taxes or additional fees, are incorporated into the solution. Double-checking the problem statement can prevent critical omissions. ": 0.22017478444503288
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's [actionable advice, e.g., double-check formulas, verify all conditions, or test edge cases].",
+        "children": [
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.3537164710919436
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.2663790507865051
+            },
+            {
+                "Wait, let's carefully verify the problem's exact wording and ensure we calculate the precise probability required (e.g., \"exactly\" vs. \"at least\"). Double-check combination calculations and exponent usage in the binomial formula to avoid conflating similar but distinct probability scenarios. ": 0.45777796152808825
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.35632412039543065
+            },
+            {
+                "Wait, let's <your guide here>. ": 0.3125068330830641
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.2563099559213055
+            },
+            {
+                "Wait, let's [actionable advice, e.g., double-check formulas, verify all conditions, or test edge cases].": 0.24931568636606494
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's verify factual information and ensure accurate knowledge of geographical facts to avoid such confusion.",
+        "children": [
+            {
+                "Wait, let's carefully verify the problem's exact wording and ensure we calculate the precise probability required (e.g., \"exactly\" vs. \"at least\"). Double-check combination calculations and exponent usage in the binomial formula to avoid conflating similar but distinct probability scenarios. ": 0.45777796152808825
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.35632412039543065
+            }
+        ]
+    }
+]

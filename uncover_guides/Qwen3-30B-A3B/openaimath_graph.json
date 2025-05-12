@@ -1,0 +1,233 @@
+[
+    {
+        "guide": "Wait, let's make sure we're using the correct formula for the problem.",
+        "children": [
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 1.0690079608899086
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 1.0329805294323664
+            },
+            {
+                "Wait, let's verify the correct formula for the quantity being requested (e.g., area requires multiplication, perimeter requires addition) before performing calculations. Always double-check the operation based on the problem's explicit requirements.  ": 0.9436696933610659
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 1.0821720256990257
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.989424511426929
+            },
+            {
+                "Wait, let's confirm the correct formula for the area of a rectangle (length \u00d7 width) before performing calculations. Always double-check the mathematical operation required for the task. ": 1.0669343799106512
+            }
+        ]
+    },
+    {
+        "guide": "Wait, did we convert all units to the same measurement before starting?",
+        "children": [
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 1.0329805294323664
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 1.0690079608899086
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 1.0821720256990257
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.989424511426929
+            },
+            {
+                "Wait, let's carefully verify all numerical values in the problem statement before performing calculations to ensure they match the given inputs. Always cross-check numbers in the question with those used in the solution. ": 0.9324133151351915
+            },
+            {
+                "Wait, let's verify the correct formula for the quantity being requested (e.g., area requires multiplication, perimeter requires addition) before performing calculations. Always double-check the operation based on the problem's explicit requirements.  ": 0.9436696933610659
+            },
+            {
+                "Wait, let's confirm the correct formula for the area of a rectangle (length \u00d7 width) before performing calculations. Always double-check the mathematical operation required for the task. ": 1.0669343799106512
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's double-check the calculations to avoid any arithmetic mistakes.",
+        "children": [
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.989424511426929
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 1.0329805294323664
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 1.0821720256990257
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 1.0690079608899086
+            },
+            {
+                "Wait, let's confirm the correct formula for the area of a rectangle (length \u00d7 width) before performing calculations. Always double-check the mathematical operation required for the task. ": 1.0669343799106512
+            },
+            {
+                "Wait, let's verify the correct formula for the quantity being requested (e.g., area requires multiplication, perimeter requires addition) before performing calculations. Always double-check the operation based on the problem's explicit requirements.  ": 0.9436696933610659
+            },
+            {
+                "Wait, let's carefully verify all numerical values in the problem statement before performing calculations to ensure they match the given inputs. Always cross-check numbers in the question with those used in the solution. ": 0.9324133151351915
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's verify that we've correctly applied the signs throughout the problem.",
+        "children": [
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 1.0690079608899086
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 1.0821720256990257
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.989424511426929
+            },
+            {
+                "Wait, let's verify the correct formula for the quantity being requested (e.g., area requires multiplication, perimeter requires addition) before performing calculations. Always double-check the operation based on the problem's explicit requirements.  ": 0.9436696933610659
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 1.0329805294323664
+            },
+            {
+                "Wait, let's confirm the correct formula for the area of a rectangle (length \u00d7 width) before performing calculations. Always double-check the mathematical operation required for the task. ": 1.0669343799106512
+            },
+            {
+                "Wait, let's carefully verify all numerical values in the problem statement before performing calculations to ensure they match the given inputs. Always cross-check numbers in the question with those used in the solution. ": 0.9324133151351915
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's verify the correct formula for the quantity being requested (e.g., area requires multiplication, perimeter requires addition) before performing calculations. Always double-check the operation based on the problem's explicit requirements.  ",
+        "children": [
+            {
+                "Wait, let's verify the correct formula for the quantity being requested (e.g., area requires multiplication, perimeter requires addition) before performing calculations. Always double-check the operation based on the problem's explicit requirements.  ": 0.9436696933610659
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 1.0821720256990257
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 1.0329805294323664
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.989424511426929
+            },
+            {
+                "Wait, let's confirm the correct formula for the area of a rectangle (length \u00d7 width) before performing calculations. Always double-check the mathematical operation required for the task. ": 1.0669343799106512
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 1.0690079608899086
+            },
+            {
+                "Wait, let's verify the specific country's capital by cross-referencing reliable geographical data before providing an answer.  ": 0.8727908128297521
+            },
+            {
+                "Wait, let's verify the geographical facts by recalling the correct capital for France and cross-checking with known country-capital pairs to avoid mix-ups. ": 0.9720615010781991
+            },
+            {
+                "Wait, let's carefully verify all numerical values in the problem statement before performing calculations to ensure they match the given inputs. Always cross-check numbers in the question with those used in the solution. ": 0.9324133151351915
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's confirm the correct formula for the area of a rectangle (length \u00d7 width) before performing calculations. Always double-check the mathematical operation required for the task. ",
+        "children": [
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 1.0821720256990257
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.989424511426929
+            },
+            {
+                "Wait, let's confirm the correct formula for the area of a rectangle (length \u00d7 width) before performing calculations. Always double-check the mathematical operation required for the task. ": 1.0669343799106512
+            },
+            {
+                "Wait, let's carefully verify all numerical values in the problem statement before performing calculations to ensure they match the given inputs. Always cross-check numbers in the question with those used in the solution. ": 0.9324133151351915
+            },
+            {
+                "Wait, let's verify the specific country's capital by cross-referencing reliable geographical data before providing an answer.  ": 0.8727908128297521
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 1.0690079608899086
+            },
+            {
+                "Wait, let's verify the correct formula for the quantity being requested (e.g., area requires multiplication, perimeter requires addition) before performing calculations. Always double-check the operation based on the problem's explicit requirements.  ": 0.9436696933610659
+            },
+            {
+                "Wait, let's verify the geographical facts by recalling the correct capital for France and cross-checking with known country-capital pairs to avoid mix-ups. ": 0.9720615010781991
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 1.0329805294323664
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's carefully verify all numerical values in the problem statement before performing calculations to ensure they match the given inputs. Always cross-check numbers in the question with those used in the solution. ",
+        "children": [
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 1.0690079608899086
+            },
+            {
+                "Wait, let's verify the correct formula for the quantity being requested (e.g., area requires multiplication, perimeter requires addition) before performing calculations. Always double-check the operation based on the problem's explicit requirements.  ": 0.9436696933610659
+            },
+            {
+                "Wait, let's carefully verify all numerical values in the problem statement before performing calculations to ensure they match the given inputs. Always cross-check numbers in the question with those used in the solution. ": 0.9324133151351915
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.989424511426929
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 1.0329805294323664
+            },
+            {
+                "Wait, let's verify the specific country's capital by cross-referencing reliable geographical data before providing an answer.  ": 0.8727908128297521
+            },
+            {
+                "Wait, let's confirm the correct formula for the area of a rectangle (length \u00d7 width) before performing calculations. Always double-check the mathematical operation required for the task. ": 1.0669343799106512
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's verify the specific country's capital by cross-referencing reliable geographical data before providing an answer.  ",
+        "children": [
+            {
+                "Wait, let's confirm the correct formula for the area of a rectangle (length \u00d7 width) before performing calculations. Always double-check the mathematical operation required for the task. ": 1.0669343799106512
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 1.0821720256990257
+            },
+            {
+                "Wait, let's verify the correct formula for the quantity being requested (e.g., area requires multiplication, perimeter requires addition) before performing calculations. Always double-check the operation based on the problem's explicit requirements.  ": 0.9436696933610659
+            },
+            {
+                "Wait, let's carefully verify all numerical values in the problem statement before performing calculations to ensure they match the given inputs. Always cross-check numbers in the question with those used in the solution. ": 0.9324133151351915
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 1.0690079608899086
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's verify the geographical facts by recalling the correct capital for France and cross-checking with known country-capital pairs to avoid mix-ups. ",
+        "children": [
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 1.0690079608899086
+            },
+            {
+                "Wait, let's verify the specific country's capital by cross-referencing reliable geographical data before providing an answer.  ": 0.8727908128297521
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.989424511426929
+            },
+            {
+                "Wait, let's verify the correct formula for the quantity being requested (e.g., area requires multiplication, perimeter requires addition) before performing calculations. Always double-check the operation based on the problem's explicit requirements.  ": 0.9436696933610659
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 1.0329805294323664
+            }
+        ]
+    }
+]

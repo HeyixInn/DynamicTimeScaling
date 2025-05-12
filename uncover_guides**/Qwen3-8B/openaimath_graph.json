@@ -1,0 +1,287 @@
+[
+    {
+        "guide": "Wait, let's make sure we're using the correct formula for the problem.",
+        "children": [
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 1.1370462292057315
+            },
+            {
+                "Wait, let's carefully re-examine the question and ensure all instructions are followed, double-checking calculations or reasoning steps to avoid oversights.  ": 1.0901252383750675
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 1.1535809479475985
+            },
+            {
+                "Wait, let's verify the formula being used\u2014area requires multiplication of length and width, not addition. Always double-check the mathematical operation corresponding to the problem's requirement.": 1.112311880353403
+            },
+            {
+                "Wait, let's double-check each algebraic step, especially when isolating the variable, to ensure correct operations are applied and arithmetic is verified. Breaking down the problem into smaller steps can help prevent such errors. ": 1.265145176654373
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 1.1490259651087813
+            },
+            {
+                "Wait, let's verify the geometric shape in question and recall the correct formula specific to that shape before applying any calculations. Double-checking the problem statement and ensuring the formula matches the figure's properties will prevent such errors. Additionally, distinguishing between similar formulas (e.g., trapezoid vs. triangle) by focusing on key differences like the presence of two parallel sides in trapezoids can help avoid confusion. ": 1.0775679623575618
+            },
+            {
+                "Wait, let's confirm the formula for the specific shape mentioned in the question and ensure all necessary operations (like division) are included.": 1.1267612748543934
+            }
+        ]
+    },
+    {
+        "guide": "Wait, did we convert all units to the same measurement before starting?",
+        "children": [
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 1.1370462292057315
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 1.1535809479475985
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 1.2527426373031059
+            },
+            {
+                "Wait, let's confirm the formula for the specific shape mentioned in the question and ensure all necessary operations (like division) are included.": 1.1267612748543934
+            },
+            {
+                "Wait, let's verify the geometric shape in question and recall the correct formula specific to that shape before applying any calculations. Double-checking the problem statement and ensuring the formula matches the figure's properties will prevent such errors. Additionally, distinguishing between similar formulas (e.g., trapezoid vs. triangle) by focusing on key differences like the presence of two parallel sides in trapezoids can help avoid confusion. ": 1.0775679623575618
+            },
+            {
+                "Wait, let's carefully re-examine the question and ensure all instructions are followed, double-checking calculations or reasoning steps to avoid oversights.  ": 1.0901252383750675
+            },
+            {
+                "Wait, let's double-check each algebraic step, especially when isolating the variable, to ensure correct operations are applied and arithmetic is verified. Breaking down the problem into smaller steps can help prevent such errors. ": 1.265145176654373
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 1.1490259651087813
+            },
+            {
+                "Wait, let's verify the formula being used\u2014area requires multiplication of length and width, not addition. Always double-check the mathematical operation corresponding to the problem's requirement.": 1.112311880353403
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's double-check the calculations to avoid any arithmetic mistakes.",
+        "children": [
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 1.1535809479475985
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 1.1490259651087813
+            },
+            {
+                "Wait, let's confirm the formula for the specific shape mentioned in the question and ensure all necessary operations (like division) are included.": 1.1267612748543934
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 1.1370462292057315
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 1.2527426373031059
+            },
+            {
+                "Wait, let's double-check each algebraic step, especially when isolating the variable, to ensure correct operations are applied and arithmetic is verified. Breaking down the problem into smaller steps can help prevent such errors. ": 1.265145176654373
+            },
+            {
+                "Wait, let's carefully re-examine the question and ensure all instructions are followed, double-checking calculations or reasoning steps to avoid oversights.  ": 1.0901252383750675
+            },
+            {
+                "Wait, let's verify the geometric shape in question and recall the correct formula specific to that shape before applying any calculations. Double-checking the problem statement and ensuring the formula matches the figure's properties will prevent such errors. Additionally, distinguishing between similar formulas (e.g., trapezoid vs. triangle) by focusing on key differences like the presence of two parallel sides in trapezoids can help avoid confusion. ": 1.0775679623575618
+            },
+            {
+                "Wait, let's verify the formula being used\u2014area requires multiplication of length and width, not addition. Always double-check the mathematical operation corresponding to the problem's requirement.": 1.112311880353403
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's verify that we've correctly applied the signs throughout the problem.",
+        "children": [
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 1.1490259651087813
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 1.1370462292057315
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 1.1535809479475985
+            },
+            {
+                "Wait, let's carefully re-examine the question and ensure all instructions are followed, double-checking calculations or reasoning steps to avoid oversights.  ": 1.0901252383750675
+            },
+            {
+                "Wait, let's verify the geometric shape in question and recall the correct formula specific to that shape before applying any calculations. Double-checking the problem statement and ensuring the formula matches the figure's properties will prevent such errors. Additionally, distinguishing between similar formulas (e.g., trapezoid vs. triangle) by focusing on key differences like the presence of two parallel sides in trapezoids can help avoid confusion. ": 1.0775679623575618
+            },
+            {
+                "Wait, let's confirm the formula for the specific shape mentioned in the question and ensure all necessary operations (like division) are included.": 1.1267612748543934
+            },
+            {
+                "Wait, let's verify the formula being used\u2014area requires multiplication of length and width, not addition. Always double-check the mathematical operation corresponding to the problem's requirement.": 1.112311880353403
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 1.2527426373031059
+            },
+            {
+                "Wait, let's double-check each algebraic step, especially when isolating the variable, to ensure correct operations are applied and arithmetic is verified. Breaking down the problem into smaller steps can help prevent such errors. ": 1.265145176654373
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's confirm the formula for the specific shape mentioned in the question and ensure all necessary operations (like division) are included.",
+        "children": [
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 1.1370462292057315
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 1.1535809479475985
+            },
+            {
+                "Wait, let's confirm the formula for the specific shape mentioned in the question and ensure all necessary operations (like division) are included.": 1.1267612748543934
+            },
+            {
+                "Wait, let's verify the geometric shape in question and recall the correct formula specific to that shape before applying any calculations. Double-checking the problem statement and ensuring the formula matches the figure's properties will prevent such errors. Additionally, distinguishing between similar formulas (e.g., trapezoid vs. triangle) by focusing on key differences like the presence of two parallel sides in trapezoids can help avoid confusion. ": 1.0775679623575618
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 1.1490259651087813
+            },
+            {
+                "Wait, let's carefully re-examine the question and ensure all instructions are followed, double-checking calculations or reasoning steps to avoid oversights.  ": 1.0901252383750675
+            },
+            {
+                "Wait, let's verify the formula being used\u2014area requires multiplication of length and width, not addition. Always double-check the mathematical operation corresponding to the problem's requirement.": 1.112311880353403
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 1.2527426373031059
+            },
+            {
+                "Wait, let's double-check each algebraic step, especially when isolating the variable, to ensure correct operations are applied and arithmetic is verified. Breaking down the problem into smaller steps can help prevent such errors. ": 1.265145176654373
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's carefully re-examine the question and ensure all instructions are followed, double-checking calculations or reasoning steps to avoid oversights.  ",
+        "children": [
+            {
+                "Wait, let's carefully re-examine the question and ensure all instructions are followed, double-checking calculations or reasoning steps to avoid oversights.  ": 1.0901252383750675
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 1.1490259651087813
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 1.1535809479475985
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 1.2527426373031059
+            },
+            {
+                "Wait, let's confirm the formula for the specific shape mentioned in the question and ensure all necessary operations (like division) are included.": 1.1267612748543934
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 1.1370462292057315
+            },
+            {
+                "Wait, let's verify the formula being used\u2014area requires multiplication of length and width, not addition. Always double-check the mathematical operation corresponding to the problem's requirement.": 1.112311880353403
+            },
+            {
+                "Wait, let's verify the geometric shape in question and recall the correct formula specific to that shape before applying any calculations. Double-checking the problem statement and ensuring the formula matches the figure's properties will prevent such errors. Additionally, distinguishing between similar formulas (e.g., trapezoid vs. triangle) by focusing on key differences like the presence of two parallel sides in trapezoids can help avoid confusion. ": 1.0775679623575618
+            },
+            {
+                "Wait, let's double-check each algebraic step, especially when isolating the variable, to ensure correct operations are applied and arithmetic is verified. Breaking down the problem into smaller steps can help prevent such errors. ": 1.265145176654373
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's verify the geometric shape in question and recall the correct formula specific to that shape before applying any calculations. Double-checking the problem statement and ensuring the formula matches the figure's properties will prevent such errors. Additionally, distinguishing between similar formulas (e.g., trapezoid vs. triangle) by focusing on key differences like the presence of two parallel sides in trapezoids can help avoid confusion. ",
+        "children": [
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 1.1490259651087813
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 1.1535809479475985
+            },
+            {
+                "Wait, let's confirm the formula for the specific shape mentioned in the question and ensure all necessary operations (like division) are included.": 1.1267612748543934
+            },
+            {
+                "Wait, let's verify the formula being used\u2014area requires multiplication of length and width, not addition. Always double-check the mathematical operation corresponding to the problem's requirement.": 1.112311880353403
+            },
+            {
+                "Wait, let's verify the geometric shape in question and recall the correct formula specific to that shape before applying any calculations. Double-checking the problem statement and ensuring the formula matches the figure's properties will prevent such errors. Additionally, distinguishing between similar formulas (e.g., trapezoid vs. triangle) by focusing on key differences like the presence of two parallel sides in trapezoids can help avoid confusion. ": 1.0775679623575618
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 1.2527426373031059
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 1.1370462292057315
+            },
+            {
+                "Wait, let's carefully re-examine the question and ensure all instructions are followed, double-checking calculations or reasoning steps to avoid oversights.  ": 1.0901252383750675
+            },
+            {
+                "Wait, let's double-check each algebraic step, especially when isolating the variable, to ensure correct operations are applied and arithmetic is verified. Breaking down the problem into smaller steps can help prevent such errors. ": 1.265145176654373
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's double-check each algebraic step, especially when isolating the variable, to ensure correct operations are applied and arithmetic is verified. Breaking down the problem into smaller steps can help prevent such errors. ",
+        "children": [
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 1.1535809479475985
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 1.1370462292057315
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 1.2527426373031059
+            },
+            {
+                "Wait, let's verify the formula being used\u2014area requires multiplication of length and width, not addition. Always double-check the mathematical operation corresponding to the problem's requirement.": 1.112311880353403
+            },
+            {
+                "Wait, let's double-check each algebraic step, especially when isolating the variable, to ensure correct operations are applied and arithmetic is verified. Breaking down the problem into smaller steps can help prevent such errors. ": 1.265145176654373
+            },
+            {
+                "Wait, let's verify the geometric shape in question and recall the correct formula specific to that shape before applying any calculations. Double-checking the problem statement and ensuring the formula matches the figure's properties will prevent such errors. Additionally, distinguishing between similar formulas (e.g., trapezoid vs. triangle) by focusing on key differences like the presence of two parallel sides in trapezoids can help avoid confusion. ": 1.0775679623575618
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 1.1490259651087813
+            },
+            {
+                "Wait, let's confirm the formula for the specific shape mentioned in the question and ensure all necessary operations (like division) are included.": 1.1267612748543934
+            },
+            {
+                "Wait, let's carefully re-examine the question and ensure all instructions are followed, double-checking calculations or reasoning steps to avoid oversights.  ": 1.0901252383750675
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's verify the formula being used\u2014area requires multiplication of length and width, not addition. Always double-check the mathematical operation corresponding to the problem's requirement.",
+        "children": [
+            {
+                "Wait, let's verify the geometric shape in question and recall the correct formula specific to that shape before applying any calculations. Double-checking the problem statement and ensuring the formula matches the figure's properties will prevent such errors. Additionally, distinguishing between similar formulas (e.g., trapezoid vs. triangle) by focusing on key differences like the presence of two parallel sides in trapezoids can help avoid confusion. ": 1.0775679623575618
+            },
+            {
+                "Wait, let's confirm the formula for the specific shape mentioned in the question and ensure all necessary operations (like division) are included.": 1.1267612748543934
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 1.2527426373031059
+            },
+            {
+                "Wait, let's double-check each algebraic step, especially when isolating the variable, to ensure correct operations are applied and arithmetic is verified. Breaking down the problem into smaller steps can help prevent such errors. ": 1.265145176654373
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 1.1490259651087813
+            },
+            {
+                "Wait, let's carefully re-examine the question and ensure all instructions are followed, double-checking calculations or reasoning steps to avoid oversights.  ": 1.0901252383750675
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 1.1535809479475985
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 1.1370462292057315
+            },
+            {
+                "Wait, let's verify the formula being used\u2014area requires multiplication of length and width, not addition. Always double-check the mathematical operation corresponding to the problem's requirement.": 1.112311880353403
+            }
+        ]
+    }
+]

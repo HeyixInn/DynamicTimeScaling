@@ -1,0 +1,290 @@
+[
+    {
+        "guide": "Wait, let's make sure we're using the correct formula for the problem.",
+        "children": [
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.35696548590163857
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.36239121438826244
+            },
+            {
+                "Wait, let's verify the direction of motion and recall that when objects move toward each other, their relative speed is the sum of their individual speeds, not the difference. Always double-check whether the problem involves converging or diverging motion. ": 0.4367881779394169
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.6369063880935809
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.4143008657708763
+            },
+            {
+                "Wait, let's verify geographical facts by recalling that Paris is the capital of France, while London is the capital of the United Kingdom.": 0.5588801326044446
+            },
+            {
+                "Wait, let's double-check the mathematical derivation of the formula to ensure all components, like the division by 2, are correctly included based on the geometric principles involved. ": 0.32571725532841245
+            },
+            {
+                "Wait, let's double-check the problem's requirements and confirm whether the question asks for area (multiplication of length and width) or perimeter (sum of all sides) before applying any calculations. This will prevent mixing up the correct operations. ": 0.3777378614775065
+            },
+            {
+                "Wait, let's carefully analyze the setting and historical context clues in the question to ensure accurate character identification. Double-check for unique descriptors like time period, location, and story elements that distinguish one narrative from another. ": 0.35678618319671784
+            }
+        ]
+    },
+    {
+        "guide": "Wait, did we convert all units to the same measurement before starting?",
+        "children": [
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.4143008657708763
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.35696548590163857
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.6369063880935809
+            },
+            {
+                "Wait, let's carefully analyze the setting and historical context clues in the question to ensure accurate character identification. Double-check for unique descriptors like time period, location, and story elements that distinguish one narrative from another. ": 0.35678618319671784
+            },
+            {
+                "Wait, let's verify the direction of motion and recall that when objects move toward each other, their relative speed is the sum of their individual speeds, not the difference. Always double-check whether the problem involves converging or diverging motion. ": 0.4367881779394169
+            },
+            {
+                "Wait, let's verify geographical facts by recalling that Paris is the capital of France, while London is the capital of the United Kingdom.": 0.5588801326044446
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.36239121438826244
+            },
+            {
+                "Wait, let's double-check the problem's requirements and confirm whether the question asks for area (multiplication of length and width) or perimeter (sum of all sides) before applying any calculations. This will prevent mixing up the correct operations. ": 0.3777378614775065
+            },
+            {
+                "Wait, let's double-check the mathematical derivation of the formula to ensure all components, like the division by 2, are correctly included based on the geometric principles involved. ": 0.32571725532841245
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's double-check the calculations to avoid any arithmetic mistakes.",
+        "children": [
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.35696548590163857
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.4143008657708763
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.6369063880935809
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.36239121438826244
+            },
+            {
+                "Wait, let's verify geographical facts by recalling that Paris is the capital of France, while London is the capital of the United Kingdom.": 0.5588801326044446
+            },
+            {
+                "Wait, let's carefully analyze the setting and historical context clues in the question to ensure accurate character identification. Double-check for unique descriptors like time period, location, and story elements that distinguish one narrative from another. ": 0.35678618319671784
+            },
+            {
+                "Wait, let's double-check the mathematical derivation of the formula to ensure all components, like the division by 2, are correctly included based on the geometric principles involved. ": 0.32571725532841245
+            },
+            {
+                "Wait, let's verify the direction of motion and recall that when objects move toward each other, their relative speed is the sum of their individual speeds, not the difference. Always double-check whether the problem involves converging or diverging motion. ": 0.4367881779394169
+            },
+            {
+                "Wait, let's double-check the problem's requirements and confirm whether the question asks for area (multiplication of length and width) or perimeter (sum of all sides) before applying any calculations. This will prevent mixing up the correct operations. ": 0.3777378614775065
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's verify that we've correctly applied the signs throughout the problem.",
+        "children": [
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.4143008657708763
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.6369063880935809
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.35696548590163857
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.36239121438826244
+            },
+            {
+                "Wait, let's verify the direction of motion and recall that when objects move toward each other, their relative speed is the sum of their individual speeds, not the difference. Always double-check whether the problem involves converging or diverging motion. ": 0.4367881779394169
+            },
+            {
+                "Wait, let's carefully analyze the setting and historical context clues in the question to ensure accurate character identification. Double-check for unique descriptors like time period, location, and story elements that distinguish one narrative from another. ": 0.35678618319671784
+            },
+            {
+                "Wait, let's verify geographical facts by recalling that Paris is the capital of France, while London is the capital of the United Kingdom.": 0.5588801326044446
+            },
+            {
+                "Wait, let's double-check the problem's requirements and confirm whether the question asks for area (multiplication of length and width) or perimeter (sum of all sides) before applying any calculations. This will prevent mixing up the correct operations. ": 0.3777378614775065
+            },
+            {
+                "Wait, let's double-check the mathematical derivation of the formula to ensure all components, like the division by 2, are correctly included based on the geometric principles involved. ": 0.32571725532841245
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's verify the direction of motion and recall that when objects move toward each other, their relative speed is the sum of their individual speeds, not the difference. Always double-check whether the problem involves converging or diverging motion. ",
+        "children": [
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.4143008657708763
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.6369063880935809
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.36239121438826244
+            },
+            {
+                "Wait, let's verify geographical facts by recalling that Paris is the capital of France, while London is the capital of the United Kingdom.": 0.5588801326044446
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.35696548590163857
+            },
+            {
+                "Wait, let's double-check the problem's requirements and confirm whether the question asks for area (multiplication of length and width) or perimeter (sum of all sides) before applying any calculations. This will prevent mixing up the correct operations. ": 0.3777378614775065
+            },
+            {
+                "Wait, let's double-check the mathematical derivation of the formula to ensure all components, like the division by 2, are correctly included based on the geometric principles involved. ": 0.32571725532841245
+            },
+            {
+                "Wait, let's carefully analyze the setting and historical context clues in the question to ensure accurate character identification. Double-check for unique descriptors like time period, location, and story elements that distinguish one narrative from another. ": 0.35678618319671784
+            },
+            {
+                "Wait, let's verify the direction of motion and recall that when objects move toward each other, their relative speed is the sum of their individual speeds, not the difference. Always double-check whether the problem involves converging or diverging motion. ": 0.4367881779394169
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's verify geographical facts by recalling that Paris is the capital of France, while London is the capital of the United Kingdom.",
+        "children": [
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.6369063880935809
+            },
+            {
+                "Wait, let's verify geographical facts by recalling that Paris is the capital of France, while London is the capital of the United Kingdom.": 0.5588801326044446
+            },
+            {
+                "Wait, let's carefully analyze the setting and historical context clues in the question to ensure accurate character identification. Double-check for unique descriptors like time period, location, and story elements that distinguish one narrative from another. ": 0.35678618319671784
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.35696548590163857
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.4143008657708763
+            },
+            {
+                "Wait, let's verify the direction of motion and recall that when objects move toward each other, their relative speed is the sum of their individual speeds, not the difference. Always double-check whether the problem involves converging or diverging motion. ": 0.4367881779394169
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.36239121438826244
+            },
+            {
+                "Wait, let's double-check the problem's requirements and confirm whether the question asks for area (multiplication of length and width) or perimeter (sum of all sides) before applying any calculations. This will prevent mixing up the correct operations. ": 0.3777378614775065
+            },
+            {
+                "Wait, let's double-check the mathematical derivation of the formula to ensure all components, like the division by 2, are correctly included based on the geometric principles involved. ": 0.32571725532841245
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's carefully analyze the setting and historical context clues in the question to ensure accurate character identification. Double-check for unique descriptors like time period, location, and story elements that distinguish one narrative from another. ",
+        "children": [
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.36239121438826244
+            },
+            {
+                "Wait, let's verify geographical facts by recalling that Paris is the capital of France, while London is the capital of the United Kingdom.": 0.5588801326044446
+            },
+            {
+                "Wait, let's double-check the mathematical derivation of the formula to ensure all components, like the division by 2, are correctly included based on the geometric principles involved. ": 0.32571725532841245
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.6369063880935809
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.35696548590163857
+            },
+            {
+                "Wait, let's double-check the problem's requirements and confirm whether the question asks for area (multiplication of length and width) or perimeter (sum of all sides) before applying any calculations. This will prevent mixing up the correct operations. ": 0.3777378614775065
+            },
+            {
+                "Wait, let's carefully analyze the setting and historical context clues in the question to ensure accurate character identification. Double-check for unique descriptors like time period, location, and story elements that distinguish one narrative from another. ": 0.35678618319671784
+            },
+            {
+                "Wait, let's verify the direction of motion and recall that when objects move toward each other, their relative speed is the sum of their individual speeds, not the difference. Always double-check whether the problem involves converging or diverging motion. ": 0.4367881779394169
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.4143008657708763
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's double-check the problem's requirements and confirm whether the question asks for area (multiplication of length and width) or perimeter (sum of all sides) before applying any calculations. This will prevent mixing up the correct operations. ",
+        "children": [
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.36239121438826244
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.6369063880935809
+            },
+            {
+                "Wait, let's carefully analyze the setting and historical context clues in the question to ensure accurate character identification. Double-check for unique descriptors like time period, location, and story elements that distinguish one narrative from another. ": 0.35678618319671784
+            },
+            {
+                "Wait, let's verify geographical facts by recalling that Paris is the capital of France, while London is the capital of the United Kingdom.": 0.5588801326044446
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.35696548590163857
+            },
+            {
+                "Wait, let's double-check the problem's requirements and confirm whether the question asks for area (multiplication of length and width) or perimeter (sum of all sides) before applying any calculations. This will prevent mixing up the correct operations. ": 0.3777378614775065
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.4143008657708763
+            },
+            {
+                "Wait, let's verify the direction of motion and recall that when objects move toward each other, their relative speed is the sum of their individual speeds, not the difference. Always double-check whether the problem involves converging or diverging motion. ": 0.4367881779394169
+            },
+            {
+                "Wait, let's double-check the mathematical derivation of the formula to ensure all components, like the division by 2, are correctly included based on the geometric principles involved. ": 0.32571725532841245
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's double-check the mathematical derivation of the formula to ensure all components, like the division by 2, are correctly included based on the geometric principles involved. ",
+        "children": [
+            {
+                "Wait, let's carefully analyze the setting and historical context clues in the question to ensure accurate character identification. Double-check for unique descriptors like time period, location, and story elements that distinguish one narrative from another. ": 0.35678618319671784
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.6369063880935809
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.35696548590163857
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.4143008657708763
+            },
+            {
+                "Wait, let's verify geographical facts by recalling that Paris is the capital of France, while London is the capital of the United Kingdom.": 0.5588801326044446
+            },
+            {
+                "Wait, let's verify the direction of motion and recall that when objects move toward each other, their relative speed is the sum of their individual speeds, not the difference. Always double-check whether the problem involves converging or diverging motion. ": 0.4367881779394169
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.36239121438826244
+            },
+            {
+                "Wait, let's double-check the mathematical derivation of the formula to ensure all components, like the division by 2, are correctly included based on the geometric principles involved. ": 0.32571725532841245
+            },
+            {
+                "Wait, let's double-check the problem's requirements and confirm whether the question asks for area (multiplication of length and width) or perimeter (sum of all sides) before applying any calculations. This will prevent mixing up the correct operations. ": 0.3777378614775065
+            }
+        ]
+    }
+]

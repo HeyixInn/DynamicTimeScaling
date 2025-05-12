@@ -1,0 +1,281 @@
+[
+    {
+        "guide": "Wait, let's make sure we're using the correct formula for the problem.",
+        "children": [
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.4235077375954688
+            },
+            {
+                "Wait, let's double-check the formula for the shape in question\u2014remember that area requires multiplication of length and width, while perimeter uses addition. Always verify which operation corresponds to the quantity being calculated. ": 0.45686362358410126
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.32652344259520666
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.45174837133936313
+            },
+            {
+                "Wait, let's verify factual information by cross-referencing common knowledge or using reliable sources to ensure accuracy, especially for geography-related questions.": 0.3460385884425965
+            },
+            {
+                "Wait, let's <your guide here>. ": 0.411599228698053
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.4493128098463396
+            },
+            {
+                "Wait, let's <your guide here>. ": 0.3859516359946119
+            }
+        ]
+    },
+    {
+        "guide": "Wait, did we convert all units to the same measurement before starting?",
+        "children": [
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.4493128098463396
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.32652344259520666
+            },
+            {
+                "Wait, let's double-check the formula for the shape in question\u2014remember that area requires multiplication of length and width, while perimeter uses addition. Always verify which operation corresponds to the quantity being calculated. ": 0.45686362358410126
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.4235077375954688
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.45174837133936313
+            },
+            {
+                "Wait, let's <your guide here>. ": 0.411599228698053
+            },
+            {
+                "Wait, let's verify factual information by cross-referencing common knowledge or using reliable sources to ensure accuracy, especially for geography-related questions.": 0.3460385884425965
+            },
+            {
+                "Wait, let's <your guide here>. ": 0.3859516359946119
+            },
+            {
+                "Wait, let's carefully re-examine the question to ensure all requirements and constraints are addressed, and verify each step against the problem's expectations before finalizing the answer. ": 0.5272491527777676
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's double-check the calculations to avoid any arithmetic mistakes.",
+        "children": [
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.4235077375954688
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.4493128098463396
+            },
+            {
+                "Wait, let's double-check the formula for the shape in question\u2014remember that area requires multiplication of length and width, while perimeter uses addition. Always verify which operation corresponds to the quantity being calculated. ": 0.45686362358410126
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.32652344259520666
+            },
+            {
+                "Wait, let's <your guide here>. ": 0.411599228698053
+            },
+            {
+                "Wait, let's carefully re-examine the question to ensure all requirements and constraints are addressed, and verify each step against the problem's expectations before finalizing the answer. ": 0.5272491527777676
+            },
+            {
+                "Wait, let's <your guide here>. ": 0.3859516359946119
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.45174837133936313
+            },
+            {
+                "Wait, let's verify factual information by cross-referencing common knowledge or using reliable sources to ensure accuracy, especially for geography-related questions.": 0.3460385884425965
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's verify that we've correctly applied the signs throughout the problem.",
+        "children": [
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.4235077375954688
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.32652344259520666
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.4493128098463396
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.45174837133936313
+            },
+            {
+                "Wait, let's verify factual information by cross-referencing common knowledge or using reliable sources to ensure accuracy, especially for geography-related questions.": 0.3460385884425965
+            },
+            {
+                "Wait, let's <your guide here>. ": 0.3859516359946119
+            },
+            {
+                "Wait, let's double-check the formula for the shape in question\u2014remember that area requires multiplication of length and width, while perimeter uses addition. Always verify which operation corresponds to the quantity being calculated. ": 0.45686362358410126
+            },
+            {
+                "Wait, let's carefully re-examine the question to ensure all requirements and constraints are addressed, and verify each step against the problem's expectations before finalizing the answer. ": 0.5272491527777676
+            },
+            {
+                "Wait, let's <your guide here>. ": 0.411599228698053
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's double-check the formula for the shape in question\u2014remember that area requires multiplication of length and width, while perimeter uses addition. Always verify which operation corresponds to the quantity being calculated. ",
+        "children": [
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.4235077375954688
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.45174837133936313
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.32652344259520666
+            },
+            {
+                "Wait, let's carefully re-examine the question to ensure all requirements and constraints are addressed, and verify each step against the problem's expectations before finalizing the answer. ": 0.5272491527777676
+            },
+            {
+                "Wait, let's double-check the formula for the shape in question\u2014remember that area requires multiplication of length and width, while perimeter uses addition. Always verify which operation corresponds to the quantity being calculated. ": 0.45686362358410126
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.4493128098463396
+            },
+            {
+                "Wait, let's <your guide here>. ": 0.3859516359946119
+            },
+            {
+                "Wait, let's verify factual information by cross-referencing common knowledge or using reliable sources to ensure accuracy, especially for geography-related questions.": 0.3460385884425965
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's verify factual information by cross-referencing common knowledge or using reliable sources to ensure accuracy, especially for geography-related questions.",
+        "children": [
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.4235077375954688
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.4493128098463396
+            },
+            {
+                "Wait, let's verify factual information by cross-referencing common knowledge or using reliable sources to ensure accuracy, especially for geography-related questions.": 0.3460385884425965
+            },
+            {
+                "Wait, let's double-check the formula for the shape in question\u2014remember that area requires multiplication of length and width, while perimeter uses addition. Always verify which operation corresponds to the quantity being calculated. ": 0.45686362358410126
+            },
+            {
+                "Wait, let's <your guide here>. ": 0.411599228698053
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.45174837133936313
+            },
+            {
+                "Wait, let's <your guide here>. ": 0.3859516359946119
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.32652344259520666
+            },
+            {
+                "Wait, let's carefully re-examine the question to ensure all requirements and constraints are addressed, and verify each step against the problem's expectations before finalizing the answer. ": 0.5272491527777676
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's <your guide here>. ",
+        "children": [
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.45174837133936313
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.4235077375954688
+            },
+            {
+                "Wait, let's verify factual information by cross-referencing common knowledge or using reliable sources to ensure accuracy, especially for geography-related questions.": 0.3460385884425965
+            },
+            {
+                "Wait, let's carefully re-examine the question to ensure all requirements and constraints are addressed, and verify each step against the problem's expectations before finalizing the answer. ": 0.5272491527777676
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.32652344259520666
+            },
+            {
+                "Wait, let's <your guide here>. ": 0.411599228698053
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.4493128098463396
+            },
+            {
+                "Wait, let's <your guide here>. ": 0.3859516359946119
+            },
+            {
+                "Wait, let's double-check the formula for the shape in question\u2014remember that area requires multiplication of length and width, while perimeter uses addition. Always verify which operation corresponds to the quantity being calculated. ": 0.45686362358410126
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's carefully re-examine the question to ensure all requirements and constraints are addressed, and verify each step against the problem's expectations before finalizing the answer. ",
+        "children": [
+            {
+                "Wait, let's <your guide here>. ": 0.411599228698053
+            },
+            {
+                "Wait, let's carefully re-examine the question to ensure all requirements and constraints are addressed, and verify each step against the problem's expectations before finalizing the answer. ": 0.5272491527777676
+            },
+            {
+                "Wait, let's double-check the formula for the shape in question\u2014remember that area requires multiplication of length and width, while perimeter uses addition. Always verify which operation corresponds to the quantity being calculated. ": 0.45686362358410126
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.45174837133936313
+            },
+            {
+                "Wait, let's <your guide here>. ": 0.3859516359946119
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.4235077375954688
+            },
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.4493128098463396
+            },
+            {
+                "Wait, let's verify factual information by cross-referencing common knowledge or using reliable sources to ensure accuracy, especially for geography-related questions.": 0.3460385884425965
+            }
+        ]
+    },
+    {
+        "guide": "Wait, let's <your guide here>. ",
+        "children": [
+            {
+                "Wait, let's verify that we've correctly applied the signs throughout the problem.": 0.4493128098463396
+            },
+            {
+                "Wait, did we convert all units to the same measurement before starting?": 0.4235077375954688
+            },
+            {
+                "Wait, let's carefully re-examine the question to ensure all requirements and constraints are addressed, and verify each step against the problem's expectations before finalizing the answer. ": 0.5272491527777676
+            },
+            {
+                "Wait, let's double-check the calculations to avoid any arithmetic mistakes.": 0.45174837133936313
+            },
+            {
+                "Wait, let's double-check the formula for the shape in question\u2014remember that area requires multiplication of length and width, while perimeter uses addition. Always verify which operation corresponds to the quantity being calculated. ": 0.45686362358410126
+            },
+            {
+                "Wait, let's verify factual information by cross-referencing common knowledge or using reliable sources to ensure accuracy, especially for geography-related questions.": 0.3460385884425965
+            },
+            {
+                "Wait, let's <your guide here>. ": 0.411599228698053
+            },
+            {
+                "Wait, let's <your guide here>. ": 0.3859516359946119
+            },
+            {
+                "Wait, let's make sure we're using the correct formula for the problem.": 0.32652344259520666
+            }
+        ]
+    }
+]
